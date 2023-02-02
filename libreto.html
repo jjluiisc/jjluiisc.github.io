@@ -1,4 +1,11 @@
 <!--Primera seccion-->
+<div class="row" style="padding:10px">
+	<div class="col-sm-12 col-md-12 col-lg-12">
+		<button type="button" class="btn btn-success" onclick="MostrarSoloPersonaje()">Solo el personaje</button>
+		<button type="button" class="btn btn-light" onclick="MostrarTodo()">Todo</button>
+	</div>
+</div>
+</br>
 <div class="accordion" id="accordionActividades">
   <div class="card">
     <div class="card-header" id="headingOne">
@@ -26,16 +33,40 @@
 			<div id="collapseOneActividades" class="collapse show" aria-labelledby="headingOneActividades" data-parent="#accordionEscenas">
 			  <div class="card-body">
 				<ul class="nav nav-tabs">
-				  <li class="active"><a data-toggle="tab" href="#mariaDespedidaJesus"><h4>&nbsp;Maria&nbsp;</h4></a></li>
+				  <li class="active"><a data-toggle="tab" href="#MaríaDespedidaJesus"><h4>&nbsp;María&nbsp;</h4></a></li>
 				  <li><a data-toggle="tab" href="#jesusDespedidaJesus"><h4>&nbsp;Jesús&nbsp;</h4></a></li>
+				  <li><a data-toggle="tab" href="#narradorDespedidaJesus"><h4>&nbsp;Narrador&nbsp;</h4></a></li>
 				</ul>
+				</br>
 
 				<div class="tab-content">
-				  <div id="mariaDespedidaJesus" class="tab-pane fade in active">
-					<!-- dialogos Maria -->
+				  <div id="MaríaDespedidaJesus" class="tab-pane fade in active">
+					<h5 class="otrosPersonajes"><B>JESÚS:</B> Si el bautismo hoy no es una ley, mañana lo será, la ley antigua es muy dura la nueva ley será blanda de gran caridad y dulzura... ¿Te duele que deje esta casita en donde tan felices haras hemos pasado juntos?</h5>
+					<h5><B class="verde-normal">MARÍA:</B> No hijo, no me duele que abandones la casa humilde de tu madre, para ir a cumplir tu encomienda, yo ya sabía qye para eso te había dado luz.</h5>
+					<h5 class="otrosPersonajes"><B>JESÚS:</B> Madre, con mi obediencia te pido permiso para salir a predicar la buena nueva de mi padre y también pido tu maternal bendición.</h5>
+					<h5><B class="verde-normal">MARÍA:</B> Si de ello necesitas yo te concedo todo lo que me pidas... ¿Qué le puede negar a su creador esta pobre madre?... bendigo al padre eterno por haberme dignado en darme por hijo al verbo divino... Te bendigo a ti hijo mio.</h5>
+					<h5><B class="verde-normal">MARÍA:</B> Anda... a predicarles la vida de gracia... y ahora bendíceme tu a mí para tener la fuerza necesaria.</h5>
+					<h5 class="otrosPersonajes"><B>JESÚS:</B> Mi padre y yo estamos agradecidos, por esta razón serás bendecida por todas las generaciones.</h5>
+					<h5><B class="verde-normal">MARÍA:</B> Yo humilde esclava del señor, solo aspiro a hacer su santísima voluntad, de Dios todo lo recibo y a Dios todo se lo doy con gusto.</h5>
+					<h5 class="otrosPersonajes"><B>LECTURA:</B> Se abrazan unos segundos María llora.</h5>
 				  </div>
 				  <div id="jesusDespedidaJesus" class="tab-pane fade">
-					<!-- dialogos Jesus -->
+					<h5><B class="verde-normal">JESÚS:</B> Si el bautismo hoy no es una ley, mañana lo será, la ley antigua es muy dura la nueva ley será blanda de gran caridad y dulzura... ¿Te duele que deje esta casita en donde tan felices haras hemos pasado juntos?</h5>
+					<h5 class="otrosPersonajes"><B>MARÍA:</B> No hijo, no me duele que abandones la casa humilde de tu madre, para ir a cumplir tu encomienda, yo ya sabía qye para eso te había dado luz.</h5>
+					<h5><B class="verde-normal">JESÚS:</B> Madre, con mi obediencia te pido permiso para salir a predicar la buena nueva de mi padre y también pido tu maternal bendición.</h5>
+					<h5 class="otrosPersonajes"><B>MARÍA:</B> Si de ello necesitas yo te concedo todo lo que me pidas... ¿Qué le puede negar a su creador esta pobre madre?... bendigo al padre eterno por haberme dignado en darme por hijo al verbo divino... Te bendigo a ti hijo mio.</h5>
+					<h5 class="otrosPersonajes"><B>MARÍA:</B> Anda... a predicarles la vida de gracia... y ahora bendíceme tu a mí para tener la fuerza necesaria.</h5>
+					<h5 class="otrosPersonajes"><B>LECTURA:</B> Jesús bendice a María.</h5>
+					<h5><B class="verde-normal">JESÚS:</B> Mi padre y yo estamos agradecidos, por esta razón serás bendecida por todas las generaciones.</h5>
+					<h5 class="otrosPersonajes"><B>MARÍA:</B> Yo humilde esclava del señor, solo aspiro a hacer su santísima voluntad, de Dios todo lo recibo y a Dios todo se lo doy con gusto.</h5>
+				  </div>
+				  <div id="narradorDespedidaJesus" class="tab-pane fade">
+					<h5 class="otrosPersonajes"><B>MARÍA:</B> Anda... a predicarles la vida de gracia... y ahora bendíceme tu a mí para tener la fuerza necesaria.</h5>
+					<h5><B class="verde-normal">LECTURA:</B> Jesús bendice a María.</h5>
+					<h5 class="otrosPersonajes"><B>JESÚS:</B> Mi padre y yo estamos agradecidos, por esta razón serás bendecida por todas las generaciones.</h5>
+					<h5 class="otrosPersonajes"><B>MARÍA:</B> Yo humilde esclava del señor, solo aspiro a hacer su santísima voluntad, de Dios todo lo recibo y a Dios todo se lo doy con gusto.</h5>
+					<h5><B class="verde-normal">LECTURA:</B> Se abrazan unos segundos María llora.</h5>
+					<h5><B class="verde-normal">LECTURA:</B> Jesús antes de comenzar su doloroso peregrinar, quiso despedirse de su madre, y pedirle su bendición ya que era la última vez que estaría con ella.</h5>
 				  </div>
 				</div>
 			  </div>
@@ -51,13 +82,6 @@
 			</div>
 			<div id="collapseTwoActividades" class="collapse" aria-labelledby="headingTwoActividades" data-parent="#accordionEscenas">
 			  <div class="card-body">
-				<div class="row">
-					<div class="col-sm-12 col-md-12 col-lg-12">
-						<button type="button" class="btn btn-success" onclick="MostrarSoloPersonaje()">Solo el personaje</button>
-						<button type="button" class="btn btn-light" onclick="MostrarTodo()">Todo</button>
-					</div>
-				</div>
-				<br/>
 				<ul class="nav nav-tabs" role="tablist">
 				  <li class="active"><a data-toggle="tab" href="#narradorBautismo"><h4>&nbsp;Narrador&nbsp;</h4></a></li>
 				  <li><a data-toggle="tab" href="#juanBautismo"><h4>&nbsp;Juan&nbsp;</h4></a></li>
@@ -69,10 +93,11 @@
 				  <li><a data-toggle="tab" href="#jesusBautismo"><h4>&nbsp;Jesús&nbsp;</h4></a></li>
 				  <li><a data-toggle="tab" href="#padreBautismo"><h4>&nbsp;Padre&nbsp;</h4></a></li>
 				</ul>
-
+				</br>		
+				
 				<div class="tab-content">
 				  <div id="narradorBautismo" class="tab-pane fade in active">
-					<!-- dialogos Maria -->
+					<!-- dialogos María -->
 					<div class="row">
 						<div class="col-sm-12 col-md-12 col-lg-12">
 							<h5><B class="verde-normal">LECTURA:</B> Juan el bautista que había sido enviado antes que Jesús, preparaba el camino y predicaba la penitencia del bautismo, era este Juan, un hombre con vestiduras de piel de camello y se alimentaba de hierbas y miel silvestre.</h5>
@@ -358,8 +383,4 @@
     </div>
   </div>
 </div>
-<a name="libreto"></a>   	
-
-	
-
-    
+<a name="libreto"></a>
