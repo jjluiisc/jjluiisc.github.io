@@ -24,18 +24,30 @@ var primer_domingo_escenas =
 	{id: "010", orden:10, nombre:"LA ELECCIÓN DE LOS APÓSTOLES", dialogos:dialogos_escena_eleccion_de_los_apostoles, personajes:primer_domingo_010}
 ];
 
+var segundo_domingo_001 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:21,nombre:"LÁZARO"},{id:22,nombre:"MAGDALENA"}];
+var segundo_domingo_002 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:3,nombre:"JESÚS"},{id:111,nombre:"HOMBRE"},{id:103,nombre:"JUDIO"},{id:112,nombre:"PARALITICO"},{id:113,nombre:"PIADOSA"}];
+var segundo_domingo_003 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:3,nombre:"JESÚS"},{id:23,nombre:"MARTHA"}];
+var segundo_domingo_004 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:3,nombre:"JESÚS"},{id:11,nombre:"BARTOLOMÉ"},{id:114,nombre:"RICO"},{id:24,nombre:"MATEO"},{id:10,nombre:"PEDRO"}];
+var segundo_domingo_005 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:14,nombre:"TADEO"},{id:3,nombre:"JESÚS"},{id:106,nombre:"GENTE"},{id:115,nombre:"ESPÍA 1"},{id:116,nombre:"ESPÍA 2"}];
+var segundo_domingo_006 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:10,nombre:"PEDRO"},{id:117,nombre:"NIÑO"},{id:3,nombre:"JESÚS"},{id:9,nombre:"FELIPE"},{id:8,nombre:"ANDRÉS"},{id:19,nombre:"JUDAS"},{id:106,nombre:"GENTE"},{id:109,nombre:"APÓSTOLES"},{id:18,nombre:"TOMÁS"}];
+var segundo_domingo_007 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:3,nombre:"JESÚS"},{id:118,nombre:"CENTURIÓN"}];
+var segundo_domingo_008 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:3,nombre:"JESÚS"},{id:119,nombre:"FARISEO"},{id:120,nombre:"INVITADOS"}];
+var segundo_domingo_009 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:3,nombre:"JESÚS"},{id:121,nombre:"CRIADO"},{id:122,nombre:"SACERDOTE"},{id:22,nombre:"MAGDALENA"},{id:123,nombre:"FLAVIO"},{id:19,nombre:"JUDAS"},{id:16,nombre:"JUAN"},{id:8,nombre:"ANDRÉS"},{id:124,nombre:"VERÓNICA"},{id:23,nombre:"MARTHA"},{id:115,nombre:"ESPÍA 1"},{id:116,nombre:"ESPÍA 2"},{id:21,nombre:"LÁZARO"},{id:103,nombre:"JUDIO"},{id:106,nombre:"GENTE"}];
+var segundo_domingo_010 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:6,nombre:"HERODES"},{id:5,nombre:"HERODÍAS"},{id:125,nombre:"DONCELLA"},{id:25,nombre:"SALOMÉ"},{id:104,nombre:"SOLDADO"}];
+
+
 var segundo_domingo_escenas = 
 [
-	{id: "011", orden:1, nombre:"EL JARDIN DE LAS FLORES", dialogos:[], personajes:[]},
-	{id: "012", orden:2, nombre:"JESÚS CURA A UN PARALITICO", dialogos:[], personajes:[]},
-	{id: "013", orden:3, nombre:"MARTHA Y JESÚS", dialogos:[], personajes:[]},
-	{id: "014", orden:4, nombre:"LAS BIENAVENTURANZAS", dialogos:[], personajes:[]},
-	{id: "015", orden:5, nombre:"JESÚS ENSEÑA A ORAR EL PADRE NUESTRO", dialogos:[], personajes:[]},
-	{id: "016", orden:6, nombre:"MULTIPLICACIÓN DE LOS PANES Y PECES", dialogos:[], personajes:[]},
-	{id: "017", orden:7, nombre:"JESÚS Y EL CENTURIÓN ROMANO", dialogos:[], personajes:[]},
-	{id: "018", orden:8, nombre:"PECADORA ARREPENTIDA", dialogos:[], personajes:[]},
-	{id: "019", orden:9, nombre:"VUELTA A BETANIA", dialogos:[], personajes:[]},
-	{id: "020", orden:10, nombre:"SALOME", dialogos:[], personajes:[]}
+	{id: "011", orden:1, nombre:"EL JARDIN DE LAS FLORES", dialogos:dialogos_escena_el_jardin_de_las_flores, personajes:segundo_domingo_001},
+	{id: "012", orden:2, nombre:"JESÚS CURA A UN PARALITICO", dialogos:dialogos_escena_jesus_cura_a_paralitico, personajes:segundo_domingo_002},
+	{id: "013", orden:3, nombre:"MARTHA Y JESÚS", dialogos:dialogos_escena_martha_y_jesus, personajes:segundo_domingo_003},
+	{id: "014", orden:4, nombre:"LAS BIENAVENTURANZAS", dialogos:dialogos_escena_las_bienaventuranzas, personajes:segundo_domingo_004},
+	{id: "015", orden:5, nombre:"JESÚS ENSEÑA A ORAR EL PADRE NUESTRO", dialogos:dialogos_escena_jesus_ensenia_orar_padre_nuestro, personajes:segundo_domingo_005},
+	{id: "016", orden:6, nombre:"MULTIPLICACIÓN DE LOS PANES Y PECES", dialogos:dialogos_escena_multiplicacion_de_panes_y_peces, personajes:segundo_domingo_006},
+	{id: "017", orden:7, nombre:"JESÚS Y EL CENTURIÓN ROMANO", dialogos:dialogos_escena_jesus_y_el_centurion_romano, personajes:segundo_domingo_007},
+	{id: "018", orden:8, nombre:"PECADORA ARREPENTIDA", dialogos:dialogos_escena_la_pecadora_arrepentida, personajes:segundo_domingo_008},
+	{id: "019", orden:9, nombre:"VUELTA A BETANIA", dialogos:dialogos_escena_vuelta_a_betania, personajes:segundo_domingo_009},
+	{id: "020", orden:10, nombre:"SALOME", dialogos:dialogos_escena_salome, personajes:segundo_domingo_010}
 ];
 
 var domingo_de_ramos_escenas = 
