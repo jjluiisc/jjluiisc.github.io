@@ -50,31 +50,52 @@ var segundo_domingo_escenas =
 	{id: "020", orden:10, nombre:"SALOME", dialogos:dialogos_escena_salome, personajes:segundo_domingo_010}
 ];
 
+var domingo_de_ramos_001 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:2,nombre:"MARÍA"},{id:3,nombre:"JESÚS"},{id:10,nombre:"PEDRO"},{id:16,nombre:"JUAN"},{id:103,nombre:"JUDIO"},{id:19,nombre:"JUDAS"},{id:115,nombre:"ESPÍA 1"},{id:116,nombre:"ESPÍA 2"},{id:26,nombre:"ARIMATEA"}];
+var domingo_de_ramos_002 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:3,nombre:"JESÚS"},{id:127,nombre:"ENFERMOS"}];
+var domingo_de_ramos_003 = [{id:0,nombre:"TODOS"},{id:128,nombre:"CIEGO"},{id:3,nombre:"JESÚS"},{id:109,nombre:"APÓSTOLES"},{id:19,nombre:"JUDAS"}];
+var domingo_de_ramos_004 = [{id:0,nombre:"TODOS"},{id:129,nombre:"NIÑOS"},{id:119,nombre:"FARISEO"},{id:3,nombre:"JESÚS"},{id:19,nombre:"JUDAS"},{id:1,nombre:"NARRADOR"}];
+var domingo_de_ramos_005 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:130,nombre:"VENDEDOR 1"},{id:131,nombre:"VENDEDOR 2"},{id:132,nombre:"VENDEDOR 3"},{id:133,nombre:"VENDEDOR 4"},{id:3,nombre:"JESÚS"}];
+var domingo_de_ramos_006 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:134,nombre:"ESCRIBA 1"},{id:138,nombre:"ADULTERA"},{id:135,nombre:"ESCRIBA 2"},{id:136,nombre:"ESCRIBA 3"},{id:137,nombre:"ESCRIBA 4"},{id:3,nombre:"JESÚS"},{id:106,nombre:"GENTE"}];
+var domingo_de_ramos_007 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:122,nombre:"SACERDOTE"},{id:3,nombre:"JESÚS"},{id:139,nombre:"SACERDOTES"},{id:119,nombre:"FARISEO"}];
+var domingo_de_ramos_008 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:19,nombre:"JUDAS"},{id:3,nombre:"JESÚS"}];
+var domingo_de_ramos_009 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:27,nombre:"ANÁS"},{id:28,nombre:"NICODEMO"},{id:146,nombre:"SANEDRÍN"},{id:29,nombre:"SARHOV"},{id:30,nombre:"AMER"},{id:31,nombre:"GANADEL"},{id:33,nombre:"SUMMUS"},{id:34,nombre:"RODHAM"},{id:26,nombre:"ARIMATEA"},{id:35,nombre:"CAIFÁS"},{id:36,nombre:"ZERHA"}];
+
 var domingo_de_ramos_escenas = 
 [
-	{id: "021", orden:1, nombre:"ENCUENTRO DE JESÚS CON SU MADRE", dialogos:[], personajes:[]},
-	{id: "022", orden:2, nombre:"JESÚS LLORA FRENTE A LOS MUROS DE JERUSALÉN", dialogos:[], personajes:[]},
-	{id: "023", orden:3, nombre:"CURACIÓN DEL CIEGO DE JERICÓ", dialogos:[], personajes:[]},
-	{id: "024", orden:4, nombre:"JESÚS Y LOS NIÑOS", dialogos:[], personajes:[]},
-	{id: "025", orden:5, nombre:"LA PURIFICACIÓN DEL TEMPLO", dialogos:[], personajes:[]},
-	{id: "026", orden:6, nombre:"LA MUJER ADULTERA", dialogos:[], personajes:[]},
-	{id: "027", orden:7, nombre:"TRIBUTO AL CESAR", dialogos:[], personajes:[]},
-	{id: "028", orden:8, nombre:"LA UNCIÓN EN BETANIA", dialogos:[], personajes:[]},
-	{id: "029", orden:9, nombre:"CONSEJO DE SANEDRÍN", dialogos:[], personajes:[]}
+	{id: "021", orden:1, nombre:"ENCUENTRO DE JESÚS CON SU MADRE", dialogos:dialogos_escena_encuentro_de_jesus_con_su_madre, personajes:domingo_de_ramos_001},
+	{id: "022", orden:2, nombre:"JESÚS LLORA FRENTE A LOS MUROS DE JERUSALÉN", dialogos:dialogos_escena_jesus_llora_frente_los_muros_de_jerusalen, personajes:domingo_de_ramos_002},
+	{id: "023", orden:3, nombre:"CURACIÓN DEL CIEGO DE JERICÓ", dialogos:dialogos_escena_curacion_del_ciego_de_jerico, personajes:domingo_de_ramos_003},
+	{id: "024", orden:4, nombre:"JESÚS Y LOS NIÑOS", dialogos:dialogos_escena_jesus_y_los_ninios, personajes:domingo_de_ramos_004},
+	{id: "025", orden:5, nombre:"LA PURIFICACIÓN DEL TEMPLO", dialogos:dialogos_escena_la_purificacion_del_templo, personajes:domingo_de_ramos_005},
+	{id: "026", orden:6, nombre:"LA MUJER ADULTERA", dialogos:dialogos_escena_la_mujer_adultera, personajes:domingo_de_ramos_006},
+	{id: "027", orden:7, nombre:"TRIBUTO AL CESAR", dialogos:dialogos_escena_tributo_a_cesar, personajes:domingo_de_ramos_007},
+	{id: "028", orden:8, nombre:"LA UNCIÓN EN BETANIA", dialogos:dialogos_escena_uncion_en_betania, personajes:domingo_de_ramos_008},
+	{id: "029", orden:9, nombre:"CONSEJO DE SANEDRÍN", dialogos:dialogos_escena_consejo_de_sanedrin, personajes:domingo_de_ramos_009}
 ];
+
+var jueves_santo_001 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:3,nombre:"JESÚS"},{id:16,nombre:"JUAN"},{id:10,nombre:"PEDRO"},{id:121,nombre:"CRIADO"},{id:139,nombre:"AMO"}];
+var jueves_santo_002 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:16,nombre:"JUAN"},{id:3,nombre:"JESÚS"}];
+var jueves_santo_003 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:140,nombre:"EJECUTOR"},{id:27,nombre:"ANÁS"},{id:19,nombre:"JUDAS"},{id:146,nombre:"SANEDRÍN"},{id:122,nombre:"SACERDOTE"},{id:35,nombre:"CAIFÁS"},{id:141,nombre:"GUARDIA"}];
+var jueves_santo_004 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:10,nombre:"PEDRO"},{id:3,nombre:"JESÚS"},{id:14,nombre:"TADEO"},{id:24,nombre:"MATEO"},{id:16,nombre:"JUAN"},{id:19,nombre:"JUDAS"},{id:18,nombre:"TOMÁS"}];
+var jueves_santo_005 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:19,nombre:"JUDAS"},{id:121,nombre:"CRIADO"},{id:143,nombre:"CRIADO 2"},{id:27,nombre:"ANÁS"},{id:146,nombre:"SANEDRÍN"},{id:142,nombre:"ANCIANO"},{id:122,nombre:"SACERDOTE"},{id:144,nombre:"MALCO"},{id:148,nombre:"ANCIANOS"}];
+var jueves_santo_006 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:3,nombre:"JESÚS"},{id:2,nombre:"MARÍA"}];
+var jueves_santo_007 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:3,nombre:"JESÚS"},{id:16,nombre:"JUAN"},{id:10,nombre:"PEDRO"}];
+var jueves_santo_008 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:19,nombre:"JUDAS"},{id:145,nombre:"ROMANO"},{id:3,nombre:"JESÚS"},{id:146,nombre:"SANEDRÍN"},{id:147,nombre:"DECURIÓN"}];
+var jueves_santo_009 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:16,nombre:"JUAN"},{id:2,nombre:"MARÍA"},{id:26,nombre:"ARIMATEA"},{id:28,nombre:"NICODEMO"},{id:37,nombre:"SARA"},{id:38,nombre:"AGARI"},{id:35,nombre:"CAIFÁS"},{id:3,nombre:"JESÚS"},{id:141,nombre:"GUARDIA"},{id:27,nombre:"ANÁS"},{id:33,nombre:"SUMMUS"},{id:32,nombre:"GAMABEL"},{id:30,nombre:"AMER"},{id:146,nombre:"SANEDRÍN"},{id:36,nombre:"ZERHA"}];
+var jueves_santo_010 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:38,nombre:"AGARI"},{id:141,nombre:"GUARDIA"},{id:10,nombre:"PEDRO"}];
 
 var jueves_santo_escenas = 
 [
-	{id: "030", orden:1, nombre:"PREPARACIÓN DE LA ÚLTIMA CENA", dialogos:[], personajes:[]},
-	{id: "031", orden:2, nombre:"ANUNCIO DE LAS PROFECIAS", dialogos:[], personajes:[]},
-	{id: "032", orden:3, nombre:"EL GRAN SINEDRIO", dialogos:[], personajes:[]},
-	{id: "033", orden:4, nombre:"CELEBRACIÓN DE LA ÚLTIMA CENA", dialogos:[], personajes:[]},
-	{id: "034", orden:5, nombre:"VENTA DE JESÚS. (Yo soy)", dialogos:[], personajes:[]},
-	{id: "035", orden:6, nombre:"JESÚS SE DESPIDE DE SU MADRE", dialogos:[], personajes:[]},
-	{id: "036", orden:7, nombre:"CAMINO GETSEMANÍ", dialogos:[], personajes:[]},
-	{id: "037", orden:8, nombre:"EL BESO DE JUDAS", dialogos:[], personajes:[]},
-	{id: "038", orden:9, nombre:"PRIMER INTERROGATORIO ANTE EL SANEDRÍN", dialogos:[], personajes:[]},
-	{id: "039", orden:10, nombre:"LAS NEGACIONES DE PEDRO", dialogos:[], personajes:[]}
+	{id: "030", orden:1, nombre:"PREPARACIÓN DE LA ÚLTIMA CENA", dialogos:dialogos_escena_preparacion_de_la_ultima_cena, personajes:jueves_santo_001},
+	{id: "031", orden:2, nombre:"ANUNCIO DE LAS PROFECIAS", dialogos:dialogos_escena_anuncio_de_las_profecias, personajes:jueves_santo_002},
+	{id: "032", orden:3, nombre:"EL GRAN SINEDRIO", dialogos:dialogos_escena_el_gran_sinedrio, personajes:jueves_santo_003},
+	{id: "033", orden:4, nombre:"CELEBRACIÓN DE LA ÚLTIMA CENA", dialogos:dialogos_escena_celebracion_ultima_cena, personajes:jueves_santo_004},
+	{id: "034", orden:5, nombre:"VENTA DE JESÚS. (Yo soy)", dialogos:dialogos_escena_venta_de_jesus, personajes:jueves_santo_005},
+	{id: "035", orden:6, nombre:"JESÚS SE DESPIDE DE SU MADRE", dialogos:dialogos_escena_jesus_se_despide_de_su_madre, personajes:jueves_santo_006},
+	{id: "036", orden:7, nombre:"CAMINO GETSEMANÍ", dialogos:dialogos_camino_a_getsemani, personajes:jueves_santo_007},
+	{id: "037", orden:8, nombre:"EL BESO DE JUDAS", dialogos:dialogos_escena_el_beso_de_judas, personajes:jueves_santo_008},
+	{id: "038", orden:9, nombre:"PRIMER INTERROGATORIO ANTE EL SANEDRÍN", dialogos:dialogos_escena_primer_interrogatorio_de_jesus, personajes:jueves_santo_009},
+	{id: "039", orden:10, nombre:"LAS NEGACIONES DE PEDRO", dialogos:dialogos_escena_las_negaciones_de_pedro, personajes:jueves_santo_010}
 ];
 
 var viernes_santo_escenas = 
@@ -139,28 +160,28 @@ var _personajes =
 	{id:23,nombre:"MARTHA"},
 	{id:24,nombre:"MATEO"},
 	{id:25,nombre:"SALOMÉ"},
-	{id:26,nombre:""},
-	{id:27,nombre:""},
-	{id:28,nombre:""},
-	{id:29,nombre:""},
-	{id:30,nombre:""},
+	{id:26,nombre:"ARIMATEA"},
+	{id:27,nombre:"ANÁS"},
+	{id:28,nombre:"NICODEMO"},
+	{id:29,nombre:"SARHOV"},
+	{id:30,nombre:"AMER"},
 	
-	{id:31,nombre:""},	
-	{id:32,nombre:""},
-	{id:33,nombre:""},
-	{id:34,nombre:""},
-	{id:35,nombre:""},
-	{id:36,nombre:""},
-	{id:37,nombre:""},
-	{id:38,nombre:""},
-	{id:39,nombre:""},
-	{id:40,nombre:""},
+	{id:31,nombre:"GANADEL"},	
+	{id:32,nombre:"GAMABEL"},
+	{id:33,nombre:"SUMMUS"},
+	{id:34,nombre:"RODHAM"},
+	{id:35,nombre:"CAIFÁS"},
+	{id:36,nombre:"ZERHA"},
+	{id:37,nombre:"SARA"},
+	{id:38,nombre:"AGARI"},
+	{id:39,nombre:"GESTAS"},
+	{id:40,nombre:"DIMAS"},
 	
-	{id:41,nombre:""},	
-	{id:42,nombre:""},
-	{id:43,nombre:""},
-	{id:44,nombre:""},
-	{id:45,nombre:""},
+	{id:41,nombre:"BARRABAS"},	
+	{id:42,nombre:"QUINTILO"},
+	{id:43,nombre:"PILATOS"},
+	{id:44,nombre:"CLAUDIA"},
+	{id:45,nombre:"CIRINEO"},
 	{id:46,nombre:""},
 	{id:47,nombre:""},
 	{id:48,nombre:""},
@@ -249,11 +270,66 @@ var _personajes =
 	{id:123,nombre:"FLAVIO"},
 	{id:124,nombre:"VERÓNICA"},
 	{id:125,nombre:"DONCELLA"},
-	{id:126,nombre:""},
-	{id:127,nombre:""},
-	{id:128,nombre:""},
-	{id:129,nombre:""},
-	{id:130,nombre:""},
+	{id:126,nombre:"SACERDOTES"},
+	{id:127,nombre:"ENFERMOS"},
+	{id:128,nombre:"CIEGO"},
+	{id:129,nombre:"NIÑOS"},
+	{id:130,nombre:"VENDEDOR 1"},	
 	
+	{id:131,nombre:"VENDEDOR 2"},
+	{id:132,nombre:"VENDEDOR 3"},
+	{id:133,nombre:"VENDEDOR 4"},
+	{id:134,nombre:"ESCRIBA 1"},
+	{id:135,nombre:"ESCRIBA 2"},
+	{id:136,nombre:"ESCRIBA 3"},
+	{id:137,nombre:"ESCRIBA 4"},
+	{id:138,nombre:"ADULTERA"},
+	{id:139,nombre:"AMO"},
+	{id:140,nombre:"EJECUTOR"},
+	
+	{id:141,nombre:"GUARDIA"},
+	{id:142,nombre:"ANCIANO"},
+	{id:143,nombre:"CRIADO 2"},
+	{id:144,nombre:"MALCO"},
+	{id:145,nombre:"ROMANO"},
+	{id:146,nombre:"SANEDRÍN"},
+	{id:147,nombre:"DECURIÓN"},
+	{id:148,nombre:"ANCIANOS"},
+	{id:149,nombre:"MATÍAS"},
+	{id:150,nombre:"SOLDADO 1"},
+	
+	{id:151,nombre:"SOLDADO 2"},
+	{id:152,nombre:"SOLDADO 3"},
+	{id:153,nombre:"SOLDADO 4"},
+	{id:154,nombre:"MUJER 1"},
+	{id:155,nombre:"MUJER 1"},
+	{id:156,nombre:"PIADOSA 1"},
+	{id:157,nombre:"PIADOSA 2"},
+	{id:158,nombre:"PIADOSA 3"},
+	{id:159,nombre:"PIADOSA 4"},
+	{id:160,nombre:"CLEOFAS"},
+	
+	{id:161,nombre:""},
+	{id:162,nombre:""},
+	{id:163,nombre:""},
+	{id:164,nombre:""},
+	{id:165,nombre:""},
+	{id:166,nombre:""},
+	{id:167,nombre:""},
+	{id:168,nombre:""},
+	{id:169,nombre:""},
+	{id:170,nombre:""},
+	
+	{id:171,nombre:""},
+	{id:172,nombre:""},
+	{id:173,nombre:""},
+	{id:174,nombre:""},
+	{id:175,nombre:""},
+	{id:176,nombre:""},
+	{id:177,nombre:""},
+	{id:178,nombre:""},
+	{id:179,nombre:""},
+	{id:180,nombre:""},
+
 ];
 
