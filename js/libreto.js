@@ -98,26 +98,45 @@ var jueves_santo_escenas =
 	{id: "039", orden:10, nombre:"LAS NEGACIONES DE PEDRO", dialogos:dialogos_escena_las_negaciones_de_pedro, personajes:jueves_santo_010}
 ];
 
+var viernes_santo_001 = [{id:0,nombre:"TODOS"},{id:39,nombre:"GESTAS"},{id:40,nombre:"DIMAS"},{id:41,nombre:"BARRABAS"},{id:42,nombre:"QUINTILO"},{id:104,nombre:"SOLDADO"}];
+var viernes_santo_002 = [{id:0,nombre:"TODOS"},{id:106,nombre:"GENTE"},{id:42,nombre:"QUINTILO"},{id:43,nombre:"PILATOS"},];
+var viernes_santo_003 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:43,nombre:"PILATOS"},{id:146,nombre:"SANEDRÍN"},{id:3,nombre:"JESÚS"},{id:126,nombre:"SACERDOTES"},{id:27,nombre:"ANÁS"}];
+var viernes_santo_004 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:149,nombre:"MATÍAS"},{id:6,nombre:"HERODES"},{id:30,nombre:"AMER"},{id:36,nombre:"ZERHA"},{id:27,nombre:"ANÁS"},{id:35,nombre:"CAIFÁS"},{id:126,nombre:"SACERDOTES"}];
+var viernes_santo_005 = [{id:0,nombre:"TODOS"},{id:35,nombre:"CAIFÁS"},{id:141,nombre:"GUARDIA"},{id:42,nombre:"QUINTILO"},{id:36,nombre:"ZERHA"},{id:43,nombre:"PILATOS"},{id:27,nombre:"ANÁS"},{id:146,nombre:"SANEDRÍN"},{id:44,nombre:"CLAUDIA"},{id:150,nombre:"SOLDADO 1"},{id:151,nombre:"SOLDADO 2"},{id:152,nombre:"SOLDADO 3"}];
+var viernes_santo_006 = [{id:0,nombre:"TODOS"},{id:43,nombre:"PILATOS"},{id:3,nombre:"JESÚS"},{id:42,nombre:"QUINTILO"}];
+var viernes_santo_007 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:43,nombre:"PILATOS"},{id:146,nombre:"SANEDRÍN"},{id:23,nombre:"MARTHA"},{id:42,nombre:"QUINTILO"},{id:27,nombre:"ANÁS"},{id:144,nombre:"MALCO"},{id:104,nombre:"SOLDADO"}];
+var viernes_santo_008 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:3,nombre:"JESÚS"},{id:150,nombre:"SOLDADO 1"},{id:151,nombre:"SOLDADO 2"},{id:40,nombre:"DIMAS"},{id:39,nombre:"GESTAS"},{id:104,nombre:"SOLDADO"}];
+var viernes_santo_009 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:16,nombre:"JUAN"},{id:2,nombre:"MARÍA"},{id:3,nombre:"JESÚS"},{id:102,nombre:"MARÍA Y JESÚS"},{id:152,nombre:"SOLDADO 3"},{id:126,nombre:"SACERDOTES"},{id:45,nombre:"CIRINEO"},{id:42,nombre:"QUINTILO"}];
+var viernes_santo_010 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:152,nombre:"SOLDADO 3"},{id:153,nombre:"SOLDADO 4"},{id:124,nombre:"VERÓNICA"},{id:3,nombre:"JESÚS"},{id:150,nombre:"SOLDADO 1"},{id:154,nombre:"MUJER 1"},{id:155,nombre:"MUJER 2"},];
+var viernes_santo_011 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:151,nombre:"SOLDADO 2"},{id:150,nombre:"SOLDADO 1"},{id:126,nombre:"SACERDOTES"},{id:42,nombre:"QUINTILO"}];
+var viernes_santo_012 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:152,nombre:"SOLDADO 3"},{id:39,nombre:"GESTAS"},{id:105,nombre:"MUJER"},{id:153,nombre:"SOLDADO 4"},{id:156,nombre:"PIADOSA 1"},{id:157,nombre:"PIADOSA 2"},{id:158,nombre:"PIADOSA 3"},{id:159,nombre:"PIADOSA 4"},{id:3,nombre:"JESÚS"},{id:150,nombre:"SOLDADO 1"},{id:126,nombre:"SACERDOTES"}];
+var viernes_santo_013 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:26,nombre:"ARIMATEA"},{id:3,nombre:"JESÚS"},{id:150,nombre:"SOLDADO 1"}];
+var viernes_santo_014 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:150,nombre:"SOLDADO 1"},{id:126,nombre:"SACERDOTES"},{id:151,nombre:"SOLDADO 2"}];
+var viernes_santo_015 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:2,nombre:"MARÍA"},{id:150,nombre:"SOLDADO 1"},{id:152,nombre:"SOLDADO 3"},{id:153,nombre:"SOLDADO 4"},{id:26,nombre:"ARIMATEA"},{id:151,nombre:"SOLDADO 2"},{id:113,nombre:"PIADOSA"},{id:160,nombre:"CLEOFAS"},{id:23,nombre:"MARTHA"},{id:42,nombre:"QUINTILO"},{id:22,nombre:"MAGDALENA"}];
+var viernes_santo_016 = [{id:0,nombre:"TODOS"},{id:122,nombre:"SACERDOTE"},{id:34,nombre:"RODHAM"},{id:30,nombre:"AMER"},{id:42,nombre:"QUINTILO"},{id:33,nombre:"SUMMUS"},{id:2,nombre:"MARÍA"},{id:39,nombre:"GESTAS"},{id:40,nombre:"DIMAS"},{id:3,nombre:"JESÚS"},{id:35,nombre:"CAIFÁS"},{id:152,nombre:"SOLDADO 3"},{id:27,nombre:"ANÁS"},{id:16,nombre:"JUAN"}];
+var viernes_santo_017 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:26,nombre:"ARIMATEA"},{id:43,nombre:"PILATOS"},{id:42,nombre:"QUINTILO"},{id:2,nombre:"MARÍA"}];
+var viernes_santo_018 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:3,nombre:"JESÚS"},{id:112,nombre:"PARALITICO"},{id:103,nombre:"JUDIO"}];
+
 var viernes_santo_escenas = 
 [
-	{id: "040", orden:1, nombre:"DIÁLOGO LOS LADRONES", dialogos:[], personajes:[]},
-	{id: "041", orden:2, nombre:"PILATOS LLEGA AL PALACIO", dialogos:[], personajes:[]},
-	{id: "042", orden:3, nombre:"JESÚS ES INTERROGADO POR PONCIO PILATOS", dialogos:[], personajes:[]},
-	{id: "043", orden:4, nombre:"JESÚS ANTE HERODES", dialogos:[], personajes:[]},
-	{id: "044", orden:5, nombre:"JESÚS ES PRESENTADO ANTE PILATOS POR SEGUNDA VEZ", dialogos:[], personajes:[]},
-	{id: "045", orden:6, nombre:"JESÚS ES PRESENTADO AL PUEBLO DE JUDEA", dialogos:[], personajes:[]},
-	{id: "046", orden:7, nombre:"JESUS ES SENTENCIADO A MUERTE", dialogos:[], personajes:[]},
-	{id: "047", orden:8, nombre:"EL CASTIGO DE LOS LADRONES", dialogos:[], personajes:[]},
-	{id: "048", orden:9, nombre:"JESUS ENCUENTRA A SU MADRE", dialogos:[], personajes:[]},
-	{id: "049", orden:10, nombre:"LA VERÓNICA LIMPIA EL ROSTRO DE JESÚS", dialogos:[], personajes:[]},
-	{id: "050", orden:11, nombre:"JESÚS CAE POR SEGUNDA VEZ", dialogos:[], personajes:[]},
-	{id: "051", orden:12, nombre:"JESUS ENCUENTRA A LAS MUJERES DE JERUSALÉN", dialogos:[], personajes:[]},
-	{id: "052", orden:13, nombre:"JOSE DE ARIMATEA CONFORTA A JESÚS", dialogos:[], personajes:[]},
-	{id: "053", orden:14, nombre:"JESÚS CAE POR TERCERA VEZ", dialogos:[], personajes:[]},
-	{id: "054", orden:15, nombre:"JESÚS ES CRUCIFICADO EN EL GÓLGOTA", dialogos:[], personajes:[]},
-	{id: "055", orden:16, nombre:"LAS SIETE PALABRAS", dialogos:[], personajes:[]},
-	{id: "056", orden:17, nombre:"SEPULTURA DE JESÚS", dialogos:[], personajes:[]},
-	{id: "057", orden:18, nombre:"OTROS MILAGROS", dialogos:[], personajes:[]}
+	{id: "040", orden:1, nombre:"DIÁLOGO LOS LADRONES", dialogos:dialogos_escena_los_ladrones, personajes:viernes_santo_001},
+	{id: "041", orden:2, nombre:"PILATOS LLEGA AL PALACIO", dialogos:dialogos_escena_pilatos_llega_al_palacio, personajes:viernes_santo_002},
+	{id: "042", orden:3, nombre:"JESÚS ES INTERROGADO POR PONCIO PILATOS", dialogos:dialogos_escena_jesus_es_interrogado_por_pilato, personajes:viernes_santo_003},
+	{id: "043", orden:4, nombre:"JESÚS ANTE HERODES", dialogos:dialogos_escena_jesus_ante_erodes, personajes:viernes_santo_004},
+	{id: "044", orden:5, nombre:"JESÚS ES PRESENTADO ANTE PILATOS POR SEGUNDA VEZ", dialogos:dialogos_escena_jesus_presentado_ante_pilatos_por_segunda_vez, personajes:viernes_santo_005},
+	{id: "045", orden:6, nombre:"JESÚS ES PRESENTADO AL PUEBLO DE JUDEA", dialogos:dialogos_escena_jesus_es_precentado_al_puble_de_judea, personajes:viernes_santo_006},
+	{id: "046", orden:7, nombre:"JESUS ES SENTENCIADO A MUERTE", dialogos:dialogos_escena_jesus_es_sentenciado, personajes:viernes_santo_007},
+	{id: "047", orden:8, nombre:"EL CASTIGO DE LOS LADRONES", dialogos:dialogos_escena_castigo_a_los_ladrones, personajes:viernes_santo_008},
+	{id: "048", orden:9, nombre:"JESUS ENCUENTRA A SU MADRE", dialogos:dialogos_escena_jesus_encuentra_a_su_madre, personajes:viernes_santo_009},
+	{id: "049", orden:10, nombre:"LA VERÓNICA LIMPIA EL ROSTRO DE JESÚS", dialogos:dialogos_escena_la_veronica_limpia_el_rostro_de_jesus, personajes:viernes_santo_010},
+	{id: "050", orden:11, nombre:"JESÚS CAE POR SEGUNDA VEZ", dialogos:dialogos_escena_jesus_cae_por_segunda_vez, personajes:viernes_santo_011},
+	{id: "051", orden:12, nombre:"JESUS ENCUENTRA A LAS MUJERES DE JERUSALÉN", dialogos:dialogos_escena_jesus_consuela_a_las_mujeres_de_jerusalen, personajes:viernes_santo_012},
+	{id: "052", orden:13, nombre:"JOSE DE ARIMATEA CONFORTA A JESÚS", dialogos:dialogos_escena_jose_de_arimatea_conforta_a_jesus, personajes:viernes_santo_013},
+	{id: "053", orden:14, nombre:"JESÚS CAE POR TERCERA VEZ", dialogos:dialogos_escena_jesus_cae_po_tercera_vez, personajes:viernes_santo_014},
+	{id: "054", orden:15, nombre:"JESÚS ES CRUCIFICADO EN EL GÓLGOTA", dialogos:dialogos_escena_jesus_crucificado_en_el_golgota, personajes:viernes_santo_015},
+	{id: "055", orden:16, nombre:"LAS SIETE PALABRAS", dialogos:dialogos_escena_la_siete_palabras, personajes:viernes_santo_016},
+	{id: "056", orden:17, nombre:"SEPULTURA DE JESÚS", dialogos:dialogos_escena_sepultura_de_jesus, personajes:viernes_santo_017},
+	{id: "057", orden:18, nombre:"OTROS MILAGROS", dialogos:dialogos_escena_otros_milagros, personajes:viernes_santo_018}
 ];
 
 
