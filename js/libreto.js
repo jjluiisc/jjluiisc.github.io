@@ -1,6 +1,6 @@
 var primer_domingo_001 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:2,nombre:"MARÍA"},{id:3,nombre:"JESÚS"},{id:100,nombre:"SIRVIENTES"},{id:101,nombre:"MAYORDOMO"}];
 var primer_domingo_002 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:2,nombre:"MARÍA"},{id:3,nombre:"JESÚS"},{id:102,nombre:"MARÍA Y JESÚS"}];
-var primer_domingo_003 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:4,nombre:"JUAN"},{id:103,nombre:"JUDIO"},{id:5,nombre:"HERODÍAS"},{id:6,nombre:"HERODES"},{id:104,nombre:"SOLDADO"},{id:105,nombre:"MUJER"}];
+var primer_domingo_003 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:4,nombre:"JUAN"},{id:103,nombre:"JUDIO"},{id:5,nombre:"HERODÍAS"},{id:6,nombre:"HERODES"},{id:104,nombre:"SOLDADO"},{id:105,nombre:"MUJER"},{id:106,nombre:"GENTE"}];
 var primer_domingo_004 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:3,nombre:"JESÚS"},{id:4,nombre:"JUAN"},{id:107,nombre:"PADRE"},{id:106,nombre:"GENTE"},{id:103,nombre:"JUDIO"},{id:6,nombre:"HERODES"}];
 var primer_domingo_005 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:7,nombre:"SATANAS"},{id:3,nombre:"JESÚS"}];
 var primer_domingo_006 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:3,nombre:"JESÚS"},{id:8,nombre:"ANDRÉS"},{id:9,nombre:"FELIPE"}];
@@ -24,6 +24,7 @@ var primer_domingo_escenas =
 	{id: "010", orden:10, nombre:"LA ELECCIÓN DE LOS APÓSTOLES", dialogos:dialogos_escena_eleccion_de_los_apostoles, personajes:primer_domingo_010}
 ];
 
+	
 var segundo_domingo_001 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:21,nombre:"LÁZARO"},{id:22,nombre:"MAGDALENA"}];
 var segundo_domingo_002 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:3,nombre:"JESÚS"},{id:111,nombre:"HOMBRE"},{id:103,nombre:"JUDIO"},{id:112,nombre:"PARALITICO"},{id:113,nombre:"PIADOSA"}];
 var segundo_domingo_003 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:3,nombre:"JESÚS"},{id:23,nombre:"MARTHA"}];
@@ -50,13 +51,13 @@ var segundo_domingo_escenas =
 	{id: "020", orden:10, nombre:"SALOME", dialogos:dialogos_escena_salome, personajes:segundo_domingo_010}
 ];
 
-var domingo_de_ramos_001 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:2,nombre:"MARÍA"},{id:3,nombre:"JESÚS"},{id:10,nombre:"PEDRO"},{id:16,nombre:"JUAN"},{id:103,nombre:"JUDIO"},{id:19,nombre:"JUDAS"},{id:115,nombre:"ESPÍA 1"},{id:116,nombre:"ESPÍA 2"},{id:26,nombre:"ARIMATEA"}];
+var domingo_de_ramos_001 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:2,nombre:"MARÍA"},{id:3,nombre:"JESÚS"},{id:10,nombre:"PEDRO"},{id:16,nombre:"JUAN"},{id:103,nombre:"JUDIO"},{id:19,nombre:"JUDAS"},{id:115,nombre:"ESPÍA 1"},{id:116,nombre:"ESPÍA 2"},{id:26,nombre:"ARIMATEA"},{id:126,nombre:"SACERDOTES"}];
 var domingo_de_ramos_002 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:3,nombre:"JESÚS"},{id:127,nombre:"ENFERMOS"}];
 var domingo_de_ramos_003 = [{id:0,nombre:"TODOS"},{id:128,nombre:"CIEGO"},{id:3,nombre:"JESÚS"},{id:109,nombre:"APÓSTOLES"},{id:19,nombre:"JUDAS"}];
 var domingo_de_ramos_004 = [{id:0,nombre:"TODOS"},{id:129,nombre:"NIÑOS"},{id:119,nombre:"FARISEO"},{id:3,nombre:"JESÚS"},{id:19,nombre:"JUDAS"},{id:1,nombre:"NARRADOR"}];
 var domingo_de_ramos_005 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:130,nombre:"VENDEDOR 1"},{id:131,nombre:"VENDEDOR 2"},{id:132,nombre:"VENDEDOR 3"},{id:133,nombre:"VENDEDOR 4"},{id:3,nombre:"JESÚS"}];
 var domingo_de_ramos_006 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:134,nombre:"ESCRIBA 1"},{id:138,nombre:"ADULTERA"},{id:135,nombre:"ESCRIBA 2"},{id:136,nombre:"ESCRIBA 3"},{id:137,nombre:"ESCRIBA 4"},{id:3,nombre:"JESÚS"},{id:106,nombre:"GENTE"}];
-var domingo_de_ramos_007 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:122,nombre:"SACERDOTE"},{id:3,nombre:"JESÚS"},{id:139,nombre:"SACERDOTES"},{id:119,nombre:"FARISEO"}];
+var domingo_de_ramos_007 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:122,nombre:"SACERDOTE"},{id:3,nombre:"JESÚS"},{id:126,nombre:"SACERDOTES"},{id:119,nombre:"FARISEO"}];
 var domingo_de_ramos_008 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:19,nombre:"JUDAS"},{id:3,nombre:"JESÚS"}];
 var domingo_de_ramos_009 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:27,nombre:"ANÁS"},{id:28,nombre:"NICODEMO"},{id:146,nombre:"SANEDRÍN"},{id:29,nombre:"SARHOV"},{id:30,nombre:"AMER"},{id:31,nombre:"GANADEL"},{id:33,nombre:"SUMMUS"},{id:34,nombre:"RODHAM"},{id:26,nombre:"ARIMATEA"},{id:35,nombre:"CAIFÁS"},{id:36,nombre:"ZERHA"}];
 
@@ -76,7 +77,7 @@ var domingo_de_ramos_escenas =
 var jueves_santo_001 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:3,nombre:"JESÚS"},{id:16,nombre:"JUAN"},{id:10,nombre:"PEDRO"},{id:121,nombre:"CRIADO"},{id:139,nombre:"AMO"}];
 var jueves_santo_002 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:16,nombre:"JUAN"},{id:3,nombre:"JESÚS"}];
 var jueves_santo_003 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:140,nombre:"EJECUTOR"},{id:27,nombre:"ANÁS"},{id:19,nombre:"JUDAS"},{id:146,nombre:"SANEDRÍN"},{id:122,nombre:"SACERDOTE"},{id:35,nombre:"CAIFÁS"},{id:141,nombre:"GUARDIA"}];
-var jueves_santo_004 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:10,nombre:"PEDRO"},{id:3,nombre:"JESÚS"},{id:14,nombre:"TADEO"},{id:24,nombre:"MATEO"},{id:16,nombre:"JUAN"},{id:19,nombre:"JUDAS"},{id:18,nombre:"TOMÁS"}];
+var jueves_santo_004 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:10,nombre:"PEDRO"},{id:3,nombre:"JESÚS"},{id:14,nombre:"TADEO"},{id:24,nombre:"MATEO"},{id:16,nombre:"JUAN"},{id:19,nombre:"JUDAS"},{id:18,nombre:"TOMÁS"},{id:109,nombre:"APÓSTOLES"}];
 var jueves_santo_005 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:19,nombre:"JUDAS"},{id:121,nombre:"CRIADO"},{id:143,nombre:"CRIADO 2"},{id:27,nombre:"ANÁS"},{id:146,nombre:"SANEDRÍN"},{id:142,nombre:"ANCIANO"},{id:122,nombre:"SACERDOTE"},{id:144,nombre:"MALCO"},{id:148,nombre:"ANCIANOS"}];
 var jueves_santo_006 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:3,nombre:"JESÚS"},{id:2,nombre:"MARÍA"}];
 var jueves_santo_007 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:3,nombre:"JESÚS"},{id:16,nombre:"JUAN"},{id:10,nombre:"PEDRO"}];
@@ -98,15 +99,16 @@ var jueves_santo_escenas =
 	{id: "039", orden:10, nombre:"LAS NEGACIONES DE PEDRO", dialogos:dialogos_escena_las_negaciones_de_pedro, personajes:jueves_santo_010}
 ];
 
+
 var viernes_santo_001 = [{id:0,nombre:"TODOS"},{id:39,nombre:"GESTAS"},{id:40,nombre:"DIMAS"},{id:41,nombre:"BARRABAS"},{id:42,nombre:"QUINTILO"},{id:104,nombre:"SOLDADO"}];
 var viernes_santo_002 = [{id:0,nombre:"TODOS"},{id:106,nombre:"GENTE"},{id:42,nombre:"QUINTILO"},{id:43,nombre:"PILATOS"},];
 var viernes_santo_003 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:43,nombre:"PILATOS"},{id:146,nombre:"SANEDRÍN"},{id:3,nombre:"JESÚS"},{id:126,nombre:"SACERDOTES"},{id:27,nombre:"ANÁS"}];
 var viernes_santo_004 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:149,nombre:"MATÍAS"},{id:6,nombre:"HERODES"},{id:30,nombre:"AMER"},{id:36,nombre:"ZERHA"},{id:27,nombre:"ANÁS"},{id:35,nombre:"CAIFÁS"},{id:126,nombre:"SACERDOTES"}];
-var viernes_santo_005 = [{id:0,nombre:"TODOS"},{id:35,nombre:"CAIFÁS"},{id:141,nombre:"GUARDIA"},{id:42,nombre:"QUINTILO"},{id:36,nombre:"ZERHA"},{id:43,nombre:"PILATOS"},{id:27,nombre:"ANÁS"},{id:146,nombre:"SANEDRÍN"},{id:44,nombre:"CLAUDIA"},{id:150,nombre:"SOLDADO 1"},{id:151,nombre:"SOLDADO 2"},{id:152,nombre:"SOLDADO 3"}];
+var viernes_santo_005 = [{id:0,nombre:"TODOS"},{id:35,nombre:"CAIFÁS"},{id:141,nombre:"GUARDIA"},{id:42,nombre:"QUINTILO"},{id:36,nombre:"ZERHA"},{id:43,nombre:"PILATOS"},{id:27,nombre:"ANÁS"},{id:146,nombre:"SANEDRÍN"},{id:44,nombre:"CLAUDIA"},{id:150,nombre:"SOLDADO 1"},{id:151,nombre:"SOLDADO 2"},{id:152,nombre:"SOLDADO 3"},{id:104,nombre:"SOLDADO"}];
 var viernes_santo_006 = [{id:0,nombre:"TODOS"},{id:43,nombre:"PILATOS"},{id:3,nombre:"JESÚS"},{id:42,nombre:"QUINTILO"}];
 var viernes_santo_007 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:43,nombre:"PILATOS"},{id:146,nombre:"SANEDRÍN"},{id:23,nombre:"MARTHA"},{id:42,nombre:"QUINTILO"},{id:27,nombre:"ANÁS"},{id:144,nombre:"MALCO"},{id:104,nombre:"SOLDADO"}];
 var viernes_santo_008 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:3,nombre:"JESÚS"},{id:150,nombre:"SOLDADO 1"},{id:151,nombre:"SOLDADO 2"},{id:40,nombre:"DIMAS"},{id:39,nombre:"GESTAS"},{id:104,nombre:"SOLDADO"}];
-var viernes_santo_009 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:16,nombre:"JUAN"},{id:2,nombre:"MARÍA"},{id:3,nombre:"JESÚS"},{id:102,nombre:"MARÍA Y JESÚS"},{id:152,nombre:"SOLDADO 3"},{id:126,nombre:"SACERDOTES"},{id:45,nombre:"CIRINEO"},{id:42,nombre:"QUINTILO"}];
+var viernes_santo_009 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:16,nombre:"JUAN"},{id:2,nombre:"MARÍA"},{id:3,nombre:"JESÚS"},{id:102,nombre:"MARÍA Y JESÚS"},{id:152,nombre:"SOLDADO 3"},{id:126,nombre:"SACERDOTES"},{id:45,nombre:"CIRINEO"},{id:42,nombre:"QUINTILO"},{id:150,nombre:"SOLDADO 1"}];
 var viernes_santo_010 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:152,nombre:"SOLDADO 3"},{id:153,nombre:"SOLDADO 4"},{id:124,nombre:"VERÓNICA"},{id:3,nombre:"JESÚS"},{id:150,nombre:"SOLDADO 1"},{id:154,nombre:"MUJER 1"},{id:155,nombre:"MUJER 2"},];
 var viernes_santo_011 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:151,nombre:"SOLDADO 2"},{id:150,nombre:"SOLDADO 1"},{id:126,nombre:"SACERDOTES"},{id:42,nombre:"QUINTILO"}];
 var viernes_santo_012 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:152,nombre:"SOLDADO 3"},{id:39,nombre:"GESTAS"},{id:105,nombre:"MUJER"},{id:153,nombre:"SOLDADO 4"},{id:156,nombre:"PIADOSA 1"},{id:157,nombre:"PIADOSA 2"},{id:158,nombre:"PIADOSA 3"},{id:159,nombre:"PIADOSA 4"},{id:3,nombre:"JESÚS"},{id:150,nombre:"SOLDADO 1"},{id:126,nombre:"SACERDOTES"}];
@@ -116,6 +118,9 @@ var viernes_santo_015 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:2,no
 var viernes_santo_016 = [{id:0,nombre:"TODOS"},{id:122,nombre:"SACERDOTE"},{id:34,nombre:"RODHAM"},{id:30,nombre:"AMER"},{id:42,nombre:"QUINTILO"},{id:33,nombre:"SUMMUS"},{id:2,nombre:"MARÍA"},{id:39,nombre:"GESTAS"},{id:40,nombre:"DIMAS"},{id:3,nombre:"JESÚS"},{id:35,nombre:"CAIFÁS"},{id:152,nombre:"SOLDADO 3"},{id:27,nombre:"ANÁS"},{id:16,nombre:"JUAN"}];
 var viernes_santo_017 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:26,nombre:"ARIMATEA"},{id:43,nombre:"PILATOS"},{id:42,nombre:"QUINTILO"},{id:2,nombre:"MARÍA"}];
 var viernes_santo_018 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:3,nombre:"JESÚS"},{id:112,nombre:"PARALITICO"},{id:103,nombre:"JUDIO"}];
+	
+
+
 
 var viernes_santo_escenas = 
 [
@@ -321,7 +326,7 @@ var _personajes =
 	{id:152,nombre:"SOLDADO 3"},
 	{id:153,nombre:"SOLDADO 4"},
 	{id:154,nombre:"MUJER 1"},
-	{id:155,nombre:"MUJER 1"},
+	{id:155,nombre:"MUJER 2"},
 	{id:156,nombre:"PIADOSA 1"},
 	{id:157,nombre:"PIADOSA 2"},
 	{id:158,nombre:"PIADOSA 3"},
@@ -352,3 +357,112 @@ var _personajes =
 
 ];
 
+var _personajesOrdenados =
+[
+	{id:138,nombre:"ADULTERA"},
+	{id:38,nombre:"AGARI"},
+	{id:30,nombre:"AMER"},
+	{id:139,nombre:"AMO"},
+	{id:27,nombre:"ANÁS"},
+	{id:142,nombre:"ANCIANO"},
+	{id:148,nombre:"ANCIANOS"},
+	{id:8,nombre:"ANDRÉS"},
+	{id:109,nombre:"APÓSTOLES"},
+	{id:26,nombre:"ARIMATEA"},
+	{id:41,nombre:"BARRABAS"},
+	{id:11,nombre:"BARTOLOMÉ"},
+	{id:35,nombre:"CAIFÁS"},
+	{id:118,nombre:"CENTURIÓN"},
+	{id:128,nombre:"CIEGO"},
+	{id:45,nombre:"CIRINEO"},
+	{id:44,nombre:"CLAUDIA"},
+	{id:160,nombre:"CLEOFAS"},
+	{id:121,nombre:"CRIADO"},
+	{id:143,nombre:"CRIADO 2"},
+	{id:147,nombre:"DECURIÓN"},
+	{id:40,nombre:"DIMAS"},
+	{id:125,nombre:"DONCELLA"},
+	{id:140,nombre:"EJECUTOR"},
+	{id:127,nombre:"ENFERMOS"},
+	{id:134,nombre:"ESCRIBA 1"},
+	{id:135,nombre:"ESCRIBA 2"},
+	{id:136,nombre:"ESCRIBA 3"},
+	{id:137,nombre:"ESCRIBA 4"},
+	{id:115,nombre:"ESPÍA 1"},
+	{id:116,nombre:"ESPÍA 2"},
+	{id:108,nombre:"ESPOSA"},
+	{id:119,nombre:"FARISEO"},
+	{id:9,nombre:"FELIPE"},
+	{id:123,nombre:"FLAVIO"},
+	{id:32,nombre:"GAMABEL"},
+	{id:31,nombre:"GANADEL"},
+	{id:106,nombre:"GENTE-(TODOS)"},
+	{id:39,nombre:"GESTAS"},
+	{id:141,nombre:"GUARDIA"},
+	{id:6,nombre:"HERODES"},
+	{id:5,nombre:"HERODÍAS"},
+	{id:111,nombre:"HOMBRE"},
+	{id:120,nombre:"INVITADOS"},
+	{id:17,nombre:"JAIRO"},
+	{id:3,nombre:"JESÚS"},
+	{id:4,nombre:"JUAN BAUTISTA"},
+	{id:16,nombre:"JUAN"},
+	{id:19,nombre:"JUDAS"},
+	{id:103,nombre:"JUDIO"},
+	{id:21,nombre:"LÁZARO"},
+	{id:22,nombre:"MAGDALENA"},
+	{id:144,nombre:"MALCO"},
+	{id:2,nombre:"MARÍA"},
+	{id:102,nombre:"MARÍA Y JESÚS"},
+	{id:23,nombre:"MARTHA"},
+	{id:24,nombre:"MATEO"},
+	{id:149,nombre:"MATÍAS"},
+	{id:101,nombre:"MAYORDOMO"},
+	{id:105,nombre:"MUJER"},
+	{id:154,nombre:"MUJER 1"},
+	{id:155,nombre:"MUJER 2"},
+	{id:1,nombre:"NARRADOR"},
+	{id:28,nombre:"NICODEMO"},
+	{id:110,nombre:"NIÑA"},
+	{id:117,nombre:"NIÑO"},
+	{id:129,nombre:"NIÑOS"},
+	{id:107,nombre:"PADRE"},
+	{id:112,nombre:"PARALITICO"},
+	{id:10,nombre:"PEDRO"},
+	{id:113,nombre:"PIADOSA"},
+	{id:156,nombre:"PIADOSA 1"},
+	{id:157,nombre:"PIADOSA 2"},
+	{id:158,nombre:"PIADOSA 3"},
+	{id:159,nombre:"PIADOSA 4"},
+	{id:43,nombre:"PILATOS"},
+	{id:42,nombre:"QUINTILO"},
+	{id:114,nombre:"RICO"},
+	{id:34,nombre:"RODHAM"},
+	{id:145,nombre:"ROMANO"},
+	{id:122,nombre:"SACERDOTE"},
+	{id:126,nombre:"SACERDOTES"},
+	{id:25,nombre:"SALOMÉ"},
+	{id:20,nombre:"SAMARITANA"},
+	{id:146,nombre:"SANEDRÍN"},
+	{id:13,nombre:"SANTIAGO A"},
+	{id:15,nombre:"SANTIAGO M"},
+	{id:37,nombre:"SARA"},
+	{id:29,nombre:"SARHOV"},
+	{id:7,nombre:"SATANAS"},
+	{id:12,nombre:"SIMÓN"},
+	{id:100,nombre:"SIRVIENTES"},
+	{id:104,nombre:"SOLDADO"},
+	{id:150,nombre:"SOLDADO 1"},
+	{id:151,nombre:"SOLDADO 2"},
+	{id:152,nombre:"SOLDADO 3"},
+	{id:153,nombre:"SOLDADO 4"},
+	{id:33,nombre:"SUMMUS"},
+	{id:14,nombre:"TADEO"},
+	{id:18,nombre:"TOMÁS"},
+	{id:130,nombre:"VENDEDOR 1"},
+	{id:131,nombre:"VENDEDOR 2"},
+	{id:132,nombre:"VENDEDOR 3"},
+	{id:133,nombre:"VENDEDOR 4"},
+	{id:124,nombre:"VERÓNICA"},
+	{id:36,nombre:"ZERHA"},
+]
