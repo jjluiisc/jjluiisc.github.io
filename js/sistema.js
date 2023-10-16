@@ -23,7 +23,7 @@ function cargaLibreto(){
 	}
 }
 
-function headAcordion(padre, identificador, nombre, personajes, dialogos){
+function headAcordion(padre, identificador, nombre, personajes, dialogos, esSoloPersonaje, idP){
 var salida = 
 '<div class="accordion" id="accordion_'+padre+identificador+'">'+
 '	<div class="card">'+
@@ -38,6 +38,8 @@ var salida =
 '			<div class="card-body">'+
 '				<ul class="nav nav-tabs">';
 					for(z=0;z<personajes.length;z++){
+						if(esSoloPersonaje && personajes[z].id != idP)
+							continue;
 						salida +='<li '+(z==0?'class="active"':'')+'><a data-toggle="tab" href="#personaje_'+padre+identificador+personajes[z].id+'"><h5>&nbsp;'+personajes[z].nombre+'&nbsp;</h5></a></li>'
 					}
 salida +=
@@ -45,6 +47,8 @@ salida +=
 '				</br>'+
 '				<div class="tab-content">';
 					for(a=0;a<personajes.length;a++){
+						if(esSoloPersonaje && personajes[a].id != idP)
+							continue;
 						salida +='<div id="personaje_'+padre+identificador+personajes[a].id+'" class="tab-pane fade'+(a==0?' in active':'')+'">'+
 								 '	</br>';		
 								 for(b=0;b<dialogos.length;b++){
@@ -93,6 +97,84 @@ salida +=
 '	</div>'+
 '</div>';	
 return salida;
+}
+
+var dias_de_actos_tmp = [];
+
+function filtraLibretoPersonaje(idPersonaje)
+{
+	dias_de_actos_tmp = [];
+	for(g=0; g<dias_de_actos.length; g++)
+	{
+		var dia_de_actos = dias_de_actos[g]
+		var escenas = dia_de_actos.escenas;
+		var escenas_tmp = [];
+		for(h=0; h<escenas.length; h++)
+		{
+			var escena = escenas[h];
+			var dialogos = escena.dialogos;
+			var dialogos_tmp = [];
+			for(i=0; i<dialogos.length; i++)
+			{
+				var dialogo_anterior = {orden:0};
+				if(i>0){
+					dialogo_anterior = dialogos[i-1];
+				}
+				var dialogo = dialogos[i];
+				if(idPersonaje == dialogo.personaje){
+					if(dialogo_anterior.orden > 0)
+					{
+						dialogos_tmp.push(dialogo_anterior);
+					}					
+					dialogos_tmp.push(dialogo);
+				}	
+			}
+			if(dialogos_tmp.length >0)
+			{
+				escena.dialogos=dialogos_tmp;
+				escenas_tmp.push(escena);
+			}
+		}
+		if(escenas_tmp.length > 0)
+		{
+			dia_de_actos.escenas = escenas_tmp;
+			dias_de_actos_tmp.push(dia_de_actos);
+		}
+	}	
+}
+
+function cargaPersonajes(){
+	$(".site-header").hide();
+	$('#mainContent').empty();
+	
+	var indice_libreto =  $("#indice");
+	for(j=0; j<_personajesOrdenados.length; j++){
+		indice_libreto.append('<h2><li>'+'<button type="button" class="btn btn-info" onclick="cargaLibretoPersonaje('+_personajesOrdenados[j].id+')"><h5>'+_personajesOrdenados[j].nombre+'</h5></button>'+"</li></h2>");
+	}
+}
+
+function cargaLibretoPersonaje(id){
+	$(".site-header").hide();
+	$('#mainContent').empty();
+	$('#indice').empty();
+	
+	filtraLibretoPersonaje(id);
+	
+	var indice_libreto =  $("#indice");
+	for(x=0; x<dias_de_actos_tmp.length; x++){
+		indice_libreto.append("<h2><li>"+dias_de_actos_tmp[x].nombre+"</li></h2>");
+		
+		var escenas = dias_de_actos_tmp[x].escenas;
+		var olI = "<ol>"
+		var olF = "</ol>"
+		var lis = "";
+		for(y=0; y<escenas.length; y++){
+			var dialogos = escenas[y].dialogos;
+			var personajes = escenas[y].personajes;
+			lis += "<h4><li>"+headAcordion(dias_de_actos_tmp[x].id, escenas[y].id, escenas[y].nombre, personajes, dialogos, true, id)+"</li></h4>";
+		}
+		indice_libreto.append(olI+lis+olF);
+	}
 }
 
 function MostrarSoloPersonaje(){
