@@ -17,7 +17,7 @@ function cargaLibreto(){
 		for(y=0; y<escenas.length; y++){
 			var dialogos = escenas[y].dialogos;
 			var personajes = escenas[y].personajes;
-			lis += "<h4><li>"+headAcordion(dias_de_actos[x].id, escenas[y].id, escenas[y].nombre, personajes, dialogos)+"</li></h4>";
+			lis += "<h4><li>"+headAcordion(dias_de_actos[x].id, escenas[y].id, escenas[y].nombre, personajes, dialogos, false, -1)+"</li></h4>";
 		}
 		indice_libreto.append(olI+lis+olF);
 	}
