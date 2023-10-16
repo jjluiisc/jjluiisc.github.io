@@ -315,7 +315,7 @@ var dialogos_escena_la_siete_palabras =
 	{orden:18, personaje:152, parrafos:[{acciones:[], contenido:"Y ¿eso que?"}]},
 	{orden:19, personaje:27, parrafos:[{acciones:[{orden:"I", accion:"(Burlón). "}], contenido:" Denle vinagre, no dicen que puede convertir el agua en vino."}]},
 	{orden:20, personaje:152, parrafos:[{acciones:[{orden:"I", accion:"(Acercándole una esponja). "}], contenido:"Bebe nazareno."}]},	
-	{orden:21, personaje:1, parrafos:[{acciones:[{orden:"I", accion:"(6ª).  "}], contenido:"Todo está consumado."}]},
+	{orden:21, personaje:3, parrafos:[{acciones:[{orden:"I", accion:"(6ª).  "}], contenido:"Todo está consumado."}]},
 	{orden:22, personaje:16, parrafos:[{acciones:[], contenido:"Él lo dijo varias veces, estaba escrito que moriría de este modo. Se echarían suertes sobre su túnica y le darían a beber vinagre."}]},
 	{orden:23, personaje:122, parrafos:[{acciones:[{orden:"F", accion:"(Todos ríen). "}], contenido:"El cristo, el rey de Israel. Baja ahora de la cruz para que veamos y creamos."}]},
 	{orden:24, personaje:3, parrafos:[{acciones:[{orden:"I", accion:"(7ª).  "}], contenido:"Padre mío, en tus manos encomiendo mi espíritu."}]},
