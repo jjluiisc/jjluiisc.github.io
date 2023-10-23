@@ -17,20 +17,20 @@ function cargaLibreto(){
 		for(y=0; y<escenas.length; y++){
 			var dialogos = escenas[y].dialogos;
 			var personajes = escenas[y].personajes;
-			lis += "<h4><li>"+headAcordion(dias_de_actos[x].id, escenas[y].id, escenas[y].nombre, personajes, dialogos, false, -1)+"</li></h4>";
+			lis += "<h4><li>"+headAcordion(dias_de_actos[x].id, escenas[y].id, escenas[y].nombre, personajes, dialogos, false, -1, escenas[y].video)+"</li></h4>";
 		}
 		indice_libreto.append(olI+lis+olF);
 	}
 }
 
-function headAcordion(padre, identificador, nombre, personajes, dialogos, esSoloPersonaje, idP){
+function headAcordion(padre, identificador, nombre, personajes, dialogos, esSoloPersonaje, idP, video){
 var salida = 
 '<div class="accordion" id="accordion_'+padre+identificador+'">'+
 '	<div class="card">'+
 '		<div class="card-header" id="heading_'+identificador+'">'+
 '			<h2 class="mb-0">'+
 '				<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_'+identificador+'" aria-expanded="true" aria-controls="collapse_'+identificador+'">'+
-'			  		<h4>'+nombre+'</h4>'+
+'			  		<h4>'+nombre+'&nbsp;&nbsp;'+ (video.length>0?'<a href="'+video+'" style="color: red;">VIDEO</a>':"")+'</h4>'+
 '				</button>'+
 '		  	</h2>'+
 '		</div>'+
@@ -171,7 +171,7 @@ function cargaLibretoPersonaje(id){
 		for(y=0; y<escenas.length; y++){
 			var dialogos = escenas[y].dialogos;
 			var personajes = escenas[y].personajes;
-			lis += "<h4><li>"+headAcordion(dias_de_actos_tmp[x].id, escenas[y].id, escenas[y].nombre, personajes, dialogos, true, id)+"</li></h4>";
+			lis += "<h4><li>"+headAcordion(dias_de_actos_tmp[x].id, escenas[y].id, escenas[y].nombre, personajes, dialogos, true, id, escenas[y].video)+"</li></h4>";
 		}
 		indice_libreto.append(olI+lis+olF);
 	}
