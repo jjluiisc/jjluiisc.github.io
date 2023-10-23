@@ -12,16 +12,16 @@ var primer_domingo_010 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:3,n
 
 var primer_domingo_escenas = 
 [
-	{id: "001", orden:1, nombre:"EL PRIMER MILAGRO, EN LA BODA DE CANÁ", dialogos:dialogos_escena_el_primer_milagro, personajes:primer_domingo_001},
-	{id: "002", orden:2, nombre:"JESÚS SE DESPIDE DE SU MADRE EN NAZARET", dialogos:dialogos_escena_jesus_se_despide_de_su_madre, personajes:primer_domingo_002},
-	{id: "003", orden:3, nombre:"PRESENTACIÓN DE JUAN A ISRAEL", dialogos:dialogos_escena_presentacion_de_juan_a_israel, personajes:primer_domingo_003},
-	{id: "004", orden:4, nombre:"BAUTISMO DE JESÚS", dialogos:dialogos_escena_bautismo_de_jesus, personajes:primer_domingo_004},
-	{id: "005", orden:5, nombre:"LA TENTACIÓN EN EL DESIERTO", dialogos:dialogos_escena_tentacion_en_el_decierto, personajes:primer_domingo_005},
-	{id: "006", orden:6, nombre:"LOS PRIMEROS DISCIPULOS", dialogos:dialogos_escena_primeros_dicipulos, personajes:primer_domingo_006},
-	{id: "007", orden:7, nombre:"LA PESCA MILAGROSA", dialogos:dialogos_escena_la_pesca_milagrosa, personajes:primer_domingo_007},
-	{id: "008", orden:8, nombre:"LA HEMORROISA Y LA HIJA DE JAIRO (Mateo 9:18,25)", dialogos:dialogos_escena_la_emorroisa_y_la_hija_de_jairo, personajes:primer_domingo_008},
-	{id: "009", orden:9, nombre:"JESÚS Y LA SAMARITANA", dialogos:dialogos_escena_jesus_y_la_samaritana, personajes:primer_domingo_009},
-	{id: "010", orden:10, nombre:"LA ELECCIÓN DE LOS APÓSTOLES", dialogos:dialogos_escena_eleccion_de_los_apostoles, personajes:primer_domingo_010}
+	{id: "001", orden:1, nombre:"EL PRIMER MILAGRO, EN LA BODA DE CANÁ", dialogos:dialogos_escena_el_primer_milagro, personajes:primer_domingo_001, video:""},
+	{id: "002", orden:2, nombre:"JESÚS SE DESPIDE DE SU MADRE EN NAZARET", dialogos:dialogos_escena_jesus_se_despide_de_su_madre, personajes:primer_domingo_002, video:""},
+	{id: "003", orden:3, nombre:"PRESENTACIÓN DE JUAN A ISRAEL", dialogos:dialogos_escena_presentacion_de_juan_a_israel, personajes:primer_domingo_003, video:"https://youtube.com/watch?v=fHr4-KSEJLo&feature=shared"},
+	{id: "004", orden:4, nombre:"BAUTISMO DE JESÚS", dialogos:dialogos_escena_bautismo_de_jesus, personajes:primer_domingo_004, video:""},
+	{id: "005", orden:5, nombre:"LA TENTACIÓN EN EL DESIERTO", dialogos:dialogos_escena_tentacion_en_el_decierto, personajes:primer_domingo_005, video:""},
+	{id: "006", orden:6, nombre:"LOS PRIMEROS DISCIPULOS", dialogos:dialogos_escena_primeros_dicipulos, personajes:primer_domingo_006, video:""},
+	{id: "007", orden:7, nombre:"LA PESCA MILAGROSA", dialogos:dialogos_escena_la_pesca_milagrosa, personajes:primer_domingo_007, video:""},
+	{id: "008", orden:8, nombre:"LA HEMORROISA Y LA HIJA DE JAIRO (Mateo 9:18,25)", dialogos:dialogos_escena_la_emorroisa_y_la_hija_de_jairo, personajes:primer_domingo_008, video:""},
+	{id: "009", orden:9, nombre:"JESÚS Y LA SAMARITANA", dialogos:dialogos_escena_jesus_y_la_samaritana, personajes:primer_domingo_009, video:""},
+	{id: "010", orden:10, nombre:"LA ELECCIÓN DE LOS APÓSTOLES", dialogos:dialogos_escena_eleccion_de_los_apostoles, personajes:primer_domingo_010, video:""}
 ];
 
 	
@@ -39,16 +39,16 @@ var segundo_domingo_010 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:6,
 
 var segundo_domingo_escenas = 
 [
-	{id: "011", orden:1, nombre:"EL JARDIN DE LAS FLORES", dialogos:dialogos_escena_el_jardin_de_las_flores, personajes:segundo_domingo_001},
-	{id: "012", orden:2, nombre:"JESÚS CURA A UN PARALITICO", dialogos:dialogos_escena_jesus_cura_a_paralitico, personajes:segundo_domingo_002},
-	{id: "013", orden:3, nombre:"MARTHA Y JESÚS", dialogos:dialogos_escena_martha_y_jesus, personajes:segundo_domingo_003},
-	{id: "014", orden:4, nombre:"LAS BIENAVENTURANZAS", dialogos:dialogos_escena_las_bienaventuranzas, personajes:segundo_domingo_004},
-	{id: "015", orden:5, nombre:"JESÚS ENSEÑA A ORAR EL PADRE NUESTRO", dialogos:dialogos_escena_jesus_ensenia_orar_padre_nuestro, personajes:segundo_domingo_005},
-	{id: "016", orden:6, nombre:"MULTIPLICACIÓN DE LOS PANES Y PECES", dialogos:dialogos_escena_multiplicacion_de_panes_y_peces, personajes:segundo_domingo_006},
-	{id: "017", orden:7, nombre:"JESÚS Y EL CENTURIÓN ROMANO", dialogos:dialogos_escena_jesus_y_el_centurion_romano, personajes:segundo_domingo_007},
-	{id: "018", orden:8, nombre:"PECADORA ARREPENTIDA", dialogos:dialogos_escena_la_pecadora_arrepentida, personajes:segundo_domingo_008},
-	{id: "019", orden:9, nombre:"VUELTA A BETANIA", dialogos:dialogos_escena_vuelta_a_betania, personajes:segundo_domingo_009},
-	{id: "020", orden:10, nombre:"SALOME", dialogos:dialogos_escena_salome, personajes:segundo_domingo_010}
+	{id: "011", orden:1, nombre:"EL JARDIN DE LAS FLORES", dialogos:dialogos_escena_el_jardin_de_las_flores, personajes:segundo_domingo_001, video:""},
+	{id: "012", orden:2, nombre:"JESÚS CURA A UN PARALITICO", dialogos:dialogos_escena_jesus_cura_a_paralitico, personajes:segundo_domingo_002, video:""},
+	{id: "013", orden:3, nombre:"MARTHA Y JESÚS", dialogos:dialogos_escena_martha_y_jesus, personajes:segundo_domingo_003, video:""},
+	{id: "014", orden:4, nombre:"LAS BIENAVENTURANZAS", dialogos:dialogos_escena_las_bienaventuranzas, personajes:segundo_domingo_004, video:""},
+	{id: "015", orden:5, nombre:"JESÚS ENSEÑA A ORAR EL PADRE NUESTRO", dialogos:dialogos_escena_jesus_ensenia_orar_padre_nuestro, personajes:segundo_domingo_005, video:""},
+	{id: "016", orden:6, nombre:"MULTIPLICACIÓN DE LOS PANES Y PECES", dialogos:dialogos_escena_multiplicacion_de_panes_y_peces, personajes:segundo_domingo_006, video:""},
+	{id: "017", orden:7, nombre:"JESÚS Y EL CENTURIÓN ROMANO", dialogos:dialogos_escena_jesus_y_el_centurion_romano, personajes:segundo_domingo_007, video:""},
+	{id: "018", orden:8, nombre:"PECADORA ARREPENTIDA", dialogos:dialogos_escena_la_pecadora_arrepentida, personajes:segundo_domingo_008, video:""},
+	{id: "019", orden:9, nombre:"VUELTA A BETANIA", dialogos:dialogos_escena_vuelta_a_betania, personajes:segundo_domingo_009, video:""},
+	{id: "020", orden:10, nombre:"SALOME", dialogos:dialogos_escena_salome, personajes:segundo_domingo_010, video:""}
 ];
 
 var domingo_de_ramos_001 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:2,nombre:"MARÍA"},{id:3,nombre:"JESÚS"},{id:10,nombre:"PEDRO"},{id:16,nombre:"JUAN"},{id:103,nombre:"JUDIO"},{id:19,nombre:"JUDAS"},{id:115,nombre:"ESPÍA 1"},{id:116,nombre:"ESPÍA 2"},{id:26,nombre:"ARIMATEA"},{id:126,nombre:"SACERDOTES"}];
@@ -63,15 +63,15 @@ var domingo_de_ramos_009 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:2
 
 var domingo_de_ramos_escenas = 
 [
-	{id: "021", orden:1, nombre:"ENCUENTRO DE JESÚS CON SU MADRE", dialogos:dialogos_escena_encuentro_de_jesus_con_su_madre, personajes:domingo_de_ramos_001},
-	{id: "022", orden:2, nombre:"JESÚS LLORA FRENTE A LOS MUROS DE JERUSALÉN", dialogos:dialogos_escena_jesus_llora_frente_los_muros_de_jerusalen, personajes:domingo_de_ramos_002},
-	{id: "023", orden:3, nombre:"CURACIÓN DEL CIEGO DE JERICÓ", dialogos:dialogos_escena_curacion_del_ciego_de_jerico, personajes:domingo_de_ramos_003},
-	{id: "024", orden:4, nombre:"JESÚS Y LOS NIÑOS", dialogos:dialogos_escena_jesus_y_los_ninios, personajes:domingo_de_ramos_004},
-	{id: "025", orden:5, nombre:"LA PURIFICACIÓN DEL TEMPLO", dialogos:dialogos_escena_la_purificacion_del_templo, personajes:domingo_de_ramos_005},
-	{id: "026", orden:6, nombre:"LA MUJER ADULTERA", dialogos:dialogos_escena_la_mujer_adultera, personajes:domingo_de_ramos_006},
-	{id: "027", orden:7, nombre:"TRIBUTO AL CESAR", dialogos:dialogos_escena_tributo_a_cesar, personajes:domingo_de_ramos_007},
-	{id: "028", orden:8, nombre:"LA UNCIÓN EN BETANIA", dialogos:dialogos_escena_uncion_en_betania, personajes:domingo_de_ramos_008},
-	{id: "029", orden:9, nombre:"CONSEJO DE SANEDRÍN", dialogos:dialogos_escena_consejo_de_sanedrin, personajes:domingo_de_ramos_009}
+	{id: "021", orden:1, nombre:"ENCUENTRO DE JESÚS CON SU MADRE", dialogos:dialogos_escena_encuentro_de_jesus_con_su_madre, personajes:domingo_de_ramos_001, video:""},
+	{id: "022", orden:2, nombre:"JESÚS LLORA FRENTE A LOS MUROS DE JERUSALÉN", dialogos:dialogos_escena_jesus_llora_frente_los_muros_de_jerusalen, personajes:domingo_de_ramos_002, video:""},
+	{id: "023", orden:3, nombre:"CURACIÓN DEL CIEGO DE JERICÓ", dialogos:dialogos_escena_curacion_del_ciego_de_jerico, personajes:domingo_de_ramos_003, video:""},
+	{id: "024", orden:4, nombre:"JESÚS Y LOS NIÑOS", dialogos:dialogos_escena_jesus_y_los_ninios, personajes:domingo_de_ramos_004, video:""},
+	{id: "025", orden:5, nombre:"LA PURIFICACIÓN DEL TEMPLO", dialogos:dialogos_escena_la_purificacion_del_templo, personajes:domingo_de_ramos_005, video:""},
+	{id: "026", orden:6, nombre:"LA MUJER ADULTERA", dialogos:dialogos_escena_la_mujer_adultera, personajes:domingo_de_ramos_006, video:"https://youtu.be/y2PKQPfW12U?si=LmGgq89oSTycV0-W"},
+	{id: "027", orden:7, nombre:"TRIBUTO AL CESAR", dialogos:dialogos_escena_tributo_a_cesar, personajes:domingo_de_ramos_007, video:""},
+	{id: "028", orden:8, nombre:"LA UNCIÓN EN BETANIA", dialogos:dialogos_escena_uncion_en_betania, personajes:domingo_de_ramos_008, video:""},
+	{id: "029", orden:9, nombre:"CONSEJO DE SANEDRÍN", dialogos:dialogos_escena_consejo_de_sanedrin, personajes:domingo_de_ramos_009, video:""}
 ];
 
 var jueves_santo_001 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:3,nombre:"JESÚS"},{id:16,nombre:"JUAN"},{id:10,nombre:"PEDRO"},{id:121,nombre:"CRIADO"},{id:139,nombre:"AMO"}];
@@ -87,16 +87,16 @@ var jueves_santo_010 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:38,no
 
 var jueves_santo_escenas = 
 [
-	{id: "030", orden:1, nombre:"PREPARACIÓN DE LA ÚLTIMA CENA", dialogos:dialogos_escena_preparacion_de_la_ultima_cena, personajes:jueves_santo_001},
-	{id: "031", orden:2, nombre:"ANUNCIO DE LAS PROFECIAS", dialogos:dialogos_escena_anuncio_de_las_profecias, personajes:jueves_santo_002},
-	{id: "032", orden:3, nombre:"EL GRAN SINEDRIO", dialogos:dialogos_escena_el_gran_sinedrio, personajes:jueves_santo_003},
-	{id: "033", orden:4, nombre:"CELEBRACIÓN DE LA ÚLTIMA CENA", dialogos:dialogos_escena_celebracion_ultima_cena, personajes:jueves_santo_004},
-	{id: "034", orden:5, nombre:"VENTA DE JESÚS. (Yo soy)", dialogos:dialogos_escena_venta_de_jesus, personajes:jueves_santo_005},
-	{id: "035", orden:6, nombre:"JESÚS SE DESPIDE DE SU MADRE", dialogos:dialogos_escena_jesus_se_despide_de_su_madre, personajes:jueves_santo_006},
-	{id: "036", orden:7, nombre:"CAMINO GETSEMANÍ", dialogos:dialogos_camino_a_getsemani, personajes:jueves_santo_007},
-	{id: "037", orden:8, nombre:"EL BESO DE JUDAS", dialogos:dialogos_escena_el_beso_de_judas, personajes:jueves_santo_008},
-	{id: "038", orden:9, nombre:"PRIMER INTERROGATORIO ANTE EL SANEDRÍN", dialogos:dialogos_escena_primer_interrogatorio_de_jesus, personajes:jueves_santo_009},
-	{id: "039", orden:10, nombre:"LAS NEGACIONES DE PEDRO", dialogos:dialogos_escena_las_negaciones_de_pedro, personajes:jueves_santo_010}
+	{id: "030", orden:1, nombre:"PREPARACIÓN DE LA ÚLTIMA CENA", dialogos:dialogos_escena_preparacion_de_la_ultima_cena, personajes:jueves_santo_001, video:""},
+	{id: "031", orden:2, nombre:"ANUNCIO DE LAS PROFECIAS", dialogos:dialogos_escena_anuncio_de_las_profecias, personajes:jueves_santo_002, video:""},
+	{id: "032", orden:3, nombre:"EL GRAN SINEDRIO", dialogos:dialogos_escena_el_gran_sinedrio, personajes:jueves_santo_003, video:""},
+	{id: "033", orden:4, nombre:"CELEBRACIÓN DE LA ÚLTIMA CENA", dialogos:dialogos_escena_celebracion_ultima_cena, personajes:jueves_santo_004, video:""},
+	{id: "034", orden:5, nombre:"VENTA DE JESÚS. (Yo soy)", dialogos:dialogos_escena_venta_de_jesus, personajes:jueves_santo_005, video:""},
+	{id: "035", orden:6, nombre:"JESÚS SE DESPIDE DE SU MADRE", dialogos:dialogos_escena_jesus_se_despide_de_su_madre, personajes:jueves_santo_006, video:""},
+	{id: "036", orden:7, nombre:"CAMINO GETSEMANÍ", dialogos:dialogos_camino_a_getsemani, personajes:jueves_santo_007, video:""},
+	{id: "037", orden:8, nombre:"EL BESO DE JUDAS", dialogos:dialogos_escena_el_beso_de_judas, personajes:jueves_santo_008, video:""},
+	{id: "038", orden:9, nombre:"PRIMER INTERROGATORIO ANTE EL SANEDRÍN", dialogos:dialogos_escena_primer_interrogatorio_de_jesus, personajes:jueves_santo_009, video:""},
+	{id: "039", orden:10, nombre:"LAS NEGACIONES DE PEDRO", dialogos:dialogos_escena_las_negaciones_de_pedro, personajes:jueves_santo_010, video:""}
 ];
 
 
@@ -124,24 +124,24 @@ var viernes_santo_018 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:3,no
 
 var viernes_santo_escenas = 
 [
-	{id: "040", orden:1, nombre:"DIÁLOGO LOS LADRONES", dialogos:dialogos_escena_los_ladrones, personajes:viernes_santo_001},
-	{id: "041", orden:2, nombre:"PILATOS LLEGA AL PALACIO", dialogos:dialogos_escena_pilatos_llega_al_palacio, personajes:viernes_santo_002},
-	{id: "042", orden:3, nombre:"JESÚS ES INTERROGADO POR PONCIO PILATOS", dialogos:dialogos_escena_jesus_es_interrogado_por_pilato, personajes:viernes_santo_003},
-	{id: "043", orden:4, nombre:"JESÚS ANTE HERODES", dialogos:dialogos_escena_jesus_ante_erodes, personajes:viernes_santo_004},
-	{id: "044", orden:5, nombre:"JESÚS ES PRESENTADO ANTE PILATOS POR SEGUNDA VEZ", dialogos:dialogos_escena_jesus_presentado_ante_pilatos_por_segunda_vez, personajes:viernes_santo_005},
-	{id: "045", orden:6, nombre:"JESÚS ES PRESENTADO AL PUEBLO DE JUDEA", dialogos:dialogos_escena_jesus_es_precentado_al_puble_de_judea, personajes:viernes_santo_006},
-	{id: "046", orden:7, nombre:"JESUS ES SENTENCIADO A MUERTE", dialogos:dialogos_escena_jesus_es_sentenciado, personajes:viernes_santo_007},
-	{id: "047", orden:8, nombre:"EL CASTIGO DE LOS LADRONES", dialogos:dialogos_escena_castigo_a_los_ladrones, personajes:viernes_santo_008},
-	{id: "048", orden:9, nombre:"JESUS ENCUENTRA A SU MADRE", dialogos:dialogos_escena_jesus_encuentra_a_su_madre, personajes:viernes_santo_009},
-	{id: "049", orden:10, nombre:"LA VERÓNICA LIMPIA EL ROSTRO DE JESÚS", dialogos:dialogos_escena_la_veronica_limpia_el_rostro_de_jesus, personajes:viernes_santo_010},
-	{id: "050", orden:11, nombre:"JESÚS CAE POR SEGUNDA VEZ", dialogos:dialogos_escena_jesus_cae_por_segunda_vez, personajes:viernes_santo_011},
-	{id: "051", orden:12, nombre:"JESUS ENCUENTRA A LAS MUJERES DE JERUSALÉN", dialogos:dialogos_escena_jesus_consuela_a_las_mujeres_de_jerusalen, personajes:viernes_santo_012},
-	{id: "052", orden:13, nombre:"JOSE DE ARIMATEA CONFORTA A JESÚS", dialogos:dialogos_escena_jose_de_arimatea_conforta_a_jesus, personajes:viernes_santo_013},
-	{id: "053", orden:14, nombre:"JESÚS CAE POR TERCERA VEZ", dialogos:dialogos_escena_jesus_cae_po_tercera_vez, personajes:viernes_santo_014},
-	{id: "054", orden:15, nombre:"JESÚS ES CRUCIFICADO EN EL GÓLGOTA", dialogos:dialogos_escena_jesus_crucificado_en_el_golgota, personajes:viernes_santo_015},
-	{id: "055", orden:16, nombre:"LAS SIETE PALABRAS", dialogos:dialogos_escena_la_siete_palabras, personajes:viernes_santo_016},
-	{id: "056", orden:17, nombre:"SEPULTURA DE JESÚS", dialogos:dialogos_escena_sepultura_de_jesus, personajes:viernes_santo_017},
-	{id: "057", orden:18, nombre:"OTROS MILAGROS", dialogos:dialogos_escena_otros_milagros, personajes:viernes_santo_018}
+	{id: "040", orden:1, nombre:"DIÁLOGO LOS LADRONES", dialogos:dialogos_escena_los_ladrones, personajes:viernes_santo_001, video:""},
+	{id: "041", orden:2, nombre:"PILATOS LLEGA AL PALACIO", dialogos:dialogos_escena_pilatos_llega_al_palacio, personajes:viernes_santo_002, video:""},
+	{id: "042", orden:3, nombre:"JESÚS ES INTERROGADO POR PONCIO PILATOS", dialogos:dialogos_escena_jesus_es_interrogado_por_pilato, personajes:viernes_santo_003, video:""},
+	{id: "043", orden:4, nombre:"JESÚS ANTE HERODES", dialogos:dialogos_escena_jesus_ante_erodes, personajes:viernes_santo_004, video:""},
+	{id: "044", orden:5, nombre:"JESÚS ES PRESENTADO ANTE PILATOS POR SEGUNDA VEZ", dialogos:dialogos_escena_jesus_presentado_ante_pilatos_por_segunda_vez, personajes:viernes_santo_005, video:""},
+	{id: "045", orden:6, nombre:"JESÚS ES PRESENTADO AL PUEBLO DE JUDEA", dialogos:dialogos_escena_jesus_es_precentado_al_puble_de_judea, personajes:viernes_santo_006, video:""},
+	{id: "046", orden:7, nombre:"JESUS ES SENTENCIADO A MUERTE", dialogos:dialogos_escena_jesus_es_sentenciado, personajes:viernes_santo_007, video:""},
+	{id: "047", orden:8, nombre:"EL CASTIGO DE LOS LADRONES", dialogos:dialogos_escena_castigo_a_los_ladrones, personajes:viernes_santo_008, video:""},
+	{id: "048", orden:9, nombre:"JESUS ENCUENTRA A SU MADRE", dialogos:dialogos_escena_jesus_encuentra_a_su_madre, personajes:viernes_santo_009, video:""},
+	{id: "049", orden:10, nombre:"LA VERÓNICA LIMPIA EL ROSTRO DE JESÚS", dialogos:dialogos_escena_la_veronica_limpia_el_rostro_de_jesus, personajes:viernes_santo_010, video:""},
+	{id: "050", orden:11, nombre:"JESÚS CAE POR SEGUNDA VEZ", dialogos:dialogos_escena_jesus_cae_por_segunda_vez, personajes:viernes_santo_011, video:""},
+	{id: "051", orden:12, nombre:"JESUS ENCUENTRA A LAS MUJERES DE JERUSALÉN", dialogos:dialogos_escena_jesus_consuela_a_las_mujeres_de_jerusalen, personajes:viernes_santo_012, video:""},
+	{id: "052", orden:13, nombre:"JOSE DE ARIMATEA CONFORTA A JESÚS", dialogos:dialogos_escena_jose_de_arimatea_conforta_a_jesus, personajes:viernes_santo_013, video:""},
+	{id: "053", orden:14, nombre:"JESÚS CAE POR TERCERA VEZ", dialogos:dialogos_escena_jesus_cae_po_tercera_vez, personajes:viernes_santo_014, video:""},
+	{id: "054", orden:15, nombre:"JESÚS ES CRUCIFICADO EN EL GÓLGOTA", dialogos:dialogos_escena_jesus_crucificado_en_el_golgota, personajes:viernes_santo_015, video:""},
+	{id: "055", orden:16, nombre:"LAS SIETE PALABRAS", dialogos:dialogos_escena_la_siete_palabras, personajes:viernes_santo_016, video:""},
+	{id: "056", orden:17, nombre:"SEPULTURA DE JESÚS", dialogos:dialogos_escena_sepultura_de_jesus, personajes:viernes_santo_017, video:""},
+	{id: "057", orden:18, nombre:"OTROS MILAGROS", dialogos:dialogos_escena_otros_milagros, personajes:viernes_santo_018, video:""}
 ];
 
 
