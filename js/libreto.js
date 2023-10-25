@@ -17,7 +17,7 @@ var primer_domingo_escenas =
 	{id: "003", orden:3, nombre:"PRESENTACIÓN DE JUAN A ISRAEL", dialogos:dialogos_escena_presentacion_de_juan_a_israel, personajes:primer_domingo_003, video:"https://youtube.com/watch?v=fHr4-KSEJLo&feature=shared"},
 	{id: "004", orden:4, nombre:"BAUTISMO DE JESÚS", dialogos:dialogos_escena_bautismo_de_jesus, personajes:primer_domingo_004, video:""},
 	{id: "005", orden:5, nombre:"LA TENTACIÓN EN EL DESIERTO", dialogos:dialogos_escena_tentacion_en_el_decierto, personajes:primer_domingo_005, video:"https://youtu.be/jt2RPUASiac?si=p6M6R2OjNCFO4lgx"},
-	{id: "006", orden:6, nombre:"LOS PRIMEROS DISCIPULOS", dialogos:dialogos_escena_primeros_dicipulos, personajes:primer_domingo_006, video:""},
+	{id: "006", orden:6, nombre:"LOS PRIMEROS DISCIPULOS", dialogos:dialogos_escena_primeros_dicipulos, personajes:primer_domingo_006, video:"https://youtu.be/8U-TqdL74bc?si=-oUsIVXzmWs4LRDa"},
 	{id: "007", orden:7, nombre:"LA PESCA MILAGROSA", dialogos:dialogos_escena_la_pesca_milagrosa, personajes:primer_domingo_007, video:""},
 	{id: "008", orden:8, nombre:"LA HEMORROISA Y LA HIJA DE JAIRO (Mateo 9:18,25)", dialogos:dialogos_escena_la_emorroisa_y_la_hija_de_jairo, personajes:primer_domingo_008, video:""},
 	{id: "009", orden:9, nombre:"JESÚS Y LA SAMARITANA", dialogos:dialogos_escena_jesus_y_la_samaritana, personajes:primer_domingo_009, video:""},
