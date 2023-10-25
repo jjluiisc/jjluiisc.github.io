@@ -179,7 +179,7 @@ var dialogos_escena_primeros_dicipulos =
 	{orden:7, personaje:3, parrafos:[{acciones:[], contenido:"Pues que la paz sea con mis primeros discípulos."}]},
 	{orden:8, personaje:8, parrafos:[{acciones:[], contenido:"Rabí, ¿Dónde vives?"}]},
 	{orden:9, personaje:3, parrafos:[{acciones:[], contenido:"Ven y lo verás."}]},
-	{orden:10, personaje:7, parrafos:[{acciones:[], contenido:"Dicen las escrituras que fueron… y vieron donde vivía y se quedaron aquel día con Él, sería la hora décima. Y como ha sido siempre la norma en Jesús, él no rechaza a nadie, sino que con todo cariño les invitó a estar con él. Nadie con un deseo genuino de aprender más del Salvador ha sido jamás rechazado. En las palabras que les dijo vemos una invitación, 'venid' y una promesa, 'ved'. Y estas mismas palabras siguen resonando para todos los hombres. Realmente no sabemos dónde vivía Jesús en esos días, tal vez en alguna habitación humilde alquilada, pero esto no era lo importante, estuviera donde estuviera, lo importante era él."}]}
+	{orden:10, personaje:1, parrafos:[{acciones:[], contenido:"Dicen las escrituras que fueron… y vieron donde vivía y se quedaron aquel día con Él, sería la hora décima. Y como ha sido siempre la norma en Jesús, él no rechaza a nadie, sino que con todo cariño les invitó a estar con él. Nadie con un deseo genuino de aprender más del Salvador ha sido jamás rechazado. En las palabras que les dijo vemos una invitación, 'venid' y una promesa, 'ved'. Y estas mismas palabras siguen resonando para todos los hombres. Realmente no sabemos dónde vivía Jesús en esos días, tal vez en alguna habitación humilde alquilada, pero esto no era lo importante, estuviera donde estuviera, lo importante era él."}]}
 ]
 
 var dialogos_escena_la_pesca_milagrosa =
