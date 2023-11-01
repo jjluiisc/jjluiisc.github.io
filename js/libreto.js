@@ -44,9 +44,9 @@ var segundo_domingo_escenas =
 	{id: "013", orden:3, nombre:"MARTHA Y JESÚS", dialogos:dialogos_escena_martha_y_jesus, personajes:segundo_domingo_003, video:""},
 	{id: "014", orden:4, nombre:"LAS BIENAVENTURANZAS", dialogos:dialogos_escena_las_bienaventuranzas, personajes:segundo_domingo_004, video:""},
 	{id: "015", orden:5, nombre:"JESÚS ENSEÑA A ORAR EL PADRE NUESTRO", dialogos:dialogos_escena_jesus_ensenia_orar_padre_nuestro, personajes:segundo_domingo_005, video:""},
-	{id: "016", orden:6, nombre:"MULTIPLICACIÓN DE LOS PANES Y PECES", dialogos:dialogos_escena_multiplicacion_de_panes_y_peces, personajes:segundo_domingo_006, video:""},
+	{id: "016", orden:6, nombre:"MULTIPLICACIÓN DE LOS PANES Y PECES", dialogos:dialogos_escena_multiplicacion_de_panes_y_peces, personajes:segundo_domingo_006, video:"https://youtu.be/gg1rl6NUc7Q?si=V2JhDwAFMmBsCjWz"},
 	{id: "017", orden:7, nombre:"JESÚS Y EL CENTURIÓN ROMANO", dialogos:dialogos_escena_jesus_y_el_centurion_romano, personajes:segundo_domingo_007, video:""},
-	{id: "018", orden:8, nombre:"PECADORA ARREPENTIDA", dialogos:dialogos_escena_la_pecadora_arrepentida, personajes:segundo_domingo_008, video:""},
+	{id: "018", orden:8, nombre:"PECADORA ARREPENTIDA", dialogos:dialogos_escena_la_pecadora_arrepentida, personajes:segundo_domingo_008, video:"https://youtu.be/5P-BpSuiKhA?si=28mcLxiWi5-pkgFF"},
 	{id: "019", orden:9, nombre:"VUELTA A BETANIA", dialogos:dialogos_escena_vuelta_a_betania, personajes:segundo_domingo_009, video:"https://youtu.be/-MOBIL4mYiA?si=Ir4kl234WkFSFrey"},
 	{id: "020", orden:10, nombre:"SALOME", dialogos:dialogos_escena_salome, personajes:segundo_domingo_010, video:""}
 ];
@@ -65,7 +65,7 @@ var domingo_de_ramos_escenas =
 [
 	{id: "021", orden:1, nombre:"ENCUENTRO DE JESÚS CON SU MADRE", dialogos:dialogos_escena_encuentro_de_jesus_con_su_madre, personajes:domingo_de_ramos_001, video:""},
 	{id: "022", orden:2, nombre:"JESÚS LLORA FRENTE A LOS MUROS DE JERUSALÉN", dialogos:dialogos_escena_jesus_llora_frente_los_muros_de_jerusalen, personajes:domingo_de_ramos_002, video:""},
-	{id: "023", orden:3, nombre:"CURACIÓN DEL CIEGO DE JERICÓ", dialogos:dialogos_escena_curacion_del_ciego_de_jerico, personajes:domingo_de_ramos_003, video:""},
+	{id: "023", orden:3, nombre:"CURACIÓN DEL CIEGO DE JERICÓ", dialogos:dialogos_escena_curacion_del_ciego_de_jerico, personajes:domingo_de_ramos_003, video:"https://youtube.com/shorts/faobnMFZgck?si=yEBBoNiIzdwmbtEc"},
 	{id: "024", orden:4, nombre:"JESÚS Y LOS NIÑOS", dialogos:dialogos_escena_jesus_y_los_ninios, personajes:domingo_de_ramos_004, video:""},
 	{id: "025", orden:5, nombre:"LA PURIFICACIÓN DEL TEMPLO", dialogos:dialogos_escena_la_purificacion_del_templo, personajes:domingo_de_ramos_005, video:""},
 	{id: "026", orden:6, nombre:"LA MUJER ADULTERA", dialogos:dialogos_escena_la_mujer_adultera, personajes:domingo_de_ramos_006, video:"https://youtu.be/y2PKQPfW12U?si=LmGgq89oSTycV0-W"},
