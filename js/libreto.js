@@ -45,7 +45,7 @@ var segundo_domingo_escenas =
 	{id: "014", orden:4, nombre:"LAS BIENAVENTURANZAS", dialogos:dialogos_escena_las_bienaventuranzas, personajes:segundo_domingo_004, video:""},
 	{id: "015", orden:5, nombre:"JESÚS ENSEÑA A ORAR EL PADRE NUESTRO", dialogos:dialogos_escena_jesus_ensenia_orar_padre_nuestro, personajes:segundo_domingo_005, video:""},
 	{id: "016", orden:6, nombre:"MULTIPLICACIÓN DE LOS PANES Y PECES", dialogos:dialogos_escena_multiplicacion_de_panes_y_peces, personajes:segundo_domingo_006, video:"https://youtu.be/gg1rl6NUc7Q?si=V2JhDwAFMmBsCjWz"},
-	{id: "017", orden:7, nombre:"JESÚS Y EL CENTURIÓN ROMANO", dialogos:dialogos_escena_jesus_y_el_centurion_romano, personajes:segundo_domingo_007, video:""},
+	{id: "017", orden:7, nombre:"JESÚS Y EL CENTURIÓN ROMANO", dialogos:dialogos_escena_jesus_y_el_centurion_romano, personajes:segundo_domingo_007, video:"https://youtu.be/ifKmenTlJ9c?si=jh1RKBKMd9ChUmrJ"},
 	{id: "018", orden:8, nombre:"PECADORA ARREPENTIDA", dialogos:dialogos_escena_la_pecadora_arrepentida, personajes:segundo_domingo_008, video:"https://youtu.be/5P-BpSuiKhA?si=28mcLxiWi5-pkgFF"},
 	{id: "019", orden:9, nombre:"VUELTA A BETANIA", dialogos:dialogos_escena_vuelta_a_betania, personajes:segundo_domingo_009, video:"https://youtu.be/-MOBIL4mYiA?si=Ir4kl234WkFSFrey"},
 	{id: "020", orden:10, nombre:"SALOME", dialogos:dialogos_escena_salome, personajes:segundo_domingo_010, video:""}
