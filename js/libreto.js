@@ -15,7 +15,7 @@ var primer_domingo_escenas =
 	{id: "001", orden:1, nombre:"EL PRIMER MILAGRO, EN LA BODA DE CANÁ", dialogos:dialogos_escena_el_primer_milagro, personajes:primer_domingo_001, video:"https://youtu.be/zupv23KwdRg?si=F_oAFstE3QmPkzFh"},
 	{id: "002", orden:2, nombre:"JESÚS SE DESPIDE DE SU MADRE EN NAZARET", dialogos:dialogos_escena_jesus_se_despide_de_su_madre, personajes:primer_domingo_002, video:""},
 	{id: "003", orden:3, nombre:"PRESENTACIÓN DE JUAN A ISRAEL", dialogos:dialogos_escena_presentacion_de_juan_a_israel, personajes:primer_domingo_003, video:"https://youtube.com/watch?v=fHr4-KSEJLo&feature=shared"},
-	{id: "004", orden:4, nombre:"BAUTISMO DE JESÚS", dialogos:dialogos_escena_bautismo_de_jesus, personajes:primer_domingo_004, video:""},
+	{id: "004", orden:4, nombre:"BAUTISMO DE JESÚS", dialogos:dialogos_escena_bautismo_de_jesus, personajes:primer_domingo_004, video:"https://youtu.be/xTaScPYfZjk?si=kQTtFctxGzihQc_P"},
 	{id: "005", orden:5, nombre:"LA TENTACIÓN EN EL DESIERTO", dialogos:dialogos_escena_tentacion_en_el_decierto, personajes:primer_domingo_005, video:"https://youtu.be/jt2RPUASiac?si=p6M6R2OjNCFO4lgx"},
 	{id: "006", orden:6, nombre:"LOS PRIMEROS DISCIPULOS", dialogos:dialogos_escena_primeros_dicipulos, personajes:primer_domingo_006, video:"https://youtu.be/8U-TqdL74bc?si=-oUsIVXzmWs4LRDa"},
 	{id: "007", orden:7, nombre:"LA PESCA MILAGROSA", dialogos:dialogos_escena_la_pesca_milagrosa, personajes:primer_domingo_007, video:"https://youtu.be/J5ORKiYw_Is?si=5OxwbU9n4M7IdkQL"},
@@ -40,15 +40,15 @@ var segundo_domingo_010 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:6,
 var segundo_domingo_escenas = 
 [
 	{id: "011", orden:1, nombre:"EL JARDIN DE LAS FLORES", dialogos:dialogos_escena_el_jardin_de_las_flores, personajes:segundo_domingo_001, video:""},
-	{id: "012", orden:2, nombre:"JESÚS CURA A UN PARALITICO", dialogos:dialogos_escena_jesus_cura_a_paralitico, personajes:segundo_domingo_002, video:""},
+	{id: "012", orden:2, nombre:"JESÚS CURA A UN PARALITICO", dialogos:dialogos_escena_jesus_cura_a_paralitico, personajes:segundo_domingo_002, video:"https://youtu.be/GR9ByYDzXfU?si=3IoS33oK5K9yR3OF"},
 	{id: "013", orden:3, nombre:"MARTHA Y JESÚS", dialogos:dialogos_escena_martha_y_jesus, personajes:segundo_domingo_003, video:""},
-	{id: "014", orden:4, nombre:"LAS BIENAVENTURANZAS", dialogos:dialogos_escena_las_bienaventuranzas, personajes:segundo_domingo_004, video:""},
-	{id: "015", orden:5, nombre:"JESÚS ENSEÑA A ORAR EL PADRE NUESTRO", dialogos:dialogos_escena_jesus_ensenia_orar_padre_nuestro, personajes:segundo_domingo_005, video:""},
+	{id: "014", orden:4, nombre:"LAS BIENAVENTURANZAS", dialogos:dialogos_escena_las_bienaventuranzas, personajes:segundo_domingo_004, video:"https://youtu.be/o4SxJEqjJAw?si=N0rn2ArMZSo1jspi"},
+	{id: "015", orden:5, nombre:"JESÚS ENSEÑA A ORAR EL PADRE NUESTRO", dialogos:dialogos_escena_jesus_ensenia_orar_padre_nuestro, personajes:segundo_domingo_005, video:"https://youtu.be/Iuk92T5Oomo?si=RtkcwPlHM1gGzKYe"},
 	{id: "016", orden:6, nombre:"MULTIPLICACIÓN DE LOS PANES Y PECES", dialogos:dialogos_escena_multiplicacion_de_panes_y_peces, personajes:segundo_domingo_006, video:"https://youtu.be/gg1rl6NUc7Q?si=V2JhDwAFMmBsCjWz"},
 	{id: "017", orden:7, nombre:"JESÚS Y EL CENTURIÓN ROMANO", dialogos:dialogos_escena_jesus_y_el_centurion_romano, personajes:segundo_domingo_007, video:"https://youtu.be/ifKmenTlJ9c?si=jh1RKBKMd9ChUmrJ"},
 	{id: "018", orden:8, nombre:"PECADORA ARREPENTIDA", dialogos:dialogos_escena_la_pecadora_arrepentida, personajes:segundo_domingo_008, video:"https://youtu.be/5P-BpSuiKhA?si=28mcLxiWi5-pkgFF"},
 	{id: "019", orden:9, nombre:"VUELTA A BETANIA", dialogos:dialogos_escena_vuelta_a_betania, personajes:segundo_domingo_009, video:"https://youtu.be/-MOBIL4mYiA?si=Ir4kl234WkFSFrey"},
-	{id: "020", orden:10, nombre:"SALOME", dialogos:dialogos_escena_salome, personajes:segundo_domingo_010, video:""}
+	{id: "020", orden:10, nombre:"SALOME", dialogos:dialogos_escena_salome, personajes:segundo_domingo_010, video:"https://youtu.be/ELN6nvB_mcI?si=SeJtyJiZhZRUBpDW"}
 ];
 
 var domingo_de_ramos_001 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:2,nombre:"MARÍA"},{id:3,nombre:"JESÚS"},{id:10,nombre:"PEDRO"},{id:16,nombre:"JUAN"},{id:103,nombre:"JUDIO"},{id:19,nombre:"JUDAS"},{id:115,nombre:"ESPÍA 1"},{id:116,nombre:"ESPÍA 2"},{id:26,nombre:"ARIMATEA"},{id:126,nombre:"SACERDOTES"}];
@@ -64,12 +64,12 @@ var domingo_de_ramos_009 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:2
 var domingo_de_ramos_escenas = 
 [
 	{id: "021", orden:1, nombre:"ENCUENTRO DE JESÚS CON SU MADRE", dialogos:dialogos_escena_encuentro_de_jesus_con_su_madre, personajes:domingo_de_ramos_001, video:""},
-	{id: "022", orden:2, nombre:"JESÚS LLORA FRENTE A LOS MUROS DE JERUSALÉN", dialogos:dialogos_escena_jesus_llora_frente_los_muros_de_jerusalen, personajes:domingo_de_ramos_002, video:""},
+	{id: "022", orden:2, nombre:"JESÚS LLORA FRENTE A LOS MUROS DE JERUSALÉN", dialogos:dialogos_escena_jesus_llora_frente_los_muros_de_jerusalen, personajes:domingo_de_ramos_002, video:"https://youtube.com/shorts/87vzAet1HE4?si=btULaw4TRUbED6Td"},
 	{id: "023", orden:3, nombre:"CURACIÓN DEL CIEGO DE JERICÓ", dialogos:dialogos_escena_curacion_del_ciego_de_jerico, personajes:domingo_de_ramos_003, video:"https://youtube.com/shorts/faobnMFZgck?si=yEBBoNiIzdwmbtEc"},
-	{id: "024", orden:4, nombre:"JESÚS Y LOS NIÑOS", dialogos:dialogos_escena_jesus_y_los_ninios, personajes:domingo_de_ramos_004, video:""},
+	{id: "024", orden:4, nombre:"JESÚS Y LOS NIÑOS", dialogos:dialogos_escena_jesus_y_los_ninios, personajes:domingo_de_ramos_004, video:"https://youtu.be/4wygmd_1Q7E?si=KxEl7Q7FUrWVdKBf"},
 	{id: "025", orden:5, nombre:"LA PURIFICACIÓN DEL TEMPLO", dialogos:dialogos_escena_la_purificacion_del_templo, personajes:domingo_de_ramos_005, video:""},
 	{id: "026", orden:6, nombre:"LA MUJER ADULTERA", dialogos:dialogos_escena_la_mujer_adultera, personajes:domingo_de_ramos_006, video:"https://youtu.be/y2PKQPfW12U?si=LmGgq89oSTycV0-W"},
-	{id: "027", orden:7, nombre:"TRIBUTO AL CESAR", dialogos:dialogos_escena_tributo_a_cesar, personajes:domingo_de_ramos_007, video:""},
+	{id: "027", orden:7, nombre:"TRIBUTO AL CESAR", dialogos:dialogos_escena_tributo_a_cesar, personajes:domingo_de_ramos_007, video:"https://youtu.be/-HPBh36iQUs?si=ivrJQ3A3x3dwWChU"},
 	{id: "028", orden:8, nombre:"LA UNCIÓN EN BETANIA", dialogos:dialogos_escena_uncion_en_betania, personajes:domingo_de_ramos_008, video:""},
 	{id: "029", orden:9, nombre:"CONSEJO DE SANEDRÍN", dialogos:dialogos_escena_consejo_de_sanedrin, personajes:domingo_de_ramos_009, video:""}
 ];
