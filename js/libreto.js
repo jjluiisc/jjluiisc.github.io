@@ -70,8 +70,8 @@ var domingo_de_ramos_escenas =
 	{id: "025", orden:5, nombre:"LA PURIFICACIÓN DEL TEMPLO", dialogos:dialogos_escena_la_purificacion_del_templo, personajes:domingo_de_ramos_005, video:""},
 	{id: "026", orden:6, nombre:"LA MUJER ADULTERA", dialogos:dialogos_escena_la_mujer_adultera, personajes:domingo_de_ramos_006, video:"https://youtu.be/y2PKQPfW12U?si=LmGgq89oSTycV0-W"},
 	{id: "027", orden:7, nombre:"TRIBUTO AL CESAR", dialogos:dialogos_escena_tributo_a_cesar, personajes:domingo_de_ramos_007, video:"https://youtu.be/-HPBh36iQUs?si=ivrJQ3A3x3dwWChU"},
-	{id: "028", orden:8, nombre:"LA UNCIÓN EN BETANIA", dialogos:dialogos_escena_uncion_en_betania, personajes:domingo_de_ramos_008, video:""},
-	{id: "029", orden:9, nombre:"CONSEJO DE SANEDRÍN", dialogos:dialogos_escena_consejo_de_sanedrin, personajes:domingo_de_ramos_009, video:""}
+	{id: "028", orden:8, nombre:"LA UNCIÓN EN BETANIA", dialogos:dialogos_escena_uncion_en_betania, personajes:domingo_de_ramos_008, video:"https://youtu.be/xxjHm0olSfs?si=1-tUa5_WN2-crSj5"},
+	{id: "029", orden:9, nombre:"CONSEJO DE SANEDRÍN", dialogos:dialogos_escena_consejo_de_sanedrin, personajes:domingo_de_ramos_009, video:"https://youtu.be/45GsyYil2Ao?si=1OdlNZPrxN5wjRrg"}
 ];
 
 var jueves_santo_001 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:3,nombre:"JESÚS"},{id:16,nombre:"JUAN"},{id:10,nombre:"PEDRO"},{id:121,nombre:"CRIADO"},{id:139,nombre:"AMO"}];
@@ -88,7 +88,7 @@ var jueves_santo_010 = [{id:0,nombre:"TODOS"},{id:1,nombre:"NARRADOR"},{id:38,no
 var jueves_santo_escenas = 
 [
 	{id: "030", orden:1, nombre:"PREPARACIÓN DE LA ÚLTIMA CENA", dialogos:dialogos_escena_preparacion_de_la_ultima_cena, personajes:jueves_santo_001, video:""},
-	{id: "031", orden:2, nombre:"ANUNCIO DE LAS PROFECIAS", dialogos:dialogos_escena_anuncio_de_las_profecias, personajes:jueves_santo_002, video:""},
+	{id: "031", orden:2, nombre:"ANUNCIO DE LAS PROFECIAS", dialogos:dialogos_escena_anuncio_de_las_profecias, personajes:jueves_santo_002, video:"https://youtu.be/htzF6XfugAA?si=q9efVgjASLeEcRoH"},
 	{id: "032", orden:3, nombre:"EL GRAN SINEDRIO", dialogos:dialogos_escena_el_gran_sinedrio, personajes:jueves_santo_003, video:""},
 	{id: "033", orden:4, nombre:"CELEBRACIÓN DE LA ÚLTIMA CENA", dialogos:dialogos_escena_celebracion_ultima_cena, personajes:jueves_santo_004, video:""},
 	{id: "034", orden:5, nombre:"VENTA DE JESÚS. (Yo soy)", dialogos:dialogos_escena_venta_de_jesus, personajes:jueves_santo_005, video:""},
