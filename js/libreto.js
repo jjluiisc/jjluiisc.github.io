@@ -133,7 +133,7 @@ var viernes_santo_escenas =
 	{id: "046", orden:7, nombre:"JESUS ES SENTENCIADO A MUERTE", dialogos:dialogos_escena_jesus_es_sentenciado, personajes:viernes_santo_007, video:""},
 	{id: "047", orden:8, nombre:"EL CASTIGO DE LOS LADRONES", dialogos:dialogos_escena_castigo_a_los_ladrones, personajes:viernes_santo_008, video:""},
 	{id: "048", orden:9, nombre:"JESUS ENCUENTRA A SU MADRE", dialogos:dialogos_escena_jesus_encuentra_a_su_madre, personajes:viernes_santo_009, video:""},
-	{id: "049", orden:10, nombre:"LA VERÓNICA LIMPIA EL ROSTRO DE JESÚS", dialogos:dialogos_escena_la_veronica_limpia_el_rostro_de_jesus, personajes:viernes_santo_010, video:""},
+	{id: "049", orden:10, nombre:"LA VERÓNICA LIMPIA EL ROSTRO DE JESÚS", dialogos:dialogos_escena_la_veronica_limpia_el_rostro_de_jesus, personajes:viernes_santo_010, video:"https://youtu.be/tJ5BEWrhQ54?si=7wz_pBMtSu6bzojn"},
 	{id: "050", orden:11, nombre:"JESÚS CAE POR SEGUNDA VEZ", dialogos:dialogos_escena_jesus_cae_por_segunda_vez, personajes:viernes_santo_011, video:""},
 	{id: "051", orden:12, nombre:"JESUS ENCUENTRA A LAS MUJERES DE JERUSALÉN", dialogos:dialogos_escena_jesus_consuela_a_las_mujeres_de_jerusalen, personajes:viernes_santo_012, video:""},
 	{id: "052", orden:13, nombre:"JOSE DE ARIMATEA CONFORTA A JESÚS", dialogos:dialogos_escena_jose_de_arimatea_conforta_a_jesus, personajes:viernes_santo_013, video:""},
