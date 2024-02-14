@@ -1,1 +1,143 @@
-
+<html>
+<head>
+	<title>?</title>
+	<link href="bootstrap.min.css" rel="stylesheet">
+	<style>
+		.imgs{
+			width:150px; 
+			height:150px;
+			margin:5px;	
+		}
+	</style>
+</head>
+<body>
+	<div style="margin:20px; padding:20px; border:2px solid; border-radius:10px; border-color:#a94442; color:#31708f; text-align: center;">
+		<div class="row">
+			<button type="button" class="btn btn-success" onclick="Inicia();">Revolver... </button>
+		</div>
+		<br/>
+		<div class="row">
+			<div class="col-sm-6 col-md-3 col-lg-3" id="img_0">
+				
+			</div>
+			<div class="col-sm-6 col-md-3 col-lg-3" id="img_1">
+				
+			</div>
+			<div class="col-sm-6 col-md-3 col-lg-3" id="img_2">
+				
+			</div>
+			<div class="col-sm-6 col-md-3 col-lg-3" id="img_3">
+				
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6 col-md-3 col-lg-3" id="img_4">
+				
+			</div>
+			<div class="col-sm-6 col-md-3 col-lg-3" id="img_5">
+				
+			</div>
+			<div class="col-sm-6 col-md-3 col-lg-3" id="img_6">
+				
+			</div>
+			<div class="col-sm-6 col-md-3 col-lg-3" id="img_7">
+				
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6 col-md-3 col-lg-3" id="img_8">
+				
+			</div>
+			<div class="col-sm-6 col-md-3 col-lg-3" id="img_9">
+				
+			</div>
+			<div class="col-sm-6 col-md-3 col-lg-3" id="img_10">
+				
+			</div>
+			<div class="col-sm-6 col-md-3 col-lg-3" id="img_11">
+				
+			</div>
+		</div>
+	</div>
+	<script>
+		var index = 0;
+		var contador = 0;
+		var seleccion = [2];	
+		var seleccionIndex = [2];	
+		var opcImgsOut	= [12];
+		var opcImgs	= [ 
+				/*4*/'<img class="imgs" src="imagenes/4.jpeg" >',
+				/*0*/'<img class="imgs" src="imagenes/0.jpeg" >',
+				/*1*/'<img class="imgs" src="imagenes/1.jpeg" >',
+				/*2*/'<img class="imgs" src="imagenes/2.jpeg" >',
+				/*2*/'<img class="imgs" src="imagenes/2.jpeg" >',
+				/*3*/'<img class="imgs" src="imagenes/3.jpeg" >',
+				/*1*/'<img class="imgs" src="imagenes/1.jpeg" >',
+				/*4*/'<img class="imgs" src="imagenes/4.jpeg" >',
+				/*5*/'<img class="imgs" src="imagenes/5.jpeg" >',
+				/*0*/'<img class="imgs" src="imagenes/0.jpeg" >',
+				/*3*/'<img class="imgs" src="imagenes/3.jpeg" >',
+				/*5*/'<img class="imgs" src="imagenes/5.jpeg" >'
+			];
+		
+		var opcImgsDataOut = [12];
+		var opcImgsData = [
+			4,0,1,2,2,3,1,4,5,0,3,5
+		];		
+		
+		function Valida(x){
+			document.getElementById("img_"+x).innerHTML  = opcImgsOut[x];
+			seleccion[index] = opcImgsDataOut[x];
+			seleccionIndex[index] = x;
+			index++;
+			if(index == 2){
+				if(seleccion[0] == seleccion[1]){
+					index = 0;
+					seleccion = [2];
+					seleccionIndex = [2];
+					contador++;
+				}else{
+					index = 0;
+					seleccion = [2];	
+					setTimeout(function(){ Regresa(); }, 1000);
+				}
+			}
+		}
+		
+		function Regresa(){
+			for(var x=0; x <  seleccionIndex.length ; x++)
+			{
+				document.getElementById("img_"+seleccionIndex[x]).innerHTML  = '<img class="imgs" src="imagenes/fondo.jpg" onclick="Valida('+seleccionIndex[x]+');">'
+			}
+			seleccionIndex = [2];
+		}
+		
+		function Inicia(){
+			var rand = Math.floor(Math.random() * 12);
+			var y = 0;
+			opcImgsOut = [12];
+			opcImgsDataOut = [12];
+			for(var x=rand; x <  12 ; x++)
+			{
+				opcImgsOut[y] = opcImgs[x];
+				opcImgsDataOut[y] = opcImgsData[x];
+				y++;
+			}
+			
+			for(var x=0; x <  rand ; x++)
+			{
+				opcImgsOut[y] = opcImgs[x];
+				opcImgsDataOut[y] = opcImgsData[x];
+				y++;
+			}
+			
+			for(var x=0; x <  12 ; x++)
+			{
+				document.getElementById("img_"+x).innerHTML  = '<img class="imgs" src="imagenes/fondo.jpg" onclick="Valida('+x+');">'
+			}
+		}
+		
+		(function(){ Inicia() })();
+	</script>
+</body>
+</html>
