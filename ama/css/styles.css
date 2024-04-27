@@ -1,0 +1,419 @@
+/*Tamaño de pantalla*/
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /* Reset para REMS - 62.5% - 10px de 16px */
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/*Fuente de Texto*/
+body{
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+/*Globales*/
+.contenedor{
+    max-width: 100rem; /* 100rem = 1000px */
+    margin: 0 auto;
+}
+
+img{
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 3.4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.6rem;
+}
+
+/*Utilidades*/
+.seccion{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+.fw-300 {
+    font-size: 4rem;
+}
+
+.d-block {
+    display: block !important;
+}
+
+.contenido-centrado {
+    max-width: 80rem;
+}
+
+/*Botones*/
+.boton {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 0.5rem 3rem;
+    margin-top: 3rem;
+    display: inline-block;
+    text-align: center;
+    border: none;
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
+.boton-amarillo {
+    background-color: #e08709;
+}
+
+.boton-verde {
+    background-color: #71b100;
+}
+
+/*Header*/
+.site-header {
+    background: #333333;
+    padding: 1rem 0 3rem 0;
+}
+
+.site-header.inicio{
+    background: url(../img/header.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 60rem;
+}
+
+/*Contenido y Header*/
+.contenido-header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contenido-header h1 {
+    color: #ffffff;
+    padding-bottom: 2rem;
+    max-width: 60rem;
+}
+
+/*Barra Superior*/
+.barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+/*Navegacion*/
+.navegacion a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem; /* 1.8rem = 18px */
+    margin-right: 2rem;
+    font-family: fantasy;
+}
+
+.navegacion a:hover {
+    color: #71b100;
+}
+
+.navegacion a:last-of-type {
+    margin: 0;
+}
+
+/*Primera seccion del Contenido*/
+.iconos-nosotros {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icono {
+    flex-basis: calc(33.3% - 1rem);
+    text-align: center;
+}
+
+.icono h3 {
+    text-transform: uppercase;
+}
+
+/*Anuncios (Segunda seccion)*/
+.contenedor-anuncios {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.anuncio {
+    flex: 0 0 calc(33.3% - 1rem);
+    border: 0.1rem solid #b5b5b5;
+    background: #f5f5f5;
+    margin-bottom: 2rem;
+}
+
+.contenido-anuncio {
+    padding: 2rem;
+}
+
+.contenido-anuncio h3 {
+    margin: 0;
+}
+
+.precio {
+    color: #71b100;
+    font-weight: 700;
+}
+
+.ver-todas {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.iconos-caracteristicas {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    max-width: 50rem;
+}
+
+.iconos-caracteristicas li {
+    display: flex;
+}
+
+.iconos-caracteristicas li img {
+    margin-right: 2rem;
+}
+
+/*Tercera seccion*/
+.imagen-contacto {
+    background: url(../img/encuentra.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+}
+
+.contenido-contacto {
+    flex: 1;
+    color: #ffffff;
+    
+}
+
+.contenido-contacto p {
+    font-size: 1.8rem;
+}
+
+/*Cuarta seccion*/
+.seccion-inferior {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog {
+    flex-basis: 60%;
+}
+
+.testimoniales {
+    flex-basis: calc(40% - 2rem);
+}
+
+.entrada-blog {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.entrada-blog:last-of-type {
+    margin-bottom: 0;
+}
+
+.imagen-index {
+    flex-basis: 40%;
+}
+
+.texto-entrada {
+    flex-basis: calc(60% - 3rem);
+}
+
+.texto-entrada a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.texto-entrada h4 {
+    margin: 0;
+    line-height: 1.2;
+}
+
+.texto-entrada h4::after {
+    content: '';
+    display: block;
+    width: 15rem;
+    height: .5rem;
+    background-color: #71b100;
+    margin-top: 1rem;
+}
+
+.texto-entrada span {
+    color: #e08709;
+}
+
+.testimonial {
+    background-color: #71b100;
+    font-size: 2.4rem;
+    padding: 2rem;
+    color: #fff;
+    border-radius: 2rem;
+}
+
+.testimonial p {
+    text-align: end;
+}
+
+.testimonial blockquote::before {
+    content: '';
+    background: url(../img/comilla.svg);
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    left: -2rem;
+}
+
+.testimonial blockquote {
+    position: relative;
+    padding-left: 3.5rem;
+}
+
+/*Footer*/
+.site-footer {
+    background: #333333;
+    margin: 0;
+}
+
+.contenedor-footer {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright {
+    margin: 0;
+    color: #ffffff;
+}
+
+/*Pagina Nosotros*/
+.contenido-nosotros {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 2rem;
+}
+
+.texto-nosotros blockquote {
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem 0 3rem 0;
+}
+
+/*Pagina detalles-Anuncio*/
+.resumen-propiedad {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Pagina de Contacto*/
+legend {
+    font-size: 2.5rem;
+    color: #333333;
+}
+
+label {
+    text-transform: uppercase;
+    display: block;
+}
+
+input[type="date"]:hover,
+input[type="time"]:hover,
+input[type="radio"]:hover,
+select {
+    cursor: pointer;
+}
+
+input:not([type="submit"]),
+textarea, select {
+    padding: 1rem;
+    display: block;
+    width: 100%;
+    background: #e1e1e1;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 1rem;
+    color: black;
+}
+
+input[type="radio"] {
+    width: auto;
+}
+
+select {
+    -webkit-appearance: none;
+}
+
+textarea {
+    height: 20rem;
+}
+
+.forma-contacto{
+    max-width: 30rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacto p {
+    font-size: 1.4rem; 
+    color: #4f4f4f;
+    margin: 2rem 0 1rem 0;
+}
+
+.boton-enviar {
+    border: 1rem;
+    border-radius: 1rem;
+}
+
+.info-personal {
+    display: flex;
+}
+
+.img-info-personal {
+    height: 4rem;
+    border: none;
+}
+
+.verde-normal {
+	color: green;
+}
+
+.otrosPersonajes {
+	color: black;
+}
