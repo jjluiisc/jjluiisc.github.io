@@ -28,9 +28,9 @@ function cargaMenu(){
 				
 				salida += '<div class="col-sm-1 col-md-1 col-lg-1">&nbsp;</div>'+
 						  '<div class="col-sm-7 col-md-7 col-lg-7">'+
-								'<font style="color: #D43854; font-family: '+"'"+Algeria+"'"+', sans-serif; font-size: 1.9rem;">'+nombre+'</font>'+
-								'<font style="color: #FE1D17; font-family: '+"'"+Algeria+"'"+', sans-serif; font-size: 1.8rem;">&nbsp;'+puntos+'</font>'+								
-								'<font style="color: #D43854; font-family: '+"'"+Algeria+"'"+', sans-serif; font-size: 1.9rem;">&nbsp;$'+producto.precio+'</font>'+
+								'<font style="color: #D43854; font-family: '+"'"+'Algeria'+"'"+', sans-serif; font-size: 1.9rem;">'+nombre+'</font>'+
+								'<font style="color: #FE1D17; font-family: '+"'"+'Algeria'+"'"+', sans-serif; font-size: 1.8rem;">&nbsp;'+puntos+'</font>'+								
+								'<font style="color: #D43854; font-family: '+"'"+'Algeria'+"'"+', sans-serif; font-size: 1.9rem;">&nbsp;$'+producto.precio+'</font>'+
 						  '</div>' +
 				          '<div class="col-sm-4 col-md-4 col-lg-4">&nbsp;</div>'+
 						  '<div class="col-sm-1 col-md-1 col-lg-1">&nbsp;</div>'+
