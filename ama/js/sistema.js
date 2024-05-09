@@ -26,7 +26,7 @@ function cargaMenu(){
 				var nombre = producto.nombre;				
 				var puntos = completaCadena(nombre);				
 				
-				salida += '<div class="col-sm-1 col-md-1 col-lg-1" style="padding-left:1em">&nbsp;</div>'+
+				salida += '<div class="col-sm-1 col-md-1 col-lg-1" style="padding-left:4em">&nbsp;</div>'+
 						  '<div class="col-sm-7 col-md-7 col-lg-7">'+
 								'<font style="color: #D43854; font-family: '+"'"+'Algeria'+"'"+', sans-serif; font-size: 1.9rem;">'+nombre+'</font>'+
 								'<font style="color: #FE1D17; font-family: '+"'"+'Algeria'+"'"+', sans-serif; font-size: 1.8rem;">&nbsp;'+puntos+'</font>'+								
