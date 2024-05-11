@@ -12,15 +12,15 @@ function cargaMenu(){
 	for(var x=0; x < menu.length; x++){
 		var hoja = menu[x];
 		
-		salida += '<div class="row" style="background: url(img/'+hoja.img+'.jpg); background-repeat:no-repeat; background-size:100% 100%; background-attachment: fixed; min-height="100%">'
+		salida += '<div class="row" style="background: url(img/'+hoja.img+'.jpg); background-repeat:no-repeat; background-size:100% 100%; background-attachment: fixed; min-height="100%; backdrop-filter: brightness(50%);">'
 			productos = hoja.productos;
 			if(hoja.orientacion == 'L'){
 				
 				//salida += '';
-				salida += '<div class="col-sm-12 col-md-12 col-lg-12" align="center"><font style="color: #D43854; font-family: Pussycat, Algerian, Broadway; font-size: 4rem;">MEN&Uacute;</font></div>';
-				salida += '<div class="col-sm-12 col-md-12 col-lg-12" align="center"><font style="color: #D43854; font-family: Pussycat, Algerian, Broadway; font-size: 3rem;">'+hoja.nombre+'</font></div>' ;
+				salida += '<div class="col-sm-12 col-md-12 col-lg-12" align="center"><font style="color: #D43854; font-family: '+"'"+'Algeria'+"'"+', sans-serif; font-size: 4rem;">MEN&Uacute;</font></div>';
+				salida += '<div class="col-sm-12 col-md-12 col-lg-12" align="center"><font style="color: #D43854; font-family: '+"'"+'Algeria'+"'"+', sans-serif; font-size: 3rem;">'+hoja.nombre+'</font></div>' ;
 			}else if(hoja.orientacion == 'C'){
-				salida += '<div class="col-sm-12 col-md-12 col-lg-12" align="center"><font style="color: #D43854; font-family: Pussycat, Algerian, Broadway; font-size: 3rem;">'+hoja.nombre+'</font></div>' ;
+				salida += '<div class="col-sm-12 col-md-12 col-lg-12" align="center"><font style="color: #D43854; font-family: '+"'"+'Algeria'+"'"+', sans-serif; font-size: 3rem;">'+hoja.nombre+'</font></div>' ;	
 			}
 			
 			salida +=   '	<div class="col-sm-11 col-md-11 col-lg-8" style="padding-left:2em;">'+
@@ -47,17 +47,29 @@ function cargaMenu(){
 								'				</div>'+
 								'			</td>'+
 								'			<td style="max-width:10%;">'+
-								'					<font style="color: #D43854; font-family: Pussycat, Algerian, Broadway; font-size: 1.8rem;">&nbsp;$'+producto.precio+'</font>'+
+								'					<font style="color: #D43854; font-family: '+"'"+'Algeria'+"'"+', sans-serif; font-size: 1.8rem;">'+producto.precio+'</font>'+
+								'			</td>'+
+								'			<td style="max-width:70%;">'+calculaEspacios()+'</td>'+
+								'		</tr>'+
+								'		<tr style="width:100%;">'+
+								'			<td style="max-width:20%;">'+
+								'				<div style ="width:300px;">'+
+								'					<font style="color: #DE697A; font-family: Areal; font-size: 1.4rem;">'+producto.descripcion+'</font>'+
+								'				</div>'+
+								'			</td>'+
+								'			<td style="max-width:10%;">'+
 								'			</td>'+
 								'			<td style="max-width:70%;"></td>'+
 								'		</tr>';
 								
 				}else if(hoja.orientacion == 'C'){
-					salida += '<div class="col-sm-4 col-md-4 col-lg-4" style="padding-left:2em;">&nbsp;</div>'+
-						  '<div class="col-sm-4 col-md-4 col-lg-4">'+
-								'<font style="color: #D43854; font-family: '+"'"+'Algeria'+"'"+', sans-serif; font-size: 1.9rem;">'+nombre+'</font>'+
-						  '</div>' +
-						  '<div class="col-sm-4 col-md-4 col-lg-4">&nbsp;</div>';
+					salida +=	'		<tr style="width:100%;">'+
+								'			<td>'+
+						        '				<div class="col-sm-12 col-md-12 col-lg-12" align="center">'+
+								'					<font style="color: #D43854; font-family: '+"'"+'Algeria'+"'"+', sans-serif; font-size: '+calculaTamanio(nombre)+'rem;">'+nombre+'</font>'+
+								'				</div>' ;
+								'			</td>'+
+								'		</tr>'
 				}
 				
 			}
@@ -93,8 +105,35 @@ function calculaTamanio(nombre){
 	return tamanio; 
 }
 
+function isMobile() {
+    try{ 
+        document.createEvent("TouchEvent"); 
+        return true; 
+    }
+    catch(e){ 
+        return false;
+    }
+}
+
+function calculaEspacios(){
+	var espacios = "&nbsp;";
+	var ancho = ($(document).width()) * 1;
+	var cantidad =0;
+	
+	if(ancho > 400 &&  ancho < 700){
+		cantidad = 80;
+	}else if(ancho >700){
+		cantidad = 100;
+	}
+	
+	for(var x=0; x<cantidad; x++)
+			espacios += "&nbsp;";
+	
+	return espacios;
+}
 
 cargaMenu();
+
 document.addEventListener("contextmenu", function(event){
 	event.preventDefault();
 }, false);
