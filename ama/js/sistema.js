@@ -85,8 +85,10 @@ function cargaMenu(){
 				  '</div>';
 
 		salida += '<div class="col-sm-12 col-md-12 col-lg-12"  style="padding-left:2em; align="left">'+
-				  '		<div style="border-radius: 5px; background: #F1B15E;"><font style="color: #FE1D17; font-family: '+"'"+'Cooper Black'+"'"+', sans-serif; font-size: 1.5rem;">Av. Dolores S/N. Barrio Tlatilco. Teoloyucan.</font></div>'+
-				  '</div>';				  
+				  '		<div style="border-radius: 5px; background: #F1B15E; width: 360px;">'+
+				  '			<font style="color: #FE1D17; font-family: '+"'"+'Cooper Black'+"'"+', sans-serif; font-size: 1.5rem;">Av. Dolores S/N. Barrio Tlatilco. Teoloyucan.</font>'+
+				  '		</div>'+
+				  '</div>';	
 				  
 		salida += '<div class="col-sm-12 col-md-12 col-lg-12"  style="padding-left:2em; align="left">'+
 				  '		<font style="color: #DE697A; font-family: Areal; font-size: 1.4rem;">*Referencia: arriba de tacos y hamburgesas los 3 Montoya </font>'+
