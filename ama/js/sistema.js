@@ -40,9 +40,11 @@ function cargaMenu(){
 
 				if(hoja.orientacion == 'L'){
 					salida +=	'		<tr style="width:100%;">'+
-								'			<td style="max-width:25%;">'+
+								'			<td style="max-width:5%;">'+
+								'           			<input type="checkbox" id="ck_'+producto.id+'" onchange="toggleCheckbox(this,'+producto.id+')" />'+
+								'			</td>'+
+								'			<td style="max-width:20%;">'+
 								'				<div style ="width:350px; white-space:nowrap; overflow:hidden;">'+
-								'              				<input type="checkbox" id="ck_'+producto.id+'" onchange="toggleCheckbox(this,'+producto.id+')" />'+
 								'					<font style="color: #D43854; font-family: '+"'"+'Algeria'+"'"+', sans-serif; font-size: '+calculaTamanio(nombre)+'rem;">'+nombre+'</font>'+
 								'					<font style="color: #FE1D17; font-family: Pussycat, Algerian, Broadway; font-size: 1.7rem;">&nbsp;'+puntos+'</font>'+																
 								'				</div>'+
@@ -53,7 +55,10 @@ function cargaMenu(){
 								'			<td style="max-width:65%;">'+calculaEspacios()+'</td>'+
 								'		</tr>'+
 								'		<tr style="width:100%;">'+
-								'			<td style="max-width:25%;">'+
+								'			<td style="max-width:5%;">'+
+								'				&nbsp;'+
+								'			</td>'+
+								'			<td style="max-width:20%;">'+
 								'				<div style ="width:300px;">'+
 								'					<font style="color: #DE697A; font-family: Areal; font-size: 1.4rem;">'+producto.descripcion+'</font>'+
 								'				</div>'+
