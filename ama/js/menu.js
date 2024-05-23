@@ -100,13 +100,13 @@ var productos_7 = [
                   ];				  
 				  
 
-var hoja_1 = {img:"fondo", orientacion :"L", nombre:"PA' BOTANIAR", productos:productos_1};
-var hoja_2 = {img:"fondo", orientacion :"L", nombre:"PEPITOS Y CLUB S&Aacute;NDWICH", productos:productos_2};
-var hoja_3 = {img:"fondo", orientacion :"C", nombre:"SALSAS", productos:productos_3};
-var hoja_4 = {img:"fondo", orientacion :"L", nombre:"BEBIDAS FR&Iacute;AS CON ALCOHOL", productos:productos_4};
-var hoja_5 = {img:"fondo", orientacion :"L", nombre:"BEBIDAS FR&Iacute;AS SIN ALCOHOL", productos:productos_5};
-var hoja_6 = {img:"fondo", orientacion :"L", nombre:"BEBIDAS CALIENETES Y FR&Iacute;AS", productos:productos_6};
-var hoja_7 = {img:"fondo", orientacion :"L", nombre:"POSTRES", productos:productos_7};
+var hoja_1 = {img:"1", orientacion :"L", nombre:"PA' BOTANIAR", productos:productos_1};
+var hoja_2 = {img:"2", orientacion :"L", nombre:"PEPITOS Y CLUB S&Aacute;NDWICH", productos:productos_2};
+var hoja_3 = {img:"3", orientacion :"C", nombre:"SALSAS", productos:productos_3};
+var hoja_4 = {img:"4", orientacion :"L", nombre:"BEBIDAS FR&Iacute;AS CON ALCOHOL", productos:productos_4};
+var hoja_5 = {img:"5", orientacion :"L", nombre:"BEBIDAS FR&Iacute;AS SIN ALCOHOL", productos:productos_5};
+var hoja_6 = {img:"6", orientacion :"L", nombre:"BEBIDAS CALIENETES Y FR&Iacute;AS", productos:productos_6};
+var hoja_7 = {img:"6", orientacion :"L", nombre:"POSTRES", productos:productos_7};
 
 
 var menu = [hoja_1,hoja_2,hoja_3,hoja_4,hoja_5,hoja_6,hoja_7];
