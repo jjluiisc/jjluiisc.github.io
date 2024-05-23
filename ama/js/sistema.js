@@ -41,7 +41,7 @@ function cargaMenu(){
 				if(hoja.orientacion == 'L'){
 					salida +=	'		<tr style="width:100%;">'+
 								'			<td style="max-width:10%;">'+
-								'           			<input type="checkbox" id="ck_'+producto.id+'" onchange="toggleCheckbox(this,'+producto.id+')" />'+
+								'           			</br><input type="checkbox" id="ck_'+producto.id+'" onchange="toggleCheckbox(this,'+producto.id+')" />'+
 								'			</td>'+
 								'			<td style="max-width:20%;">'+
 								'				<div style ="width:350px; white-space:nowrap; overflow:hidden;">'+
