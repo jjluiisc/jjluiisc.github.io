@@ -220,7 +220,7 @@ function borrarMensaje(){
 }
 
 function enviarMensaje(){
-	window.open('https://api.whatsapp.com/send?phone=5541401197&text='+'origen:appMenu cliente: '+$("#nombre").val()+' mensaje:' +$("#mensaje").val()+'"'); 
+	window.open('https://api.whatsapp.com/send?phone=5564281401&text='+'origen:appMenu cliente: '+$("#nombre").val()+' mensaje:' +$("#mensaje").val()+'"'); 
 }
 
 cargaMenu();
