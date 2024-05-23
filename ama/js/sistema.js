@@ -16,7 +16,7 @@ function cargaMenu(){
 			productos = hoja.productos;
 			if(hoja.orientacion == 'L'){
 				
-				salida += '<img src="img/logo.png" style="width:500%;padding-left:4em;"/>';
+				salida += '<img src="img/logo.png" style="width:100px;padding-left:2em;"/>';
 				salida += '<div class="col-sm-12 col-md-12 col-lg-12" align="center"><font style="color: #D43854; font-family: '+"'"+'Algeria'+"'"+', sans-serif; font-size: 4rem;">MEN&Uacute;</font></div>';
 				salida += '<div class="col-sm-12 col-md-12 col-lg-12" align="center"><font style="color: #D43854; font-family: '+"'"+'Algeria'+"'"+', sans-serif; font-size: 3rem;">'+hoja.nombre+'</font></div>' ;
 			}else if(hoja.orientacion == 'C'){
