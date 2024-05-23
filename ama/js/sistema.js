@@ -196,6 +196,7 @@ function cargarMensaje(){
 	var  totalPedido = 0; 
 	var  mensaje = ""; 
 	
+	var contador = 0;
 	for(var a =0; a < _listaproductos.length; a ++){
 		for(var x=0; x < menu.length; x++){
 			var hoja = menu[x];
@@ -203,11 +204,15 @@ function cargarMensaje(){
 			for(var y=0; y < productos.length; y++){
 				if(productos[y].id == _listaproductos[a] ){
 					totalPedido += productos[y].precio;
-					mensaje += productos[y].name+", ";
+					if(contador == 0)
+						mensaje += productos[y].name;
+					else
+						mensaje += ", " + productos[y].name;
 					break;
 				}
 			}
-		}		
+		}
+		contador++;	
 	}
 	
 	$("#mensaje").val(mensaje);
