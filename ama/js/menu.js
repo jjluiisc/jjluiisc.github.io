@@ -94,7 +94,7 @@ var productos_6 = [
 
 
 var productos_7 = [
-					{id:74, name:"PASTELES;", nombre:"PASTELES;", precio:65, descripcion:""},
+					{id:74, name:"PASTELES", nombre:"PASTELES", precio:65, descripcion:""},
 					{id:75, name:"BROWNIE SUNDAE", nombre:"BROWNIE SUNDAE", precio:65, descripcion:"Brownie con helado de vainilla y adornado con tiras de chocolate, nuez y fresa."},
 					{id:76, name:"BROWNIE BLANCO", nombre:"BROWNIE BLANCO", precio:65, descripcion:"Brownie de chocolate blanco servido con helado de vainilla y adornado con tiras de chocolate almendra y fresa."}
                   ];				  
