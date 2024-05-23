@@ -40,7 +40,7 @@ function cargaMenu(){
 
 				if(hoja.orientacion == 'L'){
 					salida +=	'		<tr style="width:100%;">'+
-								'			<td style="max-width:5%;">'+
+								'			<td style="max-width:10%;">'+
 								'           			<input type="checkbox" id="ck_'+producto.id+'" onchange="toggleCheckbox(this,'+producto.id+')" />'+
 								'			</td>'+
 								'			<td style="max-width:20%;">'+
@@ -52,10 +52,10 @@ function cargaMenu(){
 								'			<td style="max-width:10%;">'+
 								'					<font style="color: #D43854; font-family: '+"'"+'Algeria'+"'"+', sans-serif; font-size: 1.8rem;">'+producto.precio+'</font>'+
 								'			</td>'+
-								'			<td style="max-width:65%;">'+calculaEspacios()+'</td>'+
+								'			<td style="max-width:60%;">'+calculaEspacios()+'</td>'+
 								'		</tr>'+
 								'		<tr style="width:100%;">'+
-								'			<td style="max-width:5%;">'+
+								'			<td style="max-width:10%;">'+
 								'				&nbsp;'+
 								'			</td>'+
 								'			<td style="max-width:20%;">'+
@@ -65,7 +65,7 @@ function cargaMenu(){
 								'			</td>'+
 								'			<td style="max-width:10%;">'+
 								'			</td>'+
-								'			<td style="max-width:65%;"></td>'+
+								'			<td style="max-width:60%;"></td>'+
 								'		</tr>';
 								
 				}else if(hoja.orientacion == 'C'){
