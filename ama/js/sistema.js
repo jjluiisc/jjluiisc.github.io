@@ -42,6 +42,7 @@ function cargaMenu(){
 					salida +=	'		<tr style="width:100%;">'+
 								'			<td style="max-width:20%;">'+
 								'				<div style ="width:300px; white-space:nowrap; overflow:hidden;">'+
+								'              				<input type="checkbox" id="ck_'+producto.id+'" onchange="toggleCheckbox(this,'+producto.id+')" />'+
 								'					<font style="color: #D43854; font-family: '+"'"+'Algeria'+"'"+', sans-serif; font-size: '+calculaTamanio(nombre)+'rem;">'+nombre+'</font>'+
 								'					<font style="color: #FE1D17; font-family: Pussycat, Algerian, Broadway; font-size: 1.7rem;">&nbsp;'+puntos+'</font>'+																
 								'				</div>'+
@@ -100,7 +101,29 @@ function cargaMenu(){
 		
   
 	} 
-	
+
+	salida += '</br></br></br></br>';
+		
+	salida += '<div class="col-sm-12 col-md-12 col-lg-12"  style="padding-left:2em; align="left">'+
+			  '		<label class="sr-only">Nombre</label>' +
+			  '     <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre" required autofocus>'+
+			  '</div>'+
+			  '<div class="col-sm-12 col-md-12 col-lg-12"  style="padding-left:2em; align="left">'+
+			  '		<label class="sr-only">Mensaje</label>' +
+			  '     <textarea class="form-control f_size_medium" style="height: 60px;" name="mensaje" id="mensaje" readonly required></textarea>'+
+			  '</div>'+
+			  '<div class="col-sm-12 col-md-12 col-lg-12"  style="padding-left:2em; align="left">'+
+			  '		<div id="totalPedido">&nbsp;</div>' +
+			  '</div>'+
+			  '<div class="col-sm-12 col-md-12 col-lg-12"  style="padding-left:2em; align="left">'+
+			  '		<button class="btn btn-lg btn-outline-primary btn-block" onclick="cargarMensaje(); return false;">Generar</button>' +
+			  '</div>'+
+			  '<div class="col-sm-12 col-md-12 col-lg-12"  style="padding-left:2em; align="left">'+
+			  '		<button class="btn btn-lg btn-outline-primary btn-block" onclick="borrarMensaje(); return false;">Borrar</button>' +
+			  '</div>'+
+			  '<div class="col-sm-12 col-md-12 col-lg-12"  style="padding-left:2em; align="left">'+
+			  '		<button class="btn btn-lg btn-outline-primary btn-block" onclick="enviarMensaje(); return false;">Enviar</button>' +
+			  '</div>';
 	
 	$('#mainContent').append(salida);
 	
@@ -150,6 +173,49 @@ function calculaEspacios(){
 			espacios += "&nbsp;";
 	
 	return espacios;
+}
+
+var _listaproductos = [];
+
+function  toggleCheckbox(objeto, id){
+	if($("#ck_"+id+":checked").length == 1){
+		_listaproductos.push(id);
+	}else{
+		var indice = _listaproductos.indexOf(id); // obtenemos el indice
+		if(indice >=0 )
+			_listaproductos.splice(indice,1);
+	}
+}
+
+function cargarMensaje(){
+	var  totalPedido = 0; 
+	var  mensaje = ""; 
+	
+	for(var a =0; a < _listaproductos.length; a ++){
+		for(var x=0; x < menu.length; x++){
+			var hoja = menu[x];
+			productos = hoja.productos;
+			for(var y=0; y < productos.length; y++){
+				if(productos[y].id == _listaproductos[a] ){
+					totalPedido += productos[y].precio;
+					mensaje += productos[y].name+", ";
+					break;
+				}
+			}
+		}		
+	}
+	
+	$("#mensaje").val(mensaje);
+	$("#totalPedido").html("Total a pagar: $ "+totalPedido);
+}
+
+function borrarMensaje(){
+	$("#mensaje").val("");
+	$("#totalPedido").empty();
+}
+
+function enviarMensaje(){
+	window.open('https://api.whatsapp.com/send?phone=5541401197&text='+'origen:appMenu cliente: '+$("#nombre").val()+' mensaje:' +$("#mensaje").val()+'"'); 
 }
 
 cargaMenu();
