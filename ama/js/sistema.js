@@ -135,21 +135,13 @@ function cargaMenu(){
 			  '     <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre" required autofocus>'+
 			  '</div>'+
 			  '<div class="col-sm-12 col-md-12 col-lg-12"  style="padding-left:2em; align="left">'+
-			  '		<label class="sr-only">Mensaje</label>' +
-			  '     <textarea class="form-control f_size_medium" style="height: 60px;" name="mensaje" id="mensaje" readonly required></textarea>'+
-			  '</div>'+
-			  '<div class="col-sm-12 col-md-12 col-lg-12"  style="padding-left:2em; align="left">'+
-			  '		<div id="totalPedido">&nbsp;</div>' +
-			  '</div>'+
-			  '<div class="col-sm-12 col-md-12 col-lg-12"  style="padding-left:2em; align="left">'+
 			  '		<button class="btn btn-lg btn-outline-primary btn-block" onclick="cargarMensaje(); return false;">Generar</button>' +
 			  '</div>'+
 			  '<div class="col-sm-12 col-md-12 col-lg-12"  style="padding-left:2em; align="left">'+
 			  '		<button class="btn btn-lg btn-outline-primary btn-block" onclick="borrarMensaje(); return false;">Borrar</button>' +
-			  '</div>'+
-			  '<div class="col-sm-12 col-md-12 col-lg-12"  style="padding-left:2em; align="left">'+
-			  '		<button class="btn btn-lg btn-outline-primary btn-block" onclick="enviarMensaje(); return false;">Enviar</button>' +
 			  '</div>';
+
+	salida += '</br></br>';
 	
 	$('#mainContent').append(salida);
 	
