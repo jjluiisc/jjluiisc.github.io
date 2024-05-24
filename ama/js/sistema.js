@@ -3,6 +3,9 @@ $(".site-header").show();
 
 
 var max = 40;
+var _listaproductos = [];
+var _mensaje= "";
+var _detalles = "";
 
 function cargaMenu(){
 	
@@ -41,21 +44,39 @@ function cargaMenu(){
 				if(hoja.orientacion == 'L'){
 					salida +=	'		<tr style="width:100%;">'+
 								'			<td style="max-width:10%;">'+
-								'           			</br><input type="checkbox" id="ck_'+producto.id+'" onchange="toggleCheckbox(this,'+producto.id+')" />'+
+								'           	</br><input type="checkbox" id="ck_'+producto.id+'" onchange="toggleCheckbox(this,'+producto.id+')" />'+
+								'			</td>'+
+								'			<td style="max-width:5%;">'+
+								'           	<span>&nbsp;<font style="color: #D43854; font-size: 3rem;" onclick="bajaCantidad('+producto.id+')">-</font>&nbsp;</span>'+
+								'			</td>'+
+								'			<td style="max-width:5%;">'+
+								'           	<input type="number" name="ticketNum" value="1" id="c_'+producto.id+'" readonly style ="width:40px;">'+
+								'			</td>'+
+								'			<td style="max-width:5%; ">'+
+								'           	<span>&nbsp;<font style="color: #D43854; font-size: 2rem;" onclick="subeCantidad('+producto.id+')">+</font>&nbsp;</span>'+
 								'			</td>'+
 								'			<td style="max-width:20%;">'+
-								'				<div style ="width:350px; white-space:nowrap; overflow:hidden;">'+
-								'					<font style="color: #D43854; font-family: '+"'"+'Algeria'+"'"+', sans-serif; font-size: '+calculaTamanio(nombre)+'rem;">'+nombre+'</font>'+
+								'				<div style ="width:300px; white-space:nowrap; overflow:hidden;">'+
+								'					<font style="color: #D43854; font-family: '+"'"+'Algeria'+"'"+', sans-serif; font-size: '+calculaTamanio(nombre)+'rem;" onclick="verImagen('+producto.id+')">'+nombre+'</font>'+
 								'					<font style="color: #FE1D17; font-family: Pussycat, Algerian, Broadway; font-size: 1.7rem;">&nbsp;'+puntos+'</font>'+																
 								'				</div>'+
 								'			</td>'+
 								'			<td style="max-width:10%;">'+
 								'					<font style="color: #D43854; font-family: '+"'"+'Algeria'+"'"+', sans-serif; font-size: 1.8rem;">'+producto.precio+'</font>'+
 								'			</td>'+
-								'			<td style="max-width:60%;">'+calculaEspacios()+'</td>'+
+								'			<td style="max-width:45%;">'+calculaEspacios()+'</td>'+
 								'		</tr>'+
 								'		<tr style="width:100%;">'+
 								'			<td style="max-width:10%;">'+
+								'				&nbsp;'+
+								'			</td>'+
+								'			<td style="max-width:5%;">'+
+								'				&nbsp;'+
+								'			</td>'+
+								'			<td style="max-width:5%;">'+
+								'				&nbsp;'+
+								'			</td>'+
+								'			<td style="max-width:5%;">'+
 								'				&nbsp;'+
 								'			</td>'+
 								'			<td style="max-width:20%;">'+
@@ -65,7 +86,7 @@ function cargaMenu(){
 								'			</td>'+
 								'			<td style="max-width:10%;">'+
 								'			</td>'+
-								'			<td style="max-width:60%;"></td>'+
+								'			<td style="max-width:45%;"></td>'+
 								'		</tr>';
 								
 				}else if(hoja.orientacion == 'C'){
@@ -180,8 +201,6 @@ function calculaEspacios(){
 	return espacios;
 }
 
-var _listaproductos = [];
-
 function  toggleCheckbox(objeto, id){
 	if($("#ck_"+id+":checked").length == 1){
 		_listaproductos.push(id);
@@ -193,39 +212,106 @@ function  toggleCheckbox(objeto, id){
 }
 
 function cargarMensaje(){
-	var  totalPedido = 0; 
-	var  mensaje = ""; 
+	var cliente = $("#nombre").val();
 	
-	var contador = 0;
-	for(var a =0; a < _listaproductos.length; a ++){
-		for(var x=0; x < menu.length; x++){
-			var hoja = menu[x];
-			productos = hoja.productos;
-			for(var y=0; y < productos.length; y++){
-				if(productos[y].id == _listaproductos[a] ){
-					totalPedido += productos[y].precio;
-					if(contador == 0)
-						mensaje += productos[y].name;
-					else
-						mensaje += ", " + productos[y].name;
-					break;
+	if(cliente.length <=3 || cliente.trim() == ""){
+		alert("Debe capturar un nombre")
+	}else{
+		var  totalPedido = 0; 
+		_mensaje = ""; 
+		_mensaje = "El cliente " + cliente +' solicita los productos, ';
+		_detalles = '<table>'+
+		            '	<tr>'+
+					'		<th>Producto</th>'+
+					'		<th>Cantidad</th>'+
+					'		<th>Precio</th>'+
+					'		<th>Subtotal</th>'+
+					'	</tr>';
+		var contador = 0;
+		for(var a =0; a < _listaproductos.length; a ++){
+			for(var x=0; x < menu.length; x++){
+				var hoja = menu[x];
+				var totalProducto=0;
+				productos = hoja.productos;
+				for(var y=0; y < productos.length; y++){
+					if(productos[y].id == _listaproductos[a] ){
+						var cantidad = $("#c_"+productos[y].id).val() * 1;
+						totalProducto = cantidad * productos[y].precio;
+						totalPedido += totalProducto;
+						if(contador == 0)
+							_mensaje += 'cantidad: '+ cantidad + ' producto: '+productos[y].name+' precio: '+productos[y].precio+' subtotal: '+totalProducto;
+						else
+							_mensaje += ", " + 'cantidad: '+ cantidad + ' producto: '+productos[y].name+' precio: '+productos[y].precio+' subtotal: '+totalProducto;
+						
+						_detalles += '<tr>'+
+									'	<td>'+productos[y].name+'</td>'+
+									'	<td style="text-align: right;">'+cantidad+'</td>'+
+									'	<td style="text-align: right;">$ '+productos[y].precio+'</td>'+
+									'	<td style="text-align: right;">$ '+totalProducto+'</td>'+
+									'</tr>';
+						
+						break;
+					}
 				}
 			}
+			contador++;	
 		}
-		contador++;	
+		_detalles += '</table>';
+		_detalles += '</br></br>';
+		_detalles += '<h2>Total a pagar: $ ' +totalPedido+'</h2>';
+		_mensaje += ", Total a pagar: $ "+totalPedido;
+		
+		$("#modalDialogBusquedasLabel").empty().html(cliente);
+		$("#modalDialogBusquedasBody").empty().append(_detalles);
+		$("#modalDialogBusquedasFooter").empty().append('<button class="btn btn-lg btn-outline-primary btn-block" onclick="enviarMensaje(); return false;">Enviar</button>');
+		$("#modalDialogBusquedas").modal('show');
 	}
-	
-	$("#mensaje").val(mensaje);
-	$("#totalPedido").html("Total a pagar: $ "+totalPedido);
 }
 
 function borrarMensaje(){
-	$("#mensaje").val("");
-	$("#totalPedido").empty();
+	$("input[type=checkbox]").prop( "checked", false );
+	$("input[type=number]").val(1);
+	_listaproductos = [];
+	_mensaje= "";
+	_detalles = "";
 }
 
 function enviarMensaje(){
-	window.open('https://api.whatsapp.com/send?phone=5564281401&text='+'origen:appMenu cliente: '+$("#nombre").val()+' mensaje:' +$("#mensaje").val()+'"'); 
+	window.open('https://api.whatsapp.com/send?phone=5564281401&text='+'origen:menu '+' mensaje:' +_mensaje); 
+}
+
+function verImagen(id){
+	var producto = {};
+	for(var x=0; x < menu.length; x++){
+		var hoja = menu[x];
+		productos = hoja.productos;
+		for(var y=0; y < productos.length; y++){
+			if(productos[y].id == id ){
+				producto = productos[y];
+				break;
+			}
+		}
+	}
+	$("#modalDialogBusquedasLabel").empty().html(producto.nombre);
+	$("#modalDialogBusquedasBody").empty().append('<img src="img/logo.png" style="width:120px;padding-left:1em;"/>');
+	$("#modalDialogBusquedasFooter").empty();
+	$("#modalDialogBusquedas").modal('show');	
+}
+
+
+function bajaCantidad(id){
+	var cantidad = $("#c_"+id).val() * 1;
+	cantidad = cantidad-1;
+	if(cantidad <= 0)
+		$("#c_"+id).val(1);
+	else
+		$("#c_"+id).val(cantidad);
+}
+
+function subeCantidad(id){
+	var cantidad = $("#c_"+id).val() * 1;
+	cantidad = cantidad+1;
+	$("#c_"+id).val(cantidad);
 }
 
 cargaMenu();
