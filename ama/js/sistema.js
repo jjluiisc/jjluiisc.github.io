@@ -15,7 +15,7 @@ function cargaMenu(){
 	for(var x=0; x < menu.length; x++){
 		var hoja = menu[x];
 		
-		salida += '<div class="row" style="background: url(img/'+hoja.img+'.jpg); background-repeat:no-repeat; background-size:100% 100%; background-attachment: fixed; min-height="100%; backdrop-filter: brightness(50%);  width: fit-content;">'
+		salida += '<div class="row" style="background: url(img/'+hoja.img+'.jpg); background-repeat:no-repeat; background-size:100% 100%; background-attachment: fixed; width: fit-content;">'
 			productos = hoja.productos;
 			if(hoja.orientacion == 'L'){
 				
