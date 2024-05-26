@@ -94,7 +94,7 @@ function cargaMenu(){
 					salida +=	'		<tr style="width:100%;">'+
 								'			<td>'+
 						        '				<div class="col-sm-12 col-md-12 col-lg-12" align="center">'+
-								'					<font style="color: #D43854; font-family: '+"'"+'Algeria'+"'"+', sans-serif; font-size: '+calculaTamanio(nombre)+'rem;">'+nombre+'</font>'+
+								'					&nbsp;&nbsp;&nbsp;&nbsp;<font style="color: #D43854; font-family: '+"'"+'Algeria'+"'"+', sans-serif; font-size: '+calculaTamanio(nombre)+'rem;">'+nombre+'</font>&nbsp;&nbsp;&nbsp;&nbsp;'+
 								'				</div>' ;
 								'			</td>'+
 								'		</tr>'
