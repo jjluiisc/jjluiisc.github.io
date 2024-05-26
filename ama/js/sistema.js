@@ -304,9 +304,10 @@ function cargarMensaje(){
 function borrarMensaje(){
 	$("input[type=checkbox]").prop( "checked", false );
 	$("input[type=number]").val(1);
+	$("#nombre").val("");
 	_listaproductos = [];
 	_mensaje= "";
-	_detalles = "";
+	_detalles = "";	
 }
 
 function enviarMensaje(){
