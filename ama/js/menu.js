@@ -110,3 +110,8 @@ var hoja_7 = {img:"6", orientacion :"L", nombre:"POSTRES", productos:productos_7
 
 
 var menu = [hoja_1,hoja_2,hoja_3,hoja_4,hoja_5,hoja_6,hoja_7];
+
+var usuarios = [
+	{user:"root", password:"123456", nombre: "Daniel"},
+	{user:"operador", password:"operador", nombre: "Vicky"},
+];
