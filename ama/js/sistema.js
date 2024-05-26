@@ -6,6 +6,7 @@ var max = 40;
 var _listaproductos = [];
 var _mensaje= "";
 var _detalles = "";
+var _currenUser = {};
 
 function cargaMenu(){
 	
@@ -142,7 +143,47 @@ function cargaMenu(){
 			  '</div>';
 
 	salida += '</br></br>';
+
+	var idUserLogin = localStorage.getItem('idUserLogin');
+	if( idUserLogin == null || idUserLogin == "false"){
+		salida += '<div class="col-sm-12 col-md-12 col-lg-12"  style="padding-left:2em;">'+
+				  '		<button class="btn btn-lg btn-outline-primary btn-block" onclick="initSesion(); return false;">Iniciar Sesi&oacute;n</button>' +
+			      '</div>';
+	}else if (idUserLogin == 'true'){
+		var _currenUser = JSON.parse(localStorage.getItem('currenUser'));
+		
+		var clintes = localStorage.getItem(_currenUser.user);
+		var opciones = ""; 
+		if(clintes != null){			
+			var listaClientes = clintes.split(","); 
+			for(var b = 0; b < listaClientes.length; b++){
+				opciones += '<option value="'+listaClientes[b]+'">'+listaClientes[b]+'</option>';
+			}
+		}
+		
+		salida += '<div class="col-sm-12 col-md-12 col-lg-12"  style="padding-left:2em;">'+
+			      '		<button class="btn btn-lg btn-outline-primary btn-block" onclick="guardarVenta(); return false;">Guardar</button>' +
+			      '</div>'+
+				  '<div class="col-sm-12 col-md-12 col-lg-12"  style="padding-left:2em;">'+
+			      '		<button class="btn btn-lg btn-outline-primary btn-block" onclick="descargarVentas(); return false;">Descarga ventas</button>' +
+			      '</div>'+				  
+                  '<div class="col-sm-12 col-md-12 col-lg-12"  style="padding-left:2em;">'+
+			      '		<button class="btn btn-lg btn-outline-primary btn-block" onclick="cerrarSesion(); return false;">Salir</button>' +
+			      '</div>';				  
+				  
+		salida += '</br></br>';
+				  
+		salida += '<div class="col-sm-12 col-md-12 col-lg-12"  style="padding-left:2em;">'+
+				  '		<label class="sr-only">Ventas '+_currenUser.nombre+'</label>' +
+				  '     <select class="form-control" id="clientes" onchange="cargaVenta()">'+opciones+
+				  '     </select>'
+				  '</div>';
+	}
 	
+			  
+	salida += '</br></br>';
+	
+	$('#mainContent').empty();	
 	$('#mainContent').append(salida);
 	
 }
@@ -306,8 +347,175 @@ function subeCantidad(id){
 	$("#c_"+id).val(cantidad);
 }
 
+function  initSesion(){
+	
+	var formulario = ""+
+	'<div>'+
+    '    <label class="sr-only">Usuario</label>'+
+    '    <input type="text" id="usuario" class="form-control" placeholder="Usuario" required autofocus>'+
+    '    <label class="sr-only">Contrase&ntilde;a</label>'+
+    '    <input type="password" id="password" class="form-control" placeholder="Contrase&ntilde;a" required data-eye>'+
+    '</div>';
+	
+	$("#modalDialogBusquedasLabel").empty().html("LOGIN");
+	$("#modalDialogBusquedasBody").empty().append(formulario);
+	$("#modalDialogBusquedasFooter").empty().append('<button class="btn btn-lg btn-outline-primary btn-block" onclick="iniciaSesion(); return false;">Validar</button>');
+	$("#modalDialogBusquedas").modal('show');	
+}
+
+function iniciaSesion(){	
+	var user = $("#usuario").val();
+	var password = $("#password").val();
+	
+	var existeUsuario = false;
+	for(var a=0; a < usuarios.length; a++){
+		var usuario = usuarios[a];
+		if(usuario.user == user && usuario.password == password){
+			localStorage.setItem('idUserLogin','true');
+			localStorage.setItem('currenUser',JSON.stringify(usuario));
+			$("#modalDialogBusquedas").modal('hide');	
+			cargaMenu();
+			existeUsuario = true;
+			_currenUser = usuario;	
+			break;
+		}
+	}
+	
+	if(!existeUsuario){
+		alert("El usuario o password es incorrecto");
+	}
+}
+
+function guardarVenta(){
+	var cliente = $("#nombre").val();
+	_currenUser = JSON.parse(localStorage.getItem('currenUser'));
+	
+	if(cliente.length <=3 || cliente.trim() == ""){
+		alert("Debe capturar un nombre")
+	}else{
+		var fecha = new Date();	
+		var sfecha = fecha.toLocaleDateString() + " " +fecha.toLocaleTimeString();
+		
+		var venta = {cliente:cliente, fecha:sfecha, detalles:[]};
+		/////////////////////////////////////////////////////
+		for(var a =0; a < _listaproductos.length; a ++){
+			for(var x=0; x < menu.length; x++){
+				var hoja = menu[x];
+				productos = hoja.productos;
+				for(var y=0; y < productos.length; y++){
+					if(productos[y].id == _listaproductos[a] ){
+						var cantidad = $("#c_"+productos[y].id).val() * 1;
+						var detalle = {producto:productos[y].id, cantidad:cantidad}
+						venta.detalles.push(detalle);
+						break;
+					}
+				}
+			}
+		}
+		/////////////////////////////////////////////////////
+		
+		var clintes = localStorage.getItem(_currenUser.user);
+		// si no hay ventas registradas guarda la primera
+		if(clintes == null){
+			var intClientes = [];
+			intClientes.push(cliente);
+			localStorage.setItem(_currenUser.user,intClientes);
+			localStorage.setItem(cliente,JSON.stringify(venta));
+			$("#clientes").append('<option value="'+cliente+'">'+cliente+'</option>');
+		}else{
+			var listaClientes = clintes.split(",");
+			var existeCliente = false;
+			for(var z=0; z < listaClientes.length; z++){
+				if(listaClientes[z] == cliente){
+					existeCliente = true;
+					break;
+				}
+			}
+			//Si ya hay una venta del cliente actualiza
+			if(existeCliente){
+				localStorage.setItem(cliente,JSON.stringify(venta));	
+			}else{ // En caso contrario agregalo a la lista
+				localStorage.setItem(cliente,JSON.stringify(venta));
+				listaClientes.push(cliente);			
+				localStorage.setItem(_currenUser.user,listaClientes);
+				
+				$("#clientes").append('<option value="'+cliente+'">'+cliente+'</option>');
+			}
+		}
+	}
+
+	borrarMensaje();
+}
+
+function cargaVenta(){
+	
+	borrarMensaje();
+	
+	var cliente = $("#clientes").val();
+	$("#nombre").val(cliente);
+	var venta = JSON.parse(localStorage.getItem(cliente));	
+	
+	for(var a =0; a < venta.detalles.length; a ++){
+		for(var x=0; x < menu.length; x++){
+			var hoja = menu[x];
+			productos = hoja.productos;
+			for(var y=0; y < productos.length; y++){
+				if(productos[y].id == venta.detalles[a].producto){
+					_listaproductos.push(productos[y].id);
+					$("#ck_"+productos[y].id).prop( "checked", true );
+					$("#c_"+productos[y].id).val(venta.detalles[a].cantidad);
+					break;
+				}
+			}
+		}
+	}
+}
+
+function descargarVentas(){
+	var data = "";
+	_currenUser = JSON.parse(localStorage.getItem('currenUser'));
+	var clintes = localStorage.getItem(_currenUser.user);
+	var listaClientes = clintes.split(",");
+	data += 'Vendedor,Cliente,Fecha,Codigo,Descripcion,Cantidad,Precio,Importe\n';
+	for(var z=0; z < listaClientes.length; z++){
+		/////////////////////////////////////////
+		var venta = JSON.parse(localStorage.getItem(listaClientes[z]));	
+	
+		for(var a =0; a < venta.detalles.length; a ++){
+			for(var x=0; x < menu.length; x++){
+				var hoja = menu[x];
+				productos = hoja.productos;
+				for(var y=0; y < productos.length; y++){
+					if(productos[y].id == venta.detalles[a].producto){
+						var cantidad = venta.detalles[a].cantidad;
+						var importe = cantidad * productos[y].precio;
+						data += _currenUser.nombre+','+listaClientes[z]+','+venta.fecha+','+productos[y].id+','+productos[y].name+','+cantidad+','+productos[y].precio+','+importe+'\n';
+						break;
+					}
+				}
+			}
+		}
+		localStorage.removeItem(listaClientes[z]);
+		/////////////////////////////////////////
+	}
+	localStorage.removeItem(_currenUser.user);
+	$("#clientes").empty();
+	
+	
+	 var blob = new Blob([data], {type: "text/plain;charset=utf-8"});
+    saveAs(blob, "Ventas_"+_currenUser.user+".csv");
+	
+}
+
+function cerrarSesion(){
+	localStorage.setItem('idUserLogin','false');
+	localStorage.setItem('currenUser',JSON.stringify({user:"", password:"", nombre: ""}));
+	cargaMenu();
+	_currenUser = {};
+}
+
 cargaMenu();
-/*
+
 document.addEventListener("contextmenu", function(event){
 	event.preventDefault();
 }, false);
@@ -317,4 +525,4 @@ document.addEventListener("copy", function(event){
 	event.clipboardData.setData("text/plain", "No se permite copiar en esta página web");
 	// Prevent the default copy action
 	event.preventDefault();
-}, false);*/
+}, false);
