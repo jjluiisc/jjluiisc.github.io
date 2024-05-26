@@ -374,7 +374,6 @@ function iniciaSesion(){
 			localStorage.setItem('idUserLogin','true');
 			localStorage.setItem('currenUser',JSON.stringify(usuario));
 			$("#modalDialogBusquedas").modal('hide');	
-			cargaMenu();
 			existeUsuario = true;
 			_currenUser = usuario;	
 			break;
@@ -383,6 +382,8 @@ function iniciaSesion(){
 	
 	if(!existeUsuario){
 		alert("El usuario o password es incorrecto");
+	}else{
+		top.location = "/ama";
 	}
 }
 
