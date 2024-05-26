@@ -175,7 +175,7 @@ function cargaMenu(){
 				  
 		salida += '<div class="col-sm-12 col-md-12 col-lg-12"  style="padding-left:2em;">'+
 				  '		<label class="sr-only">Ventas '+_currenUser.nombre+'</label>' +
-				  '     <select class="form-control" id="clientes" onchange="cargaVenta()">'+opciones+
+				  '     <select class="form-control" id="clientes" onchange="cargaVenta()"><option value="*">Selecciona cliente</option>'+opciones+
 				  '     </select>'
 				  '</div>';
 	}
@@ -453,19 +453,23 @@ function cargaVenta(){
 	borrarMensaje();
 	
 	var cliente = $("#clientes").val();
-	$("#nombre").val(cliente);
-	var venta = JSON.parse(localStorage.getItem(cliente));	
-	
-	for(var a =0; a < venta.detalles.length; a ++){
-		for(var x=0; x < menu.length; x++){
-			var hoja = menu[x];
-			productos = hoja.productos;
-			for(var y=0; y < productos.length; y++){
-				if(productos[y].id == venta.detalles[a].producto){
-					_listaproductos.push(productos[y].id);
-					$("#ck_"+productos[y].id).prop( "checked", true );
-					$("#c_"+productos[y].id).val(venta.detalles[a].cantidad);
-					break;
+	if(cliente=="*"){
+		var uno = 1;
+	}else{
+		$("#nombre").val(cliente);
+		var venta = JSON.parse(localStorage.getItem(cliente));	
+		
+		for(var a =0; a < venta.detalles.length; a ++){
+			for(var x=0; x < menu.length; x++){
+				var hoja = menu[x];
+				productos = hoja.productos;
+				for(var y=0; y < productos.length; y++){
+					if(productos[y].id == venta.detalles[a].producto){
+						_listaproductos.push(productos[y].id);
+						$("#ck_"+productos[y].id).prop( "checked", true );
+						$("#c_"+productos[y].id).val(venta.detalles[a].cantidad);
+						break;
+					}
 				}
 			}
 		}
