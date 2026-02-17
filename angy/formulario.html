@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floreria Angy Love</title>
+	<link rel="icon" type="image/x-icon" href="img/icons/logo.ico">
+    
+	<!-- Bootstrap -->	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/font-awesome.min.css">
+		
+	<!-- Jquery  -->
+	<script src="js/jquery/jquery-3.5.1.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
+	
+</head>
+<body>
+    
+  <!--   Head   -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="navTop">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerHeader"
+            aria-controls="navbarTogglerHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="index.html">
+        <img alt="logo" src="img/logo-sm.jpg">
+    </a>
+    <div class="collapse navbar-collapse" id="navbarTogglerHeader">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <!--<li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Ventas</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" onclick="subePedidos();">Sube Pedidos</a>
+                    <a class="dropdown-item" onclick="pedidos();">Pedidos</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" onclick="pedidosDP();">Detenidos por Precio</a>
+                    <a class="dropdown-item" onclick="pedidosDC();">Detenidos por Cr&eacute;dito</a>
+                </div>
+            </li>-->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Cumpleaños</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" onclick="cambia('flores');">Flores</a>
+                    <a class="dropdown-item">Plantas</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" >Combos</a>
+                    <a class="dropdown-item" >Globos</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" >Para ella</a>
+                    <a class="dropdown-item" >Para el</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Ocasiones</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" >Amor</a>
+                    <a class="dropdown-item" >Aniversario</a>
+                    <a class="dropdown-item" >Cumpleaños</a>
+					<a class="dropdown-item" >Graduación</a>
+					<a class="dropdown-item" >Perdon</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Flores y plantas</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" >Combinados</a>
+					<a class="dropdown-item" >Rosas</a>
+					<a class="dropdown-item" >Girasoles</a>
+					<a class="dropdown-item" >Tulipanes</a>
+					<a class="dropdown-item" >Gerberas</a>
+					<a class="dropdown-item" >Orquídeas</a>
+                </div>
+            </li>
+			</li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Postres</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" >Chocolates</a>
+					<a class="dropdown-item" >Galletas</a>
+					<a class="dropdown-item" >Pasteles</a>
+                </div>
+            </li>
+			<li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Globos</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" >Cumpleaños</a>
+					<a class="dropdown-item" >Graduación</a>
+					<a class="dropdown-item" >Aniversario</a>
+					<a class="dropdown-item" >Nacimiento</a>
+                </div>
+            </li>
+			<li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Regalos</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item">Globos</a>
+					<a class="dropdown-item">Peluches</a>
+					<a class="dropdown-item">Bellesa</a>
+					<a class="dropdown-item">Joyeria</a>
+					<a class="dropdown-item">Libros</a>
+					<a class="dropdown-item">Botanas y bebidas</a>
+                </div>
+            </li>
+        </ul>
+        <div class="navbar-right">
+            <!--
+			<span class="text-sm-left"></span>&nbsp;
+            <button type="button" class="btn btn-sm btn-outline-primary" onclick="cerrarSesion();">
+                <span class="fa fa-user" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;Cerrar Sesi&oacute;n
+            </button>
+			-->
+        </div>
+    </div>
+  </nav>
+  <!-- ........ -->
+  <br/>
+  <br/>
+  <br/>
+  
+  
+  <div class="row">
+	<div class="col-sm-12 col-md-6 col-lg-4">
+		<div style="margin:6px; padding:6px; border:6px solid; border-radius:5%; border-color:#FFFFFF; color:#f9b8c0; text-align: center;">
+			<img src="img/1.jpg" style="border-radius: 5%; object-fit: cover; width:100%; height=100%">			
+		</div>
+	</div>
+	<!--azul #8bcee9-->
+	<div class="col-sm-12 col-md-6 col-lg-8">
+		<div style="margin:6px; padding:6px; border:6px solid; border-radius:2%; border-color:#FFFFFF; color:#f9b8c0; text-align: left;">
+			
+			<h3 style="color:#f9b8c0;"><b>Ramo de rosas y gerberas mariposa</b></h3>
+			<br/>
+			
+			<h4 style="padding-top:3px;"><b>SKU:</b>R0N0411991</h4>
+			
+			<br/>
+			
+			<h4><b>Descripción:</b> Ramo con dos docenas de rosas (pueden ser del mismo color o alguna combinacion de colores)</h4>
+			<h4>Una docena de gerberas.</h4>
+			<h4>Adornado con mariposas.</h4>
+		</div>
+	    
+	</div>
+  </div>	
+  
+	<br/>
+	
+	<div class="row" style="padding-left:1em; padding-right:1em;">
+		<div class="col-sm-12 col-md-12 col-lg-12"  style="padding:1em;">
+		  <label class="sr-only">Nombre</label>
+		  <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre" required autofocus>
+		</div>
+		<div class="col-sm-12 col-md-12 col-lg-12"  style="padding:1em;">
+		  <label class="sr-only">Telefono</label>
+		  <input type="text" id="telefono" name="telefono" class="form-control" placeholder="Telefono" required autofocus>
+		</div>
+		<div class="col-sm-12 col-md-12 col-lg-12"  style="padding:1em;">
+		  <label class="sr-only">Email</label>
+		  <input type="text" id="email" name="email" class="form-control" placeholder="Email" required autofocus>
+		</div>
+		<div class="col-sm-12 col-md-12 col-lg-12"  style="padding:1em;">
+		  <label class="sr-only">Dedicatoria</label>
+		  <input type="text" id="dedicatoria" name="dedicatoria" class="form-control" placeholder="Dedicatoria" required autofocus>
+		</div>
+		<div class="col-sm-12 col-md-12 col-lg-12"  style="padding:1em; ">
+		  <label class="sr-only">Enviar a</label>
+		  <input type="text" id="enviara" name="enviara" class="form-control" placeholder="Enviar a" required autofocus>
+		</div>
+		<div class="col-sm-12 col-md-12 col-lg-12"  style="padding:1em;">
+		  <label class="sr-only">Observaciones</label>
+		  <input type="text" id="observaciones" name="observaciones" class="form-control" placeholder="Observaciones" required autofocus>
+		</div>	
+		
+		<div class="col-sm-12 col-md-12 col-lg-12"  style="padding:1em;">
+		 <button class="btn btn-lg btn-outline-primary btn-block">Enviar</button>
+		</div>
+	</div>
+	 
+  
+  
+  
+  
+  </br>
+  </br>
+  </br>
+  </br>
+  
+  <nav class="navbar fixed-bottom navbar-light navbar-expand-md bg-light justify-content-center" id="navBottom">
+    <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
+        <ul class="navbar-nav mx-auto text-center">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Todos los Derechos Reservados &copy; 2026</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav flex-row justify-content-center flex-nowrap">
+            <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/profile.php?id=61581607052991"><!--<i class="fa fa-facebook mr-1 btn btn-outline-success"></i>--><img src="img/face.jpg"></a></li>
+            <!--<li class="nav-item"><a class="nav-link" href=""><i class="fa fa-twitter btn btn-outline-success"></i></a> </li>-->
+        </ul>
+    </div>
+</nav>
+
+
+    <!-- Incluye el script de Lightbox si lo usas (opcional, para efecto pop-up) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+    <script>
+        lightbox.option({
+          'resizeDuration': 200,
+          'wrapAround': true
+        })
+		
+		function cambia(pagina){
+			 window.location.href = pagina+".html";
+		}
+		
+		//$('.carousel').carousel()
+    </script>
+</body>
+</html>

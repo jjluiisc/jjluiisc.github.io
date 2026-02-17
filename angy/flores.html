@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floreria Angy Love</title>
+	<link rel="icon" type="image/x-icon" href="img/icons/logo.ico">
+    
+	<!-- Bootstrap -->	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/font-awesome.min.css">
+		
+	<!-- Jquery  -->
+	<script src="js/jquery/jquery-3.5.1.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
+	
+</head>
+<body>
+    
+  <!--   Head   -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="navTop">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerHeader"
+            aria-controls="navbarTogglerHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="index.html">
+        <img alt="logo" src="img/logo-sm.jpg">
+    </a>
+    <div class="collapse navbar-collapse" id="navbarTogglerHeader">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <!--<li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Ventas</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" onclick="subePedidos();">Sube Pedidos</a>
+                    <a class="dropdown-item" onclick="pedidos();">Pedidos</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" onclick="pedidosDP();">Detenidos por Precio</a>
+                    <a class="dropdown-item" onclick="pedidosDC();">Detenidos por Cr&eacute;dito</a>
+                </div>
+            </li>-->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Cumpleaños</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" onclick="cambia('flores');">Flores</a>
+                    <a class="dropdown-item">Plantas</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" >Combos</a>
+                    <a class="dropdown-item" >Globos</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" >Para ella</a>
+                    <a class="dropdown-item" >Para el</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Ocasiones</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" >Amor</a>
+                    <a class="dropdown-item" >Aniversario</a>
+                    <a class="dropdown-item" >Cumpleaños</a>
+					<a class="dropdown-item" >Graduación</a>
+					<a class="dropdown-item" >Perdon</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Flores y plantas</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" >Combinados</a>
+					<a class="dropdown-item" >Rosas</a>
+					<a class="dropdown-item" >Girasoles</a>
+					<a class="dropdown-item" >Tulipanes</a>
+					<a class="dropdown-item" >Gerberas</a>
+					<a class="dropdown-item" >Orquídeas</a>
+                </div>
+            </li>
+			</li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Postres</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" >Chocolates</a>
+					<a class="dropdown-item" >Galletas</a>
+					<a class="dropdown-item" >Pasteles</a>
+                </div>
+            </li>
+			<li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Globos</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" >Cumpleaños</a>
+					<a class="dropdown-item" >Graduación</a>
+					<a class="dropdown-item" >Aniversario</a>
+					<a class="dropdown-item" >Nacimiento</a>
+                </div>
+            </li>
+			<li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Regalos</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item">Globos</a>
+					<a class="dropdown-item">Peluches</a>
+					<a class="dropdown-item">Bellesa</a>
+					<a class="dropdown-item">Joyeria</a>
+					<a class="dropdown-item">Libros</a>
+					<a class="dropdown-item">Botanas y bebidas</a>
+                </div>
+            </li>
+        </ul>
+        <div class="navbar-right">
+            <!--
+			<span class="text-sm-left"></span>&nbsp;
+            <button type="button" class="btn btn-sm btn-outline-primary" onclick="cerrarSesion();">
+                <span class="fa fa-user" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;Cerrar Sesi&oacute;n
+            </button>
+			-->
+        </div>
+    </div>
+  </nav>
+  <!-- ........ -->
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  
+  <div class="row">
+	<div class="col-sm-12 col-md-6 col-lg-4">
+		<div style="margin:6px; padding:6px; border:6px solid; border-radius:5%; border-color:#f9b8c0; color:#f9b8c0; text-align: center;">
+			<a href="formulario.html"><img src="img/1.jpg" style="border-radius: 5%; object-fit: cover; width:100%"></a>
+			<h4 style="padding-top:3px;"><b>SKU:</b>R0N0411991 </h4>
+		</div>
+	</div>
+	<div class="col-sm-12 col-md-6 col-lg-4">
+		<div style="margin:6px; padding:6px; border:6px solid; border-radius:5%; border-color:#f9b8c0; color:#f9b8c0; text-align: center;">
+			<!--<img src="img/2.jpg" style="border-radius: 5%; object-fit: cover; width:100%">-->
+			<div id="carousel2" class="carousel slide" data-ride="carousel">
+			  <ol class="carousel-indicators">
+				<li data-target="#carousel2" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel2" data-slide-to="1"></li>
+				<li data-target="#carousel2" data-slide-to="2"></li>
+
+			  </ol>
+			  <div class="carousel-inner">
+				<div class="carousel-item active">
+				  <img class="d-block w-100" src="img/2.jpg" alt="First slide">
+				</div>
+				<div class="carousel-item">
+				  <img class="d-block w-100" src="img/2_1.jpg" alt="Second slide">
+				</div>
+				<div class="carousel-item">
+				  <img class="d-block w-100" src="img/2_2.jpg" alt="Third slide">
+				</div>
+			  </div>
+			  <a class="carousel-control-prev" href="#carousel2" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			  </a>
+			  <a class="carousel-control-next" href="#carousel2" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			  </a>
+			</div>
+			<h4 style="padding-top:3px;"><b>SKU:</b>R0N0411791</h4>
+		</div>
+	</div>
+	<div class="col-sm-12 col-md-6 col-lg-4">
+		<div style="margin:6px; padding:6px; border:6px solid; border-radius:5%; border-color:#f9b8c0; color:#f9b8c0; text-align: center;">
+			<img src="img/3.jpg" style="border-radius: 5%; object-fit: cover; width:100%">
+			<h4 style="padding-top:3px;"><b>SKU:</b>R0N0411931</h4>
+		</div>
+	</div>
+  </div>
+  
+  <div class="row">
+	<div class="col-sm-12 col-md-6 col-lg-4">
+		<div style="margin:6px; padding:6px; border:6px solid; border-radius:5%; border-color:#f9b8c0; color:#f9b8c0; text-align: center;">
+			<img src="img/4.jpg" style="border-radius: 5%; object-fit: cover; width:100%">
+			<h4 style="padding-top:3px;"><b>SKU:</b>R0N0411531</h4>
+		</div>
+	</div>
+	<div class="col-sm-12 col-md-6 col-lg-4">
+		<div style="margin:6px; padding:6px; border:6px solid; border-radius:5%; border-color:#f9b8c0; color:#f9b8c0; text-align: center;">
+			<img src="img/5.jpg" style="border-radius: 5%; object-fit: cover; width:100%">
+			<h4 style="padding-top:3px;"><b>SKU:</b>R0N0411351</h4>
+		</div>
+	</div>
+	<div class="col-sm-12 col-md-6 col-lg-4">
+		<div style="margin:6px; padding:6px; border:6px solid; border-radius:5%; border-color:#f9b8c0; color:#f9b8c0; text-align: center;">
+			<img src="img/6.jpg" style="border-radius: 5%; object-fit: cover; width:100%">
+			<h4 style="padding-top:3px;"><b>SKU:</b>R0N0411213</h4>
+		</div>
+	</div>
+  </div>
+  
+  <div class="row">
+	<div class="col-sm-12 col-md-6 col-lg-4">
+		<div style="margin:6px; padding:6px; border:6px solid; border-radius:5%; border-color:#f9b8c0; color:#f9b8c0; text-align: center;">
+			<img src="img/7.jpg" style="border-radius: 5%; object-fit: cover; width:100%">
+			<h4 style="padding-top:3px;"><b>SKU:</b>R0N0411571</h4>
+		</div>
+	</div>
+	<div class="col-sm-12 col-md-6 col-lg-4">
+		<div style="margin:6px; padding:6px; border:6px solid; border-radius:5%; border-color:#f9b8c0; color:#f9b8c0; text-align: center;">
+			<img src="img/8.jpg" style="border-radius: 5%; object-fit: cover; width:100%">
+			<h4 style="padding-top:3px;"><b>SKU:</b>R0N0411381</h4>
+		</div>
+	</div>
+	<div class="col-sm-12 col-md-6 col-lg-4">
+		<div style="margin:6px; padding:6px; border:6px solid; border-radius:5%; border-color:#f9b8c0; color:#f9b8c0; text-align: center;">
+			<!--<img src="img/9.jpg" style="border-radius: 5%; object-fit: cover; width:100%">-->
+			<div id="carousel9" class="carousel slide" data-ride="carousel">
+			  <ol class="carousel-indicators">
+				<li data-target="#carousel9" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel9" data-slide-to="1"></li>
+
+			  </ol>
+			  <div class="carousel-inner">
+				<div class="carousel-item active">
+				  <img class="d-block w-100" src="img/9.jpg" alt="First slide">
+				</div>
+				<div class="carousel-item">
+				  <img class="d-block w-100" src="img/9_1.jpg" alt="Second slide">
+				</div>
+			  </div>
+			  <a class="carousel-control-prev" href="#carousel9" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			  </a>
+			  <a class="carousel-control-next" href="#carousel9" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			  </a>
+			</div>
+			<h4 style="padding-top:3px;"><b>SKU:</b>R0N0411293</h4>
+		</div>
+	</div>
+  </div>
+  
+  <div class="row">
+	<div class="col-sm-12 col-md-6 col-lg-4">
+		<div style="margin:6px; padding:6px; border:6px solid; border-radius:5%; border-color:#f9b8c0; color:#f9b8c0; text-align: center;">
+			<!--<img src="img/10.jpg" style="border-radius: 5%; object-fit: cover; width:100%">-->
+			<div id="carousel10" class="carousel slide" data-ride="carousel">
+			  <ol class="carousel-indicators">
+				<li data-target="#carousel10" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel10" data-slide-to="1"></li>
+				<li data-target="#carousel10" data-slide-to="2"></li>
+
+			  </ol>
+			  <div class="carousel-inner">
+				<div class="carousel-item active">
+				  <img class="d-block w-100" src="img/10.jpg" alt="First slide">
+				</div>
+				<div class="carousel-item">
+				  <img class="d-block w-100" src="img/10_1.jpg" alt="Second slide">
+				</div>
+				<div class="carousel-item">
+				  <img class="d-block w-100" src="img/10_2.jpg" alt="Third slide">
+				</div>
+			  </div>
+			  <a class="carousel-control-prev" href="#carousel10" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			  </a>
+			  <a class="carousel-control-next" href="#carousel10" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			  </a>
+			</div>
+			<h4 style="padding-top:3px;"><b>SKU:</b>R0N0411570</h4>
+		</div>
+	</div>
+	<div class="col-sm-12 col-md-6 col-lg-4">
+		<div style="margin:6px; padding:6px; border:6px solid; border-radius:5%; border-color:#f9b8c0; color:#f9b8c0; text-align: center;">
+			<img src="img/11.jpg" style="border-radius: 5%; object-fit: cover; width:100%">
+			<h4 style="padding-top:3px;"><b>SKU:</b>R0N0411311</h4>
+		</div>
+	</div>
+	<div class="col-sm-12 col-md-6 col-lg-4">
+		<div style="margin:6px; padding:6px; border:6px solid; border-radius:5%; border-color:#f9b8c0; color:#f9b8c0; text-align: center;">
+			<img src="img/12.jpg" style="border-radius: 5%; object-fit: cover; width:100%">
+			<h4 style="padding-top:3px;"><b>SKU:</b>R0N0411212</h4>
+		</div>
+	</div>
+  </div>
+  
+  <div class="row">
+	<div class="col-sm-12 col-md-6 col-lg-4">
+		<div style="margin:6px; padding:6px; border:6px solid; border-radius:5%; border-color:#f9b8c0; color:#f9b8c0; text-align: center;">
+			<img src="img/13.jpg" style="border-radius: 5%; object-fit: cover; width:100%">
+			<h4 style="padding-top:3px;"><b>SKU:</b>R0N0411321</h4>
+		</div>
+	</div>
+	<div class="col-sm-12 col-md-6 col-lg-4">
+		<div style="margin:6px; padding:6px; border:6px solid; border-radius:5%; border-color:#f9b8c0; color:#f9b8c0; text-align: center;">
+			<img src="img/14.jpg" style="border-radius: 5%; object-fit: cover; width:100%">
+			<h4 style="padding-top:3px;"><b>SKU:</b>R0N0413115</h4>
+		</div>
+	</div>
+	<div class="col-sm-12 col-md-6 col-lg-4">
+		<div style="margin:6px; padding:6px; border:6px solid; border-radius:5%; border-color:#f9b8c0; color:#f9b8c0; text-align: center;">
+			<!--<img src="img/15.jpg" style="border-radius: 5%; object-fit: cover; width:100%">-->
+			<div id="carousel15" class="carousel slide" data-ride="carousel">
+			  <ol class="carousel-indicators">
+				<li data-target="#carousel15" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel15" data-slide-to="1"></li>
+
+			  </ol>
+			  <div class="carousel-inner">
+				<div class="carousel-item active">
+				  <img class="d-block w-100" src="img/15.jpg" alt="First slide">
+				</div>
+				<div class="carousel-item">
+				  <img class="d-block w-100" src="img/15_1.jpg" alt="Second slide">
+				</div>
+			  </div>
+			  <a class="carousel-control-prev" href="#carousel15" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			  </a>
+			  <a class="carousel-control-next" href="#carousel15" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			  </a>
+			</div>
+			<h4 style="padding-top:3px;"><b>SKU:</b>R0N0411843</h4>
+		</div>
+	</div>
+  </div>
+  
+  <div class="row">
+	<div class="col-sm-12 col-md-6 col-lg-4">
+		<div style="margin:6px; padding:6px; border:6px solid; border-radius:5%; border-color:#f9b8c0; color:#f9b8c0; text-align: center;">
+			<img src="img/16.jpg" style="border-radius: 5%; object-fit: cover; width:100%">
+			<h4 style="padding-top:3px;"><b>SKU:</b>R0N0411736</h4>
+		</div>
+	</div>
+	<div class="col-sm-12 col-md-6 col-lg-4">
+		<div style="margin:6px; padding:6px; border:6px solid; border-radius:5%; border-color:#f9b8c0; color:#f9b8c0; text-align: center;">
+			<img src="img/17.jpg" style="border-radius: 5%; object-fit: cover; width:100%">
+			<h4 style="padding-top:3px;"><b>SKU:</b>R0N0411111</h4>
+		</div>
+	</div>
+	<div class="col-sm-12 col-md-6 col-lg-4">
+		<div style="margin:6px; padding:6px; border:6px solid; border-radius:5%; border-color:#f9b8c0; color:#f9b8c0; text-align: center;">
+			<img src="img/18.jpg" style="border-radius: 5%; object-fit: cover; width:100%">
+			<h4 style="padding-top:3px;"><b>SKU:</b>R0N0411243</h4>
+		</div>
+	</div>
+  </div>
+  
+  <div class="row">
+	<div class="col-sm-12 col-md-6 col-lg-4">
+		<div style="margin:6px; padding:6px; border:6px solid; border-radius:5%; border-color:#f9b8c0; color:#f9b8c0; text-align: center;">
+			<img src="img/19.jpg" style="border-radius: 5%; object-fit: cover; width:100%">
+			<h4 style="padding-top:3px;"><b>SKU:</b>R0N0411230</h4>
+		</div>
+	</div>
+	<div class="col-sm-12 col-md-6 col-lg-4">
+		<div style="margin:6px; padding:6px; border:6px solid; border-radius:5%; border-color:#f9b8c0; color:#f9b8c0; text-align: center;">
+			<img src="img/20.jpg" style="border-radius: 5%; object-fit: cover; width:100%">
+			<h4 style="padding-top:3px;"><b>SKU:</b>R0N0411331</h4>
+		</div>
+	</div>
+	<div class="col-sm-12 col-md-6 col-lg-4">
+		<!--<div style="margin:6px; padding:6px; border:6px solid; border-radius:5%; border-color:#f9b8c0; color:#f9b8c0; text-align: center;">
+			<img src="img/21.jpg" style="border-radius: 5%; object-fit: cover; width:100%">
+			<h4 style="padding-top:3px;"><b>SKU:</b>R0N0411212</h4>
+		</div>-->
+	</div>
+  </div>
+  
+  
+  </br>
+  </br>
+  </br>
+  </br>
+  
+  <nav class="navbar fixed-bottom navbar-light navbar-expand-md bg-light justify-content-center" id="navBottom">
+    <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
+        <ul class="navbar-nav mx-auto text-center">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Todos los Derechos Reservados &copy; 2026</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav flex-row justify-content-center flex-nowrap">
+            <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/profile.php?id=61581607052991"><!--<i class="fa fa-facebook mr-1 btn btn-outline-success"></i>--><img src="img/face.jpg"></a></li>
+            <!--<li class="nav-item"><a class="nav-link" href=""><i class="fa fa-twitter btn btn-outline-success"></i></a> </li>-->
+        </ul>
+    </div>
+</nav>
+
+
+    <!-- Incluye el script de Lightbox si lo usas (opcional, para efecto pop-up) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+    <script>
+        lightbox.option({
+          'resizeDuration': 200,
+          'wrapAround': true
+        })
+		
+		function cambia(pagina){
+			 window.location.href = pagina+".html";
+		}
+		
+		//$('.carousel').carousel()
+    </script>
+</body>
+</html>
